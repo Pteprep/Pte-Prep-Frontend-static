@@ -13,10 +13,17 @@
       class="py-5 px-[170px] w-full border-b border-gray-300 fixed top-0 flex items-center justify-between bg-white z-10"
     >
       <div class="flex items-center gap-x-9">
-        <img src="../assets/images/logo.svg" />
+        <a class="flex items-center" href="../../index.html">
+          <img src="../../assets/images/logo.svg"
+        /></a>
         <ul class="flex gap-x-9 leading-5 font-normal">
-          <li>Home</li>
-          <li>PTE Practice</li>
+          <a class="flex items-center" href="../homeScreen"> <li>Home</li></a>
+          <a class="flex items-center" href="../dropdownScreen">
+            <li class="flex items-center gap-x-2">
+              PTE Practice
+              <img src="../../assets/images/Play.svg" />
+            </li>
+          </a>
           <li>Course</li>
           <li>PTE Tutorials</li>
           <li>APP</li>
@@ -24,10 +31,15 @@
       </div>
       <div class="flex gap-x-6">
         <div class="flex items-center gap-x-[6px]">
-          <img src="../assets/images/VIP.svg" />
+          <img src="../../assets/images/VIP.svg" />
           <p class="text-base leading-5">Upgrade VIP</p>
         </div>
-        <img class="h-[32px] w-[32px]" src="../assets/images/Ellipse 7.svg" />
+        <a class="flex items-center" href="../ProfileScreen">
+          <img
+            class="h-[32px] w-[32px]"
+            src="../../assets/images/Ellipse 7.svg"
+          />
+        </a>
       </div>
     </div>
 
@@ -44,65 +56,73 @@
           <div class="flex items-center px-6 gap-4 mb-5">
             <img
               class="h-[32px] w-[32px]"
-              src="../assets/images/Ellipse 7.svg"
+              src="../../assets/images/Ellipse 7.svg"
             />
             <p class="font-bold text-base leading-5">Daniyal Samim</p>
           </div>
           <hr class="border border-gray-100 mb-2" />
           <ul class="flex flex-col gap-y-3 cursor-pointer">
-            <li
-              class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2 relative"
+            <a class="flex items-center" href="../homeScreen">
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2 relative"
+              >
+                <img src="../../assets/images/homeBlack.svg" />
+                Home
+              </li>
+            </a>
+            <a class="flex items-center" href="../studyCenterScreen">
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+              >
+                <img src="../../assets/images/study center.svg" />
+                Study Center
+              </li>
+            </a>
+            <a class="flex items-center" href="../mockTestScreen">
+              <li
+                class="py-2 px-6 text-mainColor hover:text-mainColor bg-lightGreenColor flex items-center gap-x-2 relative w-full"
+              >
+                <img src="../../assets/images/mocktestGreen.svg" />
+                Mock Tests
+                <hr class="absolute right-0 h-full border border-mainColor" />
+              </li>
+            </a>
+            <a class="flex items-center" href="../settingScreen">
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+              >
+                <img src="../../assets/images/setting.svg" />
+                Settings
+              </li></a
             >
-              <img src="../assets/images/homeBlack.svg" />
-              Home
-            </li>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/study center.svg" />
-              Study Center
-            </li>
-            <li
-              class="py-2 px-6 text-mainColor hover:text-mainColor bg-lightGreenColor flex items-center gap-x-2 relative"
-            >
-              <img src="../assets/images/mocktestGreen.svg" />
-              Mock Tests
-              <hr class="absolute right-0 h-full border border-mainColor" />
-            </li>
-            <li
-              class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-            >
-              <img src="../assets/images/setting.svg" />
-              Settings
-            </li>
-            <li
-              class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-            >
-              <img src="../assets/images/Crown Simple.svg" />
+              <img src="../../assets/images/Crown Simple.svg" />
               VIP Center
             </li>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/notification.svg" />
+              <img src="../../assets/images/notification.svg" />
               Notification Center
             </li>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/help.svg" />
+              <img src="../../assets/images/help.svg" />
               Help (Q&A)
             </li>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/homeBlack.svg" />
+              <img src="../../assets/images/homeBlack.svg" />
               Contact Us
             </li>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/sidebralogout.svg" />
+              <img src="../../assets/images/sidebralogout.svg" />
               Log Out
             </li>
           </ul>
@@ -117,7 +137,7 @@
           <div>
             <img
               class="w-full mt-[-9px]"
-              src="../assets/images/mockTestBannerImg.svg"
+              src="../../assets/images/mockTestBannerImg.svg"
             />
           </div>
 
@@ -155,64 +175,64 @@
                     【Free Full Test】Mock Test A (note: VIP required for
                     scoring)
                   </h1>
-                  <img src="../assets/images/rightArrow.svg" />
+                  <img src="../../assets/images/rightArrow.svg" />
                 </div>
                 <div
                   class="py-[25px] flex justify-between px-[25px] font-bold text-base leading-5 border-b border-gray-300 text-mainTextColor"
                 >
                   <h1>【VIP Full Test】Mock Test 36B (New 2h Format)</h1>
-                  <img src="../assets/images/rightArrow.svg" />
+                  <img src="../../assets/images/rightArrow.svg" />
                 </div>
                 <div
                   class="py-[25px] flex justify-between px-[25px] font-bold text-base leading-5 border-b border-gray-300 text-mainTextColor"
                 >
                   <h1>【VIP Full Test】Mock Test 36A (New 2h Format)</h1>
-                  <img src="../assets/images/rightArrow.svg" />
+                  <img src="../../assets/images/rightArrow.svg" />
                 </div>
                 <div
                   class="py-[25px] flex justify-between px-[25px] font-bold text-base leading-5 border-b border-gray-300 text-mainTextColor"
                 >
                   <h1>【VIP Full Test】Mock Test 35B (New 2h Format)</h1>
-                  <img src="../assets/images/rightArrow.svg" />
+                  <img src="../../assets/images/rightArrow.svg" />
                 </div>
                 <div
                   class="py-[25px] flex justify-between px-[25px] font-bold text-base leading-5 border-b border-gray-300 text-mainTextColor"
                 >
                   <h1>【VIP Full Test】Mock Test 35A (New 2h Format)</h1>
-                  <img src="../assets/images/rightArrow.svg" />
+                  <img src="../../assets/images/rightArrow.svg" />
                 </div>
                 <div
                   class="py-[25px] flex justify-between px-[25px] font-bold text-base leading-5 border-b border-gray-300 text-mainTextColor"
                 >
                   <h1>【VIP Full Test】Mock Test 34B (New 2h Format)</h1>
-                  <img src="../assets/images/rightArrow.svg" />
+                  <img src="../../assets/images/rightArrow.svg" />
                 </div>
                 <div
                   class="py-[25px] flex justify-between px-[25px] font-bold text-base leading-5 border-b border-gray-300 text-mainTextColor"
                 >
                   <h1>【VIP Full Test】Mock Test 34A (New 2h Format)</h1>
-                  <img src="../assets/images/rightArrow.svg" />
+                  <img src="../../assets/images/rightArrow.svg" />
                 </div>
                 <div
                   class="py-[25px] flex justify-between px-[25px] font-bold text-base leading-5 border-b border-gray-300 text-mainTextColor"
                 >
                   <h1>【VIP Full Test】Mock Test 33B (New 2h Format)</h1>
-                  <img src="../assets/images/rightArrow.svg" />
+                  <img src="../../assets/images/rightArrow.svg" />
                 </div>
                 <div
                   class="py-[25px] flex justify-between px-[25px] font-bold text-base leading-5 border-b border-gray-300 text-mainTextColor"
                 >
                   <h1>【VIP Full Test】Mock Test 33A (New 2h Format)</h1>
-                  <img src="../assets/images/rightArrow.svg" />
+                  <img src="../../assets/images/rightArrow.svg" />
                 </div>
                 <div
-                  class="py-[25px] flex justify-center px-[25px] font-bold text-base leading-5 border-b border-gray-300 text-mainTextColor"
+                  class="pt-[25px] flex justify-center px-[25px] font-bold text-base leading-5 text-mainTextColor"
                 >
                   <div class="flex items-center gap-x-3">
                     <button
                       class="py-[9px] px-[13px] rounded-[5px] text-mainColor border border-gray-300 text-base leading-5"
                     >
-                      <img src="../assets/images/leftArrow.svg" />
+                      <img src="../../assets/images/leftArrow.svg" />
                     </button>
                     <button
                       class="py-[9px] px-[13px] rounded-[5px] text-mainColor border border-mainColor text-base leading-5"
@@ -247,7 +267,7 @@
                     <button
                       class="py-[9px] px-[13px] rounded-[5px] text-mainTextColor border border-mainTextColor text-base leading-5"
                     >
-                      <img src="../assets/images/rightArrow.svg" />
+                      <img src="../../assets/images/rightArrow.svg" />
                     </button>
                     <button
                       class="py-[6px] px-[10px] rounded-[5px] text-mainTextColor font-normal text-base leading-5"
@@ -335,27 +355,27 @@
               <div
                 class="h-9 w-9-2 border-lightGrayColor rounded-full flex items-center justify-center"
               >
-                <img src="../assets/images/facebook.svg" />
+                <img src="../../assets/images/facebook.svg" />
               </div>
               <div
                 class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
               >
-                <img src="../assets/images/twitter.svg" />
+                <img src="../../assets/images/twitter.svg" />
               </div>
               <div
                 class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
               >
-                <img src="../assets/images/telegram.svg" />
+                <img src="../../assets/images/telegram.svg" />
               </div>
             </div>
           </div>
           <div class="flex gap-x-16">
             <div class="flex flex-col gap-y-5 items-center">
-              <img class="h-20 w-20" src="../assets/images/qrcode.svg" />
+              <img class="h-20 w-20" src="../../assets/images/qrcode.svg" />
               <p class="hover:text-mainColor">APEUni iOS App</p>
             </div>
             <div class="flex flex-col gap-y-5 items-center">
-              <img class="h-20 w-20" src="../assets/images/qrcode2.svg" />
+              <img class="h-20 w-20" src="../../assets/images/qrcode2.svg" />
               <p class="hover:text-mainColor">APEUni Android App</p>
             </div>
           </div>

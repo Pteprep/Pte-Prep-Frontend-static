@@ -23,6 +23,6 @@
   left: 50%;
   content: "";
   transform: rotate(45deg);
-  margin-left: -25px;
+  margin-left: -10px;
   background-color: white;
 }

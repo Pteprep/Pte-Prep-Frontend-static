@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./**/*.html"],
   theme: {
     extend: {
       colors: {
@@ -15,6 +15,7 @@ module.exports = {
         blueButtonColor: "#007BFF",
         footerBgColor: "#292933",
         footerTextColor: "#808080",
+        darkGrayColor: "#333333",
       },
     },
   },
