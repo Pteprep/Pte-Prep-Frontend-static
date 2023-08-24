@@ -13,10 +13,19 @@
       class="py-5 px-[170px] w-full border-b border-gray-300 fixed top-0 flex items-center justify-between bg-white z-10"
     >
       <div class="flex items-center gap-x-9">
-        <img src="../assets/images/logo.svg" />
+        <a class="flex items-center" href="../../index.html">
+          <img src="../../assets/images/logo.svg" />
+        </a>
         <ul class="flex gap-x-9 leading-5 font-normal">
-          <li>Home</li>
-          <li>PTE Practice</li>
+          <a class="flex items-center" href="../homeScreen">
+            <li>Home</li>
+          </a>
+          <a class="flex items-center" href="../dropdownScreen">
+            <li class="flex items-center gap-x-2">
+              PTE Practice
+              <img src="../../assets/images/Play.svg" />
+            </li>
+          </a>
           <li>Course</li>
           <li>PTE Tutorials</li>
           <li>APP</li>
@@ -24,10 +33,17 @@
       </div>
       <div class="flex gap-x-6">
         <div class="flex items-center gap-x-[6px]">
-          <img src="../assets/images/VIP.svg" />
+          <img src="../../assets/images/VIP.svg" />
           <p class="text-base leading-5">Upgrade VIP</p>
         </div>
-        <img class="h-[32px] w-[32px]" src="../assets/images/Ellipse 7.svg" />
+        <a class="flex items-center z-10" href="../ProfileScreen/">
+          <a class="flex items-center" href="../ProfileScreen">
+            <img
+              class="h-[32px] w-[32px]"
+              src="../../assets/images/Ellipse 7.svg"
+            />
+          </a>
+        </a>
       </div>
     </div>
 
@@ -44,7 +60,7 @@
           <div class="flex items-center px-6 gap-4 mb-5">
             <img
               class="h-[32px] w-[32px]"
-              src="../assets/images/Ellipse 7.svg"
+              src="../../assets/images/Ellipse 7.svg"
             />
             <p class="font-bold text-base leading-5">Daniyal Samim</p>
           </div>
@@ -53,56 +69,62 @@
             <li
               class="py-2 px-6 text-mainColor hover:text-mainColor bg-lightGreenColor flex items-center gap-x-2 relative"
             >
-              <img src="../assets/images/home.svg" />
+              <img src="../../assets/images/home.svg" />
               Home
               <hr class="absolute right-0 h-full border border-mainColor" />
             </li>
+            <a class="flex items-center" href="../studyCenterScreen">
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+              >
+                <img src="../../assets/images/study center.svg" />
+                Study Center
+              </li>
+            </a>
+            <a class="flex items-center" href="../mockTestScreen">
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+              >
+                <img src="../../assets/images/mocktest.svg" />
+                Mock Tests
+              </li>
+            </a>
+            <a class="flex items-center" href="../settingScreen">
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+              >
+                <img src="../../assets/images/setting.svg" />
+                Settings
+              </li>
+            </a>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/study center.svg" />
-              Study Center
-            </li>
-            <li
-              class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-            >
-              <img src="../assets/images/mocktest.svg" />
-              Mock Tests
-            </li>
-            <li
-              class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-            >
-              <img src="../assets/images/setting.svg" />
-              Settings
-            </li>
-            <li
-              class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-            >
-              <img src="../assets/images/Crown Simple.svg" />
+              <img src="../../assets/images/Crown Simple.svg" />
               VIP Center
             </li>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/notification.svg" />
+              <img src="../../assets/images/notification.svg" />
               Notification Center
             </li>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/help.svg" />
+              <img src="../../assets/images/help.svg" />
               Help (Q&A)
             </li>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/homeBlack.svg" />
+              <img src="../../assets/images/homeBlack.svg" />
               Contact Us
             </li>
             <li
               class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
             >
-              <img src="../assets/images/sidebralogout.svg" />
+              <img src="../../assets/images/sidebralogout.svg" />
               Log Out
             </li>
           </ul>
@@ -113,7 +135,7 @@
 
         <div class="w-full flex flex-col gap-y-10">
           <!-- Banner Start -->
-          <img class="w-full" src="../assets/images/Rectangle 17.svg" />
+          <img class="w-full" src="../../assets/images/Rectangle 17.svg" />
           <!-- Banner End -->
 
           <!-- SearchBar Start -->
@@ -124,7 +146,7 @@
             />
             <img
               class="absolute top-5 right-8"
-              src="../assets/images/search.svg"
+              src="../../assets/images/search.svg"
             />
           </div>
           <!-- SearchBar End -->
@@ -184,7 +206,7 @@
                     class="flex gap-x-4 items-center text-xs leading-3 text-lightGrayColor"
                   >
                     Study Center
-                    <img src="../assets/images/smallArrow.svg" />
+                    <img src="../../assets/images/smallArrow.svg" />
                   </button>
                 </div>
               </div>
@@ -217,7 +239,7 @@
                       </p>
                       <div class="flex items-center gap-x-4 text-xs">
                         <p class="flex gap-x-1 items-center text-mainColor">
-                          <img src="../assets/images/smallClock.svg" />
+                          <img src="../../assets/images/smallClock.svg" />
                           Tomorrow 06:00-07:30
                         </p>
                         <p class="text-lightGrayColor">Live Class</p>
@@ -246,7 +268,7 @@
                       </p>
                       <div class="flex items-center gap-x-4 text-xs">
                         <p class="flex gap-x-1 items-center text-mainColor">
-                          <img src="../assets/images/smallClock.svg" />
+                          <img src="../../assets/images/smallClock.svg" />
                           Tomorrow 09:30-11:00
                         </p>
                         <p class="text-lightGrayColor">Live Class</p>
@@ -275,7 +297,7 @@
                       </p>
                       <div class="flex items-center gap-x-4 text-xs">
                         <p class="flex gap-x-1 items-center text-mainColor">
-                          <img src="../assets/images/smallClock.svg" />
+                          <img src="../../assets/images/smallClock.svg" />
                           Tomorrow 13:00-14:30
                         </p>
                         <p class="text-lightGrayColor">Live Class</p>
@@ -298,7 +320,7 @@
                   </div>
                   <button class="text-lightGrayColor flex items-center gap-1">
                     More
-                    <img src="../assets/images/smallArrow.svg" />
+                    <img src="../../assets/images/smallArrow.svg" />
                   </button>
                 </div>
               </div>
@@ -316,7 +338,7 @@
             <div class="flex gap-x-[55px]">
               <div class="px-7 py-5 dropShadow rounded-[10px] flex gap-x-6">
                 <div>
-                  <img src="../assets/images/AITips.svg" />
+                  <img src="../../assets/images/AITips.svg" />
                 </div>
                 <div class="flex flex-col items-center gap-y-[3px]">
                   <h1 class="text-[32px] font-bold leading-9">--</h1>
@@ -359,7 +381,7 @@
                 >
                   <img
                     class="h-[31.14px] w-[28px]"
-                    src="../assets/images/Group.svg"
+                    src="../../assets/images/Group.svg"
                   />
                 </div>
                 <div class="flex flex-col gap-y-[3px]">
@@ -377,7 +399,7 @@
                 >
                   <img
                     class="h-[30px] w-[32.72px]"
-                    src="../assets/images/Group 1114.svg"
+                    src="../../assets/images/Group 1114.svg"
                   />
                 </div>
                 <div class="flex flex-col gap-y-[3px]">
@@ -396,7 +418,7 @@
                 >
                   <img
                     class="w-[31.41px] h-[33px]"
-                    src="../assets/images/Group 1113.svg"
+                    src="../../assets/images/Group 1113.svg"
                   />
                 </div>
                 <div class="flex flex-col gap-y-[3px]">
@@ -412,7 +434,7 @@
                 <div
                   class="rounded-full h-[56px] w-[56px] bg-slate-100 flex items-center justify-center"
                 >
-                  <img src="../assets/images/Mock Test ICon.svg" />
+                  <img src="../../assets/images/Mock Test ICon.svg" />
                 </div>
                 <div class="flex flex-col gap-y-[3px]">
                   <h1 class="text-base leading-5 text-mainTextColor">
@@ -438,31 +460,31 @@
             <div class="flex flex-wrap gap-x-3 items-center">
               <img
                 class="w-[228px] h-[130px]"
-                src="../assets/images/pte lesson.svg"
+                src="../../assets/images/pte lesson.svg"
               />
               <img
                 class="w-[228px] h-[130px]"
-                src="../assets/images/pte lesson.svg"
+                src="../../assets/images/pte lesson.svg"
               />
               <img
                 class="w-[228px] h-[130px]"
-                src="../assets/images/pte lesson.svg"
+                src="../../assets/images/pte lesson.svg"
               />
               <img
                 class="w-[228px] h-[130px]"
-                src="../assets/images/pte lesson.svg"
+                src="../../assets/images/pte lesson.svg"
               />
               <img
                 class="w-[228px] h-[130px]"
-                src="../assets/images/pte lesson.svg"
+                src="../../assets/images/pte lesson.svg"
               />
               <img
                 class="w-[228px] h-[130px]"
-                src="../assets/images/pte lesson.svg"
+                src="../../assets/images/pte lesson.svg"
               />
               <img
                 class="w-[228px] h-[130px]-full"
-                src="../assets/images/pte lesson.svg"
+                src="../../assets/images/pte lesson.svg"
               />
               <div
                 class="w-[207px] h-[100px] rounded-[10px] flex items-center justify-center bg-gray-300 dropShadow ml-3"
@@ -471,7 +493,10 @@
                   class="text-white flex items-center gap-x-4 font-bold text-lg leading-5"
                 >
                   More
-                  <img class="" src="../assets/images/rightIconPteLesson.svg" />
+                  <img
+                    class=""
+                    src="../../assets/images/rightIconPteLesson.svg"
+                  />
                 </button>
               </div>
             </div>
@@ -491,37 +516,37 @@
               <div
                 class="pt-[22px] pb-3 px-8 flex flex-col justify-center items-center gap-y-4 bg-white rounded-[10px] dropShadow"
               >
-                <img src="../assets/images/PTEGuide.svg" />
+                <img src="../../assets/images/PTEGuide.svg" />
                 <p>PTE Guide</p>
               </div>
               <div
                 class="pt-[22px] pb-3 px-8 flex flex-col justify-center items-center gap-y-4 bg-white rounded-[10px] dropShadow"
               >
-                <img src="../assets/images/Speaking.svg" />
+                <img src="../../assets/images/Speaking.svg" />
                 <p>Speaking</p>
               </div>
               <div
                 class="pt-[22px] pb-3 px-8 flex flex-col justify-center items-center gap-y-4 bg-white rounded-[10px] dropShadow"
               >
-                <img src="../assets/images/Writing.svg" />
+                <img src="../../assets/images/Writing.svg" />
                 <p>Writing</p>
               </div>
               <div
                 class="pt-[22px] pb-3 px-8 flex flex-col justify-center items-center gap-y-4 bg-white rounded-[10px] dropShadow"
               >
-                <img src="../assets/images/Reading.svg" />
+                <img src="../../assets/images/Reading.svg" />
                 <p>Reading</p>
               </div>
               <div
                 class="pt-[22px] pb-3 px-8 flex flex-col justify-center items-center gap-y-4 bg-white rounded-[10px] dropShadow"
               >
-                <img src="../assets/images/Listening.svg" />
+                <img src="../../assets/images/Listening.svg" />
                 <p>Listening</p>
               </div>
               <div
                 class="pt-[22px] pb-3 px-8 flex flex-col justify-center items-center gap-y-4 bg-white rounded-[10px] dropShadow"
               >
-                <img src="../assets/images/Materials.svg" />
+                <img src="../../assets/images/Materials.svg" />
                 <p>Materials</p>
               </div>
             </div>
@@ -541,31 +566,31 @@
               <div class="w-[49.5%]">
                 <img
                   class="w-full h-full"
-                  src="../assets/images/ExamCentre.svg"
+                  src="../../assets/images/ExamCentre.svg"
                 />
               </div>
               <div class="w-[49.5%]">
                 <img
                   class="w-full h-full"
-                  src="../assets/images/PteStudy.svg"
+                  src="../../assets/images/PteStudy.svg"
                 />
               </div>
               <div class="w-[49.5%]">
                 <img
                   class="w-full h-full"
-                  src="../assets/images/UnlimitedPteLiveClasses.svg"
+                  src="../../assets/images/UnlimitedPteLiveClasses.svg"
                 />
               </div>
               <div class="w-[49.5%]">
                 <img
                   class="w-full h-full"
-                  src="../assets/images/ReadingCourse.svg"
+                  src="../../assets/images/ReadingCourse.svg"
                 />
               </div>
               <div class="w-[49.5%]">
                 <img
                   class="w-full h-full"
-                  src="../assets/images/FillInTheBlanks.svg"
+                  src="../../assets/images/FillInTheBlanks.svg"
                 />
               </div>
             </div>
@@ -643,27 +668,27 @@
               <div
                 class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
               >
-                <img src="../assets/images/facebook.svg" />
+                <img src="../../assets/images/facebook.svg" />
               </div>
               <div
                 class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
               >
-                <img src="../assets/images/twitter.svg" />
+                <img src="../../assets/images/twitter.svg" />
               </div>
               <div
                 class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
               >
-                <img src="../assets/images/telegram.svg" />
+                <img src="../../assets/images/telegram.svg" />
               </div>
             </div>
           </div>
           <div class="flex gap-x-16">
             <div class="flex flex-col gap-y-5 items-center">
-              <img class="h-20 w-20" src="../assets/images/qrcode.svg" />
+              <img class="h-20 w-20" src="../../assets/images/qrcode.svg" />
               <p class="hover:text-mainColor">APEUni iOS App</p>
             </div>
             <div class="flex flex-col gap-y-5 items-center">
-              <img class="h-20 w-20" src="../assets/images/qrcode2.svg" />
+              <img class="h-20 w-20" src="../../assets/images/qrcode2.svg" />
               <p class="hover:text-mainColor">APEUni Android App</p>
             </div>
           </div>

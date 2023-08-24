@@ -5,20 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../dist/output.css" />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              mainTextColor: "#808080",
-              borderColor: "#A2A2A3",
-              mainColor: "#333333",
-              blueColor: "#212529",
-            },
-          },
-        },
-      };
-    </script>
   </head>
   <body>
     <!-- NavBar Start -->
@@ -27,68 +13,58 @@
       class="py-5 px-[170px] w-full border-b border-gray-300 fixed top-0 flex items-center justify-between bg-white z-10"
     >
       <div class="flex items-center gap-x-9">
-        <img src="../assets/images/logo.svg" />
+        <a class="flex items-center" href="../../index.html">
+          <img src="../../assets/images/logo.svg"
+        /></a>
         <ul class="flex gap-x-9 leading-5 font-normal">
           <li>PTE Practice</li>
           <li>PTE Tutorials</li>
           <li>APP</li>
         </ul>
       </div>
-      <button class="px-5">Sign In</button>
+      <a class="flex items-center" href="../signInScreen">
+        <button class="px-5">Sign In</button></a
+      >
     </div>
 
     <!-- NavBar End-->
 
-    <div class="w-full flex flex-col items-center pt-[165px]">
+    <div class="w-full flex flex-col items-center pt-[150px]">
       <!-- SignIn Section Start -->
 
-      <div class="flex items-center mb-16">
-        <h1 class="font-semibold text-[32px] leading-9 text-blueColor">
-          Email
+      <div class="flex justify-center mb-10">
+        <h1 class="font-semibold text-[32px] leading-9 text-darkBlueColor">
+          Register
         </h1>
-        <hr class="border border-borderColor -rotate-90 w-[82px]" />
-        <div class="flex gap-3">
-          <img
-            src="../assets/images/wx_logo-1877e065d79143066e1a02a7a5efb88e068e6a06c0f3e62652c3ed5d2e7b67c6 1.svg"
-          />
-          <h1 class="font-semibold text-[32px] leading-9 text-mainTextColor">
-            WeChat
-          </h1>
-        </div>
       </div>
       <div class="flex flex-col gap-y-10 items-center mb-[48px]">
         <input
-          class="py-3 w-[401px] outline-none border-b border-borderColor text-lg leading-5 pl-[170px]"
+          class="py-3 w-[401px] outline-none border-b border-borderColor text-lg leading-5 pl-[175px]"
+          placeholder="Name"
+        />
+        <input
+          class="py-3 w-[401px] outline-none border-b border-borderColor text-lg leading-5 pl-[178px]"
           placeholder="Email"
         />
         <input
-          class="py-3 w-[401px] outline-none border-b border-borderColor text-lg leading-5 pl-[152px]"
+          class="py-3 w-[401px] outline-none border-b border-borderColor text-lg leading-5 pl-[160px]"
           placeholder="Password"
         />
       </div>
-      <div class="flex items-center justify-center gap-x-5 mb-12">
-        <input class="h-6 w-6 cursor-pointer" type="checkbox" />
-        <p class="text-base leading-5">auto login next time</p>
-      </div>
-      <div class="flex flex-col gap-y-7 items-center mb-10">
+      <div class="flex justify-center mb-10">
         <button
-          class="px-[65px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-blueButtonColor"
-        >
-          Sign In
-        </button>
-        <button
-          class="px-[59px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-green-600"
+          class="px-[59px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-blueButtonColor"
         >
           Register
         </button>
       </div>
-      <div class="flex flex-col gap-y-5 items-center mb-6">
-        <p class="text-base leading-5 text-blueButtonColor">Forgot Password?</p>
+      <div class="flex flex-col gap-y-5 items-center mb-12">
+        <p class="text-base leading-5 text-blueButtonColor">Sign In</p>
         <p class="text-base leading-5 text-blueButtonColor">
-          Other login methods (Apple ID)
+          Haven't recieved confirmation email?
         </p>
       </div>
-      <div class="flex items-center justify-center gap-x-5 mb-24">
+      <div class="flex items-center justify-center gap-x-5 mb-12">
         <input class="h-6 w-6 cursor-pointer" type="checkbox" />
         <p class="text-base leading-5 text-mainColor">
           I've read and agreed to the
@@ -110,7 +86,7 @@
         </div>
       </div>
       <div class="bg-white py-2">
-        <div class="flex gap-x-16 text-sm leading-4">
+        <div class="flex gap-x-16 text-sm leading-4 text-mainColor">
           <p>© Shenzhen APEUni Educational Technology Co., Ltd.</p>
           <p>ICU-18035327</p>
           <p>PTE APEUni English Site</p>
