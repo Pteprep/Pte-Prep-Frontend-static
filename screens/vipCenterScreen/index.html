@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+  </head>
+  <body>
+    <!-- NavBar Start -->
+
+    <div
+      class="py-5 px-[170px] w-full border-b border-gray-300 fixed top-0 flex items-center justify-between bg-white z-10"
+    >
+      <div class="flex items-center gap-x-9">
+        <a class="flex items-center" href="../../index.html">
+          <img src="../../assets/images/logo.svg"
+        /></a>
+        <ul class="flex gap-x-9 leading-5 font-normal">
+          <a class="flex items-center" href="../homeScreen"> <li>Home</li></a>
+          <a class="flex items-center" href="../dropdownScreen">
+            <li class="flex items-center gap-x-2">
+              PTE Practice
+              <img src="../../assets/images/Play.svg" />
+            </li>
+          </a>
+          <li>Course</li>
+          <li>PTE Tutorials</li>
+          <li>APP</li>
+        </ul>
+      </div>
+      <div class="flex gap-x-6">
+        <div class="flex items-center gap-x-[6px] hover:text-mainColor">
+          <img src="../../assets/images/VIP.svg" />
+          <a class="flex items-center" href="../vipCenterScreen">
+            <p class="text-base leading-5">Upgrade VIP</p></a
+          >
+        </div>
+        <a class="flex items-center" href="../ProfileScreen">
+          <img
+            class="h-[32px] w-[32px]"
+            src="../../assets/images/Ellipse 7.svg"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- NavBar End-->
+
+    <!-- Main Section Start -->
+
+    <div class="bg-gray-50 pt-[87px] flex flex-col">
+      <!-- Banner Section Start -->
+
+      <div class="relative">
+        <img
+          class="w-[100%] h-auto"
+          src="../../assets/images/VipBannerImg.svg"
+        />
+        <img
+          class="absolute left-[41%] top-[24%] xl:top-[25%] w-[18%] xl:w-auto h-auto"
+          src="../../assets/images/vip_logo 1.svg"
+        />
+        <div
+          class="absolute right-[10.5%] top-2 lg:top-4 flex flex-col gap-y-2 xl:gap-y-4 justify-between items-center h-auto"
+        >
+          <div
+            class="pt-[3px] px-[9px] xl:py-[3px] xl:px-[10px] text-xs xl:text-sm leading-4 text-white bg-zinc-300 rounded-[30px]"
+          >
+            <p>You haven't purchased VIP</p>
+          </div>
+          <p
+            class="text-sm xl:text-base leading-3 xl:leading-4 text-white flex items-center gap-x-3 pl-5"
+          >
+            <img
+              class="w-[12%] xl:w-auto"
+              src="../../assets/images/Clock Clockwise.svg"
+            />
+            Purchase History
+          </p>
+        </div>
+      </div>
+
+      <!-- Banner Section End -->
+
+      <div class="px-[166px] pt-12 flex items-center flex-col">
+        <!-- Select A Plan Section Start -->
+
+        <div class="bg-zinc-300 flex gap-x-2 rounded-[31px] p-1 px-2">
+          <button
+            class="bg-white text-mainTextColor py-[7px] px-[18px] rounded-[44px]"
+          >
+            APEUni VIP
+          </button>
+          <button class="text-lightGrayColor py-[7px] px-[18px] rounded-[44px]">
+            Unlimited PTE Live Classes
+          </button>
+        </div>
+
+        <div class="flex flex-col gap-y-6 w-full pt-10 px-20">
+          <h1 class="text-lg leading-5 text-mainTextColor px-3">
+            Select a plan:
+          </h1>
+          <div class="flex justify-between w-full relative">
+            <div
+              class="bg-white py-6 w-[32.5%] dropShadow flex items-center rounded-[10px] flex-col gap-y-3"
+            >
+              <p class="text-sm leading-4 text-mainColor">
+                USD $ <span class="text-3xl">15</span>.99
+              </p>
+              <h1 class="font-bold text-[34px] leading-9 text-mainTextColor">
+                VIP 30 Days
+              </h1>
+            </div>
+            <div
+              class="bg-white py-6 w-[32.5%] dropShadow flex items-center rounded-[10px] flex-col gap-y-3"
+            >
+              <p class="text-sm leading-4 text-mainColor">
+                USD $ <span class="text-3xl">31</span>.99
+              </p>
+              <h1 class="font-bold text-[34px] leading-9 text-mainTextColor">
+                VIP 90 Days
+              </h1>
+              <p class="text-mainColor text-sm">$10.66 / 30 Days</p>
+            </div>
+            <div
+              class="bg-white py-6 w-[32.5%] dropShadow flex items-center rounded-[10px] flex-col gap-y-3"
+            >
+              <p class="text-sm leading-4 text-mainColor">
+                USD $ <span class="text-3xl">67</span>.99
+              </p>
+              <h1 class="font-bold text-[34px] leading-9 text-mainTextColor">
+                VIP 180 Days
+              </h1>
+            </div>
+            <button
+              class="h-[73px] w-[73px] bg-white dropShadow rounded-full flex items-center justify-center absolute right-[-90px] top-10"
+            >
+              <img
+                class="w-[25%]"
+                src="../../assets/images/smallRightArrow.svg"
+              />
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-base leading-5 text-zinc-300">
+              * No auto-renewal after expiry
+            </p>
+          </div>
+        </div>
+
+        <!-- Select A Plan Section End -->
+
+        <!-- Choose a payment method Section Start -->
+
+        <div class="flex flex-col gap-y-6 w-full pt-10 px-20">
+          <h1 class="text-lg leading-5 text-mainTextColor px-3">
+            Choose a payment method:
+          </h1>
+          <div class="w-full flex justify-between mb-10">
+            <div class="bg-white dropShadow px-[84px] py-5 rounded-[10px]">
+              <div class="flex gap-x-3 items-center">
+                <img src="../../assets/images/AliPay.svg" />
+                <p class="text-lg leading-5 text-mainTextColor">Alipay</p>
+              </div>
+            </div>
+            <div class="bg-white dropShadow px-[84px] py-5 rounded-[10px]">
+              <div class="flex gap-x-3 items-center">
+                <img src="../../assets/images/Master.svg" />
+                <p class="text-lg leading-5 text-mainTextColor">Master</p>
+              </div>
+            </div>
+            <div class="bg-white dropShadow px-[84px] py-5 rounded-[10px]">
+              <div class="flex gap-x-3 items-center">
+                <img src="../../assets/images/Visa.svg" />
+                <p class="text-lg leading-5 text-mainColor">VISA</p>
+              </div>
+            </div>
+            <div class="bg-white dropShadow px-[84px] py-5 rounded-[10px]">
+              <div class="flex gap-x-3 items-center">
+                <img src="../../assets/images/Amex.svg" />
+                <p class="text-lg leading-5 text-mainTextColor">AMEX</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="bg-zinc-300 text-lg leading-5 py-[17px] px-[80px] rounded-[10px] text-white mb-7"
+            >
+              Select a plan to play
+            </button>
+          </div>
+        </div>
+
+        <!-- Choose a payment method Section End -->
+
+        <!-- Vip Benfit Section Start -->
+
+        <div class="flex flex-col gap-y-6 w-full pt-10 items-center mb-8">
+          <div class="flex flex-col gap-y-[2px]">
+            <img
+              class="w-[34px] mx-[34px]"
+              src="../../assets/images/Crown.svg"
+            />
+            <h1 class="text-mainTextColor text-[36px] leading-9 font-bold">
+              - VIP Benefits -
+            </h1>
+          </div>
+          <div class="flex justify-between w-full flex-wrap gap-y-5">
+            <div
+              class="py-12 w-[32%] rounded-[10px] border border-zinc-300 flex justify-center items-center"
+            >
+              <h1 class="text-2xl leading-6 text-mainTextColor font-bold">
+                Free
+              </h1>
+            </div>
+            <div
+              class="py-12 w-[32%] rounded-[10px] border border-zinc-300 flex justify-center items-center flex-col gap-y-5"
+            >
+              <h1 class="text-2xl leading-6 text-mainTextColor font-bold">
+                APEUni VIP
+              </h1>
+              <p class="text-base text-mainColor leading-5">From $ 15.99</p>
+              <button
+                class="py-3 px-[56px] rounded-[51px] text-white text-lg leading-5 bg-mainColor"
+              >
+                Buy
+              </button>
+            </div>
+            <div
+              class="py-12 w-[32%] rounded-[10px] border border-zinc-300 flex justify-center items-center flex-col gap-y-5"
+            >
+              <h1 class="text-2xl leading-6 text-mainTextColor font-bold">
+                Unlimited PTE Live Courses
+              </h1>
+              <p class="text-base text-mainColor leading-5">From $ 75</p>
+              <button
+                class="py-3 px-[56px] rounded-[51px] text-white text-lg leading-5 bg-mainColor"
+              >
+                Buy
+              </button>
+              <p
+                class="flex items-center gap-x-3 text-xs leading-4 text-mainColor"
+              >
+                Learn More <img src="../../assets/images/smallRightArrow.svg" />
+              </p>
+            </div>
+            <div
+              class="py-12 w-[32%] rounded-[10px] border border-zinc-300 flex items-center flex-col gap-y-16"
+            >
+              <div class="flex flex-col items-center">
+                <img class="mb-6" src="../../assets/images/Mick.svg" />
+                <h1
+                  class="text-2xl leading-6 text-mainTextColor font-bold mb-7"
+                >
+                  AI Scorings
+                </h1>
+                <p class="text-base text-mainTextColor leading-5 mb-2">
+                  <span class="text-mainColor">5</span> Speaking coupons per day
+                </p>
+                <p class="text-base text-mainTextColor leading-5">
+                  <span class="text-mainColor">3</span> Writing coupons in total
+                </p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img class="mb-6" src="../../assets/images/mockicon.svg" />
+                <h1
+                  class="text-2xl leading-6 text-mainTextColor font-bold mb-7"
+                >
+                  Mock Tests
+                </h1>
+                <p class="text-base text-mainTextColor leading-5 mb-2">
+                  1 set APEUni mock test; No scoring
+                </p>
+                <p class="text-base text-mainTextColor leading-5">
+                  No test feedback by teacher
+                </p>
+              </div>
+            </div>
+            <div
+              class="py-12 w-[32%] rounded-[10px] border border-zinc-300 flex items-center flex-col gap-y-16"
+            >
+              <div class="flex flex-col items-center">
+                <img class="mb-6" src="../../assets/images/Mick.svg" />
+                <h1
+                  class="text-2xl leading-6 text-mainTextColor font-bold mb-7"
+                >
+                  AI Scorings
+                </h1>
+                <p class="text-base text-mainTextColor leading-5 mb-2">
+                  <span class="text-mainColor">Unlimited</span> Speaking
+                  scorings
+                </p>
+                <p class="text-base text-mainTextColor leading-5">
+                  <span class="text-mainColor">Unlimited</span> Writing scorings
+                </p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img class="mb-6" src="../../assets/images/mockicon.svg" />
+                <h1
+                  class="text-2xl leading-6 text-mainTextColor font-bold mb-7"
+                >
+                  Mock Tests
+                </h1>
+                <p class="text-base text-mainTextColor leading-5 mb-2">
+                  <span class="text-mainColor">Unlimited scored</span>
+                  APEUni mock tests
+                </p>
+                <p class="text-base text-mainTextColor leading-5">
+                  No test feedback by teacher
+                </p>
+              </div>
+              <button
+                class="py-3 px-[56px] rounded-[51px] text-white text-lg leading-5 bg-mainColor"
+              >
+                Buy
+              </button>
+            </div>
+            <div
+              class="py-12 w-[32%] rounded-[10px] border border-zinc-300 flex justify-center items-center flex-col gap-y-16"
+            >
+              <div class="flex flex-col items-center">
+                <img class="mb-6" src="../../assets/images/Mick.svg" />
+                <h1
+                  class="text-2xl leading-6 text-mainTextColor font-bold mb-7"
+                >
+                  AI Scorings
+                </h1>
+                <p class="text-base text-mainTextColor leading-5 mb-2">
+                  <span class="text-mainColor">Unlimited</span> Speaking
+                  scorings
+                </p>
+                <p class="text-base text-mainTextColor leading-5">
+                  <span class="text-mainColor">Unlimited</span> Writing scorings
+                </p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img class="mb-6" src="../../assets/images/mockicon.svg" />
+                <h1
+                  class="text-2xl leading-6 text-mainTextColor font-bold mb-7"
+                >
+                  Mock Tests
+                </h1>
+                <p class="text-base text-mainTextColor leading-5 mb-2">
+                  <span class="text-mainColor">Unlimited scored</span>
+                  APEUni mock tests
+                </p>
+                <p class="text-base text-mainTextColor leading-5">
+                  No test feedback by teacher
+                </p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img class="mb-6" src="../../assets/images/Mick.svg" />
+                <h1
+                  class="text-2xl leading-6 text-mainTextColor font-bold mb-7"
+                >
+                  AI Scorings
+                </h1>
+                <p class="text-base text-mainTextColor leading-5 mb-2">
+                  <span class="text-mainColor">Unlimited</span> Speaking
+                  scorings
+                </p>
+                <p class="text-base text-mainTextColor leading-5">
+                  <span class="text-mainColor">Unlimited</span> Writing scorings
+                </p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img class="mb-6" src="../../assets/images/mockicon.svg" />
+                <h1
+                  class="text-2xl leading-6 text-mainTextColor font-bold mb-7"
+                >
+                  Mock Tests
+                </h1>
+                <p class="text-base text-mainTextColor leading-5 mb-2">
+                  <span class="text-mainColor">Unlimited scored</span>
+                  APEUni mock tests
+                </p>
+                <p class="text-base text-mainTextColor leading-5">
+                  No test feedback by teacher
+                </p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img class="mb-6" src="../../assets/images/Mick.svg" />
+                <h1
+                  class="text-2xl leading-6 text-mainTextColor font-bold mb-7"
+                >
+                  AI Scorings
+                </h1>
+                <p class="text-base text-mainTextColor leading-5 mb-2">
+                  <span class="text-mainColor">Unlimited</span> Speaking
+                  scorings
+                </p>
+                <p class="text-base text-mainTextColor leading-5">
+                  <span class="text-mainColor">Unlimited</span> Writing scorings
+                </p>
+              </div>
+              <button
+                class="py-3 px-[56px] rounded-[51px] text-white text-lg leading-5 bg-mainColor"
+              >
+                Buy
+              </button>
+              <p
+                class="flex items-center gap-x-3 text-xs leading-4 text-mainColor"
+              >
+                Learn More <img src="../../assets/images/smallRightArrow.svg" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vip Benfit Section End -->
+
+        <!--FAQ Section Start -->
+
+        <div class="flex flex-col gap-y-6 w-full pt-10 items-center mb-5">
+          <h1 class="text-mainTextColor text-[36px] leading-9 font-bold mb-10">
+            - FAQ -
+          </h1>
+          <div
+            class="dropShadow rounded-[10px] p-12 pt-[48px] bg-white w-full text-mainTextColor text-base leading-5"
+          >
+            <div
+              class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+            >
+              <h1>Why does my VIP become unavailable for use？(Google Pay)</h1>
+              <img src="../../assets/images/rightArrow.svg" />
+            </div>
+            <div
+              class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+            >
+              <h1>Why does my VIP become unavailable for use?（Apple Pay）</h1>
+              <img src="../../assets/images/rightArrow.svg" />
+            </div>
+            <div
+              class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+            >
+              <h1>What functions can be unlocked by upgrading to VIP</h1>
+              <img src="../../assets/images/rightArrow.svg" />
+            </div>
+            <div
+              class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+            >
+              <h1>
+                After upgrading to VIP, can the contents on web and APP be
+                synchronized
+              </h1>
+              <img src="../../assets/images/rightArrow.svg" />
+            </div>
+            <div
+              class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+            >
+              <h1>Is there an automatic renewal when a VIP term expires</h1>
+              <img src="../../assets/images/rightArrow.svg" />
+            </div>
+            <div
+              class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+            >
+              <h1>How can I check my purchasing records of VIP</h1>
+              <img src="../../assets/images/rightArrow.svg" />
+            </div>
+            <div
+              class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+            >
+              <h1>What shall I do if the approach to payment is rejected</h1>
+              <img src="../../assets/images/rightArrow.svg" />
+            </div>
+            <div
+              class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+            >
+              <h1>How can I check my purchasing records of VIP</h1>
+              <img src="../../assets/images/rightArrow.svg" />
+            </div>
+            <div
+              class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+            >
+              <h1>Can I apply for refund after purchase?</h1>
+              <img src="../../assets/images/rightArrow.svg" />
+            </div>
+          </div>
+        </div>
+
+        <!--FAQ Section End -->
+      </div>
+      <!-- Footer Start -->
+
+      <div class="bg-gray-800 pt-20 py-16 flex flex-col gap-y-10 mt-10">
+        <div class="flex justify-between px-[170px]">
+          <div class="flex flex-col gap-y-10">
+            <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Pearson Official Website</li>
+              <li class="hover:text-mainColor">Pearson PTE Mock Tests</li>
+              <li class="hover:text-mainColor">Book PTE Tests</li>
+              <li class="hover:text-mainColor">Contact Pearson PTE</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <h1 class="text-xl leading-6 text-white">PTE Course</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">PTE Speaking Course</li>
+              <li class="hover:text-mainColor">PTE Writing Course</li>
+              <li class="hover:text-mainColor">PTE Reading Course</li>
+              <li class="hover:text-mainColor">PTE Listening Course</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Study Materials Download</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <h1 class="text-xl leading-6 text-white">APP Download</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">APEUni iOS APP</li>
+              <li class="hover:text-mainColor">APEUni Android APP</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10">
+            <h1 class="text-xl leading-6 text-white">Contact Us</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Email: support@apeuni.com</li>
+              <li class="hover:text-mainColor">Telegram: t.me/pteapeuni</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="w-full border border-lightGrayColor" />
+        <div
+          class="px-[170px] flex justify-between text-lightGrayColor text-base leading-4"
+        >
+          <div class="flex flex-col gap-y-5">
+            <p class="hover:text-mainColor">
+              Shenzhen APEUni Education Technology Co., Ltd.
+            </p>
+            <p class="hover:text-mainColor">Copyright©2023 APEUni Edu</p>
+            <p class="hover:text-mainColor">Terms of Use | Privacy Policy</p>
+            <div class="flex gap-x-5 pt-5">
+              <div
+                class="h-9 w-9-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/facebook.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/twitter.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/telegram.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-16">
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode.svg" />
+              <p class="hover:text-mainColor">APEUni iOS App</p>
+            </div>
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode2.svg" />
+              <p class="hover:text-mainColor">APEUni Android App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer End -->
+
+      <!-- Main Section End -->
+    </div>
+  </body>
+</html>
