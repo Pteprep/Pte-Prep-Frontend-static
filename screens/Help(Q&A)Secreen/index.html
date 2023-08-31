@@ -10,38 +10,64 @@
     <!-- NavBar Start -->
 
     <div
-      class="py-5 px-[170px] w-full border-b border-gray-300 fixed top-0 flex items-center justify-between bg-white z-10"
+      class="w-full border-b border-gray-300 fixed top-0 gap-x-2 md:gap-x-0 bg-white z-10 transition-all duration-300"
     >
-      <div class="flex items-center gap-x-9">
-        <a class="flex items-center" href="../../index.html">
-          <img src="../../assets/images/logo.svg"
-        /></a>
-        <ul class="flex gap-x-9 leading-5 font-normal">
-          <a class="flex items-center" href="../homeScreen"> <li>Home</li></a>
-          <a class="flex items-center" href="../dropdownScreen">
-            <li class="flex items-center gap-x-2">
-              PTE Practice
-              <img src="../../assets/images/Play.svg" />
-            </li>
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <a class="flex items-center" href="../../index.html">
+            <img src="../../assets/images/logo.svg" />
           </a>
-          <li>Course</li>
-          <li>PTE Tutorials</li>
-          <li>APP</li>
-        </ul>
-      </div>
-      <div class="flex gap-x-6">
-        <div class="flex items-center gap-x-[6px] hover:text-mainColor">
-          <img src="../../assets/images/VIP.svg" />
-          <a class="flex items-center" href="../vipCenterScreen">
-            <p class="text-base leading-5">Upgrade VIP</p></a
-          >
+          <ul class="hidden lg:flex gap-x-9 leading-5 font-normal">
+            <a class="flex items-center" href="../homeScreen">
+              <li>Home</li>
+            </a>
+            <a class="flex items-center" href="../dropdownScreen">
+              <li class="flex items-center gap-x-2">
+                PTE Practice
+                <img src="../../assets/images/Play.svg" />
+              </li>
+            </a>
+            <a class="flex items-center" href="../courseScreen">
+              <li>Course</li></a
+            >
+            <li>PTE Tutorials</li>
+            <li>APP</li>
+          </ul>
         </div>
-        <a class="flex items-center" href="../ProfileScreen">
-          <img
-            class="h-[32px] w-[32px]"
-            src="../../assets/images/Ellipse 7.svg"
-          />
-        </a>
+        <div class="flex gap-x-6">
+          <div
+            class="hidden lg:flex items-center gap-x-[6px] hover:text-mainColor"
+          >
+            <img src="../../assets/images/VIP.svg" />
+            <a class="flex items-center" href="../vipCenterScreen">
+              <p class="text-base leading-5">Upgrade VIP</p></a
+            >
+          </div>
+          <a class="items-center hidden lg:flex" href="../ProfileScreen">
+            <img
+              class="h-[32px] w-[32px] hidden lg:flex"
+              src="../../assets/images/Ellipse 7.svg"
+            />
+          </a>
+          <i aria-label="icon: bars" class="anticon anticon-bars">
+            <svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              class="text-mainTextColor text-[32px] flex lg:hidden"
+              data-icon="bars"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"
+              ></path>
+            </svg>
+          </i>
+        </div>
       </div>
     </div>
 
@@ -49,203 +75,211 @@
 
     <!-- Main Section Start -->
 
-    <div class="bg-gray-50 pt-36">
-      <div class="flex justify-between gap-x-1 px-[170px] mb-12">
-        <!-- Left SideBar Start -->
-        <div
-          class="bg-white rounded-[7px] py-4 w-[350px] border border-gray-200 h-fit text-mainTextColor"
-        >
-          <div class="flex items-center px-6 gap-4 mb-5">
-            <img
-              class="h-[32px] w-[32px]"
-              src="../../assets/images/Ellipse 7.svg"
-            />
-            <p class="font-bold text-base leading-5">Daniyal Samim</p>
+    <div class="bg-gray-50 pt-24 w-full border">
+      <div class="max-w-[1140px] box-border mx-auto w-full px-5">
+        <div class="flex justify-between gap-x-4 w-full">
+          <!-- Left SideBar Start -->
+          <div
+            class="bg-white rounded-[7px] py-4 w-[25%] border border-gray-200 h-fit text-mainTextColor md:block hidden"
+          >
+            <div class="flex items-center px-6 gap-4 mb-5">
+              <img
+                class="h-[32px] w-[32px]"
+                src="../../assets/images/Ellipse 7.svg"
+              />
+              <p class="font-bold text-base leading-5">Daniyal Samim</p>
+            </div>
+            <hr class="border border-gray-100 mb-2" />
+            <ul class="flex flex-col gap-y-3 cursor-pointer">
+              <a class="flex items-center" href="../homeScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2 relative"
+                >
+                  <img src="../../assets/images/homeBlack.svg" />
+                  Home
+                </li></a
+              >
+              <a class="flex items-center" href="../studyCenterScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/study center.svg" />
+                  Study Center
+                </li></a
+              >
+              <a class="flex items-center" href="../mockTestScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/mocktest.svg" />
+                  Mock Tests
+                </li></a
+              >
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+              >
+                <img src="../../assets/images/setting.svg" />
+                Settings
+              </li>
+              <a class="flex items-center" href="../vipCenterScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/Crown Simple.svg" />
+                  VIP Center
+                </li>
+              </a>
+              <a class="flex items-center" href="../notificationCenterScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/notification.svg" />
+                  Notification Center
+                  <hr class="absolute right-0 h-full border border-mainColor" />
+                </li>
+              </a>
+              <a class="flex items-center" href="../Help(Q&A)Secreen">
+                <li
+                  class="py-2 px-6 text-mainColor bg-lightGreenColor hover:text-mainColor flex items-center gap-x-2 relative w-full"
+                >
+                  <img src="../../assets/images/help.svg" />
+                  Help (Q&A)
+                </li>
+              </a>
+              <a class="flex items-center" href="../ContactUsScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/homeBlack.svg" />
+                  Contact Us
+                </li></a
+              >
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+              >
+                <img src="../../assets/images/sidebralogout.svg" />
+                Log Out
+              </li>
+            </ul>
           </div>
-          <hr class="border border-gray-100 mb-2" />
-          <ul class="flex flex-col gap-y-3 cursor-pointer">
-            <a class="flex items-center" href="../homeScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2 relative"
-              >
-                <img src="../../assets/images/homeBlack.svg" />
-                Home
-              </li></a
-            >
-            <a class="flex items-center" href="../studyCenterScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/study center.svg" />
-                Study Center
-              </li></a
-            >
-            <a class="flex items-center" href="../mockTestScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/mocktest.svg" />
-                Mock Tests
-              </li></a
-            >
-            <li
-              class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-            >
-              <img src="../../assets/images/setting.svg" />
-              Settings
-            </li>
-            <a class="flex items-center" href="../vipCenterScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/Crown Simple.svg" />
-                VIP Center
-              </li>
-            </a>
-            <a class="flex items-center" href="../notificationCenterScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/notification.svg" />
-                Notification Center
-                <hr class="absolute right-0 h-full border border-mainColor" />
-              </li>
-            </a>
-            <a class="flex items-center" href="../Help(Q&A)Secreen">
-              <li
-                class="py-2 px-6 text-mainColor bg-lightGreenColor hover:text-mainColor flex items-center gap-x-2 relative w-full"
-              >
-                <img src="../../assets/images/help.svg" />
+          <!-- Left SideBar End -->
+
+          <!-- Main Middle Content Section Start -->
+
+          <!-- Help (Q&A) Section Start -->
+
+          <div class="w-full md:w-[75%] px-2 mb-5">
+            <div class="dropShadow rounded-[10px] bg-white w-full">
+              <h1 class="font-bold text-base leading-5 py-6 px-10">
                 Help (Q&A)
-              </li>
-            </a>
-            <a class="flex items-center" href="../ContactUsScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/homeBlack.svg" />
-                Contact Us
-              </li></a
-            >
-            <li
-              class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-            >
-              <img src="../../assets/images/sidebralogout.svg" />
-              Log Out
-            </li>
-          </ul>
-        </div>
-        <!-- Left SideBar End -->
-
-        <!-- Main Middle Content Section Start -->
-
-        <!-- Help (Q&A) Section Start -->
-
-        <div class="w-full px-2 mb-3">
-          <div class="dropShadow rounded-[10px] bg-white w-full">
-            <h1 class="font-bold text-base leading-5 py-6 px-10">Help (Q&A)</h1>
-            <hr class="w-full border border-gray-100" />
-            <div
-              class="px-10 w-full text-mainTextColor text-base leading-5 font-bold"
-            >
+              </h1>
+              <hr class="w-full border border-gray-100" />
               <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
+                class="px-10 w-full text-mainTextColor text-base leading-5 font-bold"
               >
-                <h1 class="flex gap-x-2 items-center">
-                  <img src="../../assets/images/Help(Q&A)MessageIcon.svg" /> I
-                  have a feedback
-                </h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>Cannot record audio</h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>How to use the mock test</h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>Why are there noises in audio recordings</h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>Cannot submit answers</h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>How to score speaking tasks</h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>How to score writing tasks</h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>How to get scoring coupons</h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>How to check answers of Reading & Listening questions</h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>How to change password</h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>
-                  Why does my VIP become unavailable for use？(Google Pay)
-                </h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>
-                  Why does my VIP become unavailable for use?（Apple Pay）
-                </h1>
-                <img src="../../assets/images/rightArrow.svg" />
-              </div>
-              <div
-                class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor"
-              >
-                <h1>Cannot solve your problem? Contact us</h1>
-                <img src="../../assets/images/rightArrow.svg" />
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1 class="flex gap-x-2 items-center">
+                    <img src="../../assets/images/Help(Q&A)MessageIcon.svg" /> I
+                    have a feedback
+                  </h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>Cannot record audio</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>How to use the mock test</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>Why are there noises in audio recordings</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>Cannot submit answers</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>How to score speaking tasks</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>How to score writing tasks</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>How to get scoring coupons</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>How to check answers of Reading & Listening questions</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>How to change password</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>
+                    Why does my VIP become unavailable for use？(Google Pay)
+                  </h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>
+                    Why does my VIP become unavailable for use?（Apple Pay）
+                  </h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
+                <div
+                  class="py-[25px] flex justify-between border-b border-gray-300 hover:text-mainColor gap-x-2 md:gap-x-0"
+                >
+                  <h1>Cannot solve your problem? Contact us</h1>
+                  <img src="../../assets/images/rightArrow.svg" />
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- Help (Q&A) Section End -->
+
+          <!-- Main Middle Content Section End -->
         </div>
-
-        <!-- Help (Q&A) Section End -->
-
-        <!-- Main Middle Content Section End -->
       </div>
-      <!-- Footer Start -->
+    </div>
+    <!-- Footer Start -->
 
-      <div class="bg-gray-800 pt-20 py-16 flex flex-col gap-y-10">
-        <div class="flex justify-between px-[170px]">
-          <div class="flex flex-col gap-y-10">
+    <div class="bg-gray-800 w-full">
+      <div
+        class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col gap-y-10"
+      >
+        <div class="flex flex-wrap justify-between gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -256,7 +290,7 @@
               <li class="hover:text-mainColor">Contact Pearson PTE</li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">PTE Course</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -267,7 +301,7 @@
               <li class="hover:text-mainColor">PTE Listening Course</li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -275,7 +309,7 @@
               <li class="hover:text-mainColor">Study Materials Download</li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">APP Download</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -284,7 +318,7 @@
               <li class="hover:text-mainColor">APEUni Android APP</li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">Contact Us</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -294,9 +328,11 @@
             </ul>
           </div>
         </div>
-        <hr class="w-full border border-lightGrayColor" />
+      </div>
+      <hr class="w-full border border-lightGrayColor" />
+      <div class="text-lightGrayColor text-base leading-4 w-full">
         <div
-          class="px-[170px] flex justify-between text-lightGrayColor text-base leading-4"
+          class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col lg:flex-row justify-between gap-y-10"
         >
           <div class="flex flex-col gap-y-5">
             <p class="hover:text-mainColor">
@@ -316,7 +352,7 @@
                 <img src="../../assets/images/twitter.svg" />
               </div>
               <div
-                class="h-9 w- border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
               >
                 <img src="../../assets/images/telegram.svg" />
               </div>
@@ -325,17 +361,17 @@
           <div class="flex gap-x-16">
             <div class="flex flex-col gap-y-5 items-center">
               <img class="h-20 w-20" src="../../assets/images/qrcode.svg" />
-              <p class="hover:text-mainColor">APEUni iOS App</p>
+              <p class="hover:text-mainColor text-center">APEUni iOS App</p>
             </div>
             <div class="flex flex-col gap-y-5 items-center">
               <img class="h-20 w-20" src="../../assets/images/qrcode2.svg" />
-              <p class="hover:text-mainColor">APEUni Android App</p>
+              <p class="hover:text-mainColor text-center">APEUni Android App</p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Footer End -->
     </div>
+
+    <!-- Footer End -->
   </body>
 </html>

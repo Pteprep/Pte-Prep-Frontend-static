@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../dist/output.css" />
+  </head>
+  <body>
+    <!-- NavBar Start -->
+
+    <div
+      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
+    >
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <a class="flex items-center" href="../../../index.html">
+            <img src="../../../assets/images/logo.svg" />
+          </a>
+          <ul class="hidden lg:flex gap-x-9 leading-5 font-normal">
+            <a class="flex items-center" href="../../homeScreen">
+              <li>Home</li>
+            </a>
+            <a class="flex items-center" href="../../dropdownScreen">
+              <li class="flex items-center gap-x-2">
+                PTE Practice
+                <img src="../../../assets/images/Play.svg" />
+              </li>
+            </a>
+            <li>Course</li>
+            <li>PTE Tutorials</li>
+            <li>APP</li>
+          </ul>
+        </div>
+        <div class="flex gap-x-6">
+          <div
+            class="hidden lg:flex items-center gap-x-[6px] hover:text-mainColor"
+          >
+            <img src="../../../assets/images/VIP.svg" />
+            <a class="flex items-center" href="../../vipCenterScreen">
+              <p class="text-base leading-5">Upgrade VIP</p></a
+            >
+          </div>
+          <a class="items-center hidden lg:flex" href="../../ProfileScreen">
+            <img
+              class="h-[32px] w-[32px] hidden lg:flex"
+              src="../../../assets/images/Ellipse 7.svg"
+            />
+          </a>
+          <i aria-label="icon: bars" class="anticon anticon-bars">
+            <svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              class="text-mainTextColor text-[32px] flex lg:hidden"
+              data-icon="bars"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"
+              ></path>
+            </svg>
+          </i>
+        </div>
+      </div>
+    </div>
+
+    <!-- NavBar End-->
+
+    <!-- Main Section Start -->
+
+    <div class="bg-gray-50 pt-24 w-full border">
+      <div class="max-w-[1140px] box-border mx-auto w-full px-5">
+        <div class="flex justify-between gap-x-4 w-full">
+          <!-- Left SideBar Start -->
+          <div
+            class="bg-white rounded-[7px] py-4 w-[25%] border border-gray-200 h-fit text-mainTextColor md:block hidden"
+          >
+            <div class="flex items-center px-6 gap-4 mb-5">
+              <img
+                class="h-[32px] w-[32px]"
+                src="../../../assets/images/Ellipse 7.svg"
+              />
+              <p class="font-bold text-base leading-5">Daniyal Samim</p>
+            </div>
+            <hr class="border border-gray-100 mb-2" />
+            <ul class="flex flex-col gap-y-3 cursor-pointer">
+              <a class="flex items-center" href="../../homeScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2 relative"
+                >
+                  <img src="../../../assets/images/homeBlack.svg" />
+                  Home
+                </li></a
+              >
+              <a class="flex items-center" href="../../studyCenterScreen">
+                <li
+                  class="py-2 px-6 text-mainColor bg-lightGreenColor hover:text-mainColor flex items-center gap-x-2 relative w-full"
+                >
+                  <img
+                    src="../../../assets/images/study center green ICon.svg"
+                  />
+                  Study Center
+                  <hr
+                    class="absolute right-0 h-full border border-mainColor"
+                  /></li
+              ></a>
+              <a class="flex items-center" href="../../mockTestScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../../assets/images/mocktest.svg" />
+                  Mock Tests
+                </li></a
+              >
+              <a class="flex items-center" href="../../settingScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../../assets/images/setting.svg" />
+                  Settings
+                </li></a
+              >
+              <a class="flex items-center" href="../../vipCenterScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../../assets/images/Crown Simple.svg" />
+                  VIP Center
+                </li>
+              </a>
+              <a
+                class="flex items-center"
+                href="../../notificationCenterScreen"
+              >
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../../assets/images/notification.svg" />
+                  Notification Center
+                </li>
+              </a>
+              <a class="flex items-center" href="../../Help(Q&A)Secreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../../assets/images/help.svg" />
+                  Help (Q&A)
+                </li>
+              </a>
+              <a class="flex items-center" href="../../ContactUsScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../../assets/images/homeBlack.svg" />
+                  Contact Us
+                </li></a
+              >
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+              >
+                <img src="../../../assets/images/sidebralogout.svg" />
+                Log Out
+              </li>
+            </ul>
+          </div>
+          <!-- Left SideBar End -->
+
+          <!-- Main Middle Content Section Start -->
+
+          <!-- Settings Section Start -->
+
+          <div class="w-full md:w-[75%] px-2 mb-5">
+            <div class="dropShadow rounded-[10px] bg-white w-full">
+              <h1 class="font-bold text-base leading-5 py-6 px-8">Settings</h1>
+              <hr class="w-full border border-gray-100" />
+              <div
+                class="w-full p-8 pt-6 flex flex-col md:flex-row items-start gap-x-6 gap-y-3"
+              >
+                <div
+                  class="flex flex-col items-center gap-y-1 text-mainTextColor"
+                >
+                  <img
+                    src="../../../assets/images/studyCentreAiTipsRobotImg.svg"
+                  />
+                  <p>AI APEUni</p>
+                </div>
+                <div class="flex flex-col gap-y-4 items-center">
+                  <div
+                    class="rounded-[24px] bg-zinc-100 py-[10px] px-5 flex justify-between gap-x-36 md:gap-x-48"
+                  >
+                    <svg
+                      class="AdviceReport__StyledStarIcon-kyuhht-12 BpLKw"
+                      viewBox="0 0 1024 1024"
+                      width="1em"
+                      height="1em"
+                    >
+                      <defs><style></style></defs>
+                      <path
+                        d="M168.247 127.968h682.041v639.414H168.247z"
+                        fill="#fbe285"
+                      ></path>
+                      <path
+                        d="M940.488 912.785V100.047c0-78.009-67.18-100.004-142.887-100.004H226.007C148.084.043 83.12 24.255 83.12 100.047v812.738c-2.26 75.791 21.868 110.831 75.408 110.831a148.77 148.77 0 00100.004-31.757c45.782-28.39 134.49-77.114 176.35-99.536a183.938 183.938 0 01151.371 0c57.846 30.948 95.7 52.518 178.397 99.621a200.776 200.776 0 00104.48 31.758c51.58 0 73.447-30.564 71.188-110.832zm-149.58-517.883l-116.8 113.9 27.666 160.835a26.003 26.003 0 01-37.768 27.495L519.54 621.169l-144.465 75.963a26.045 26.045 0 01-37.768-27.495l27.58-160.834-116.8-113.901a26.003 26.003 0 0114.409-44.375l161.473-23.445 72.254-146.341a26.088 26.088 0 0146.89 0l72.254 146.34 161.388 23.446a26.045 26.045 0 0114.493 44.375zm0 0"
+                        fill="#12D3BF"
+                      ></path>
+                    </svg>
+                    <svg
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 23.999 24"
+                      class="AdviceReport__StyledCheckIcon-kyuhht-10 dgcpwc"
+                    >
+                      <g
+                        data-name="\u7EC4 432"
+                        transform="translate(-282.797 -11.999)"
+                      >
+                        <ellipse
+                          data-name="\u692D\u5706 17"
+                          cx="8"
+                          cy="9"
+                          rx="8"
+                          ry="9"
+                          transform="translate(286.796 15)"
+                          fill="#ffffff"
+                        ></ellipse>
+                        <path
+                          d="M294.796 12a12 12 0 1012 12 12 12 0 00-12-12zm6.478 9.307l-7.329 7.333a1.378 1.378 0 01-1.947 0l-3.685-3.685a1.377 1.377 0 011.947-1.947l2.714 2.712 6.36-6.36a1.376 1.376 0 111.94 1.947z"
+                          fill="#cccccc"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div
+                    class="rounded-[24px] bg-zinc-100 py-[10px] px-5 flex justify-between gap-x-36 md:gap-x-48"
+                  >
+                    <svg
+                      class="AdviceReport__StyledDescIcon-kyuhht-11 iJTgSI"
+                      viewBox="0 0 1024 1024"
+                      width="1em"
+                      height="1em"
+                    >
+                      <defs><style></style></defs>
+                      <path
+                        d="M120.024 128.751h808.859v808.86h-808.86z"
+                        fill="#ffffff"
+                      ></path>
+                      <path
+                        d="M360.936 358.425l-40.273 94.21h82.717z"
+                        fill="#45b3e1"
+                      ></path>
+                      <path
+                        d="M867.026 1.037H153.442A104.343 104.343 0 0034.881 113.425V910.79a104.343 104.343 0 00118.561 112.176h713.584a105.663 105.663 0 00119.2-120.009V121.94a106.173 106.173 0 00-119.2-120.903zM213.81 555.573L329.56 280.817a29.8 29.8 0 018.514-17.753l1.405-1.404c.724-.724 2.129-1.405 2.852-2.853a26.735 26.735 0 0121.286-7.79 27.884 27.884 0 0119.881 10.643c1.405 1.404 2.129 2.852 3.533 4.257.724.723.724 1.405 1.405 2.128a28.778 28.778 0 013.534 6.386l133.504 293.744a35.675 35.675 0 01-2.129 24.138 29.8 29.8 0 01-18.476 14.9 32.142 32.142 0 01-39.761-19.881l-34.058-75.99a30.183 30.183 0 01-7.79 1.404H302.57a16.73 16.73 0 01-5.663-1.404l-25.542 61.77A30.652 30.652 0 01250.08 594.4a29.8 29.8 0 01-29.12-8.515 30.524 30.524 0 01-7.151-30.31zm566.584 238.401H240.927a32.95 32.95 0 01-29.8-35.505 33.419 33.419 0 0129.8-35.504h539.637a36.058 36.058 0 010 71.01zm-.723-211.58H628.328a32.993 32.993 0 01-30.524-35.505 33.461 33.461 0 0130.524-35.505h151.214a33.504 33.504 0 0130.524 35.505 32.993 32.993 0 01-30.354 35.632zm0-210.857H628.328a32.993 32.993 0 01-30.524-35.505 33.461 33.461 0 0130.524-35.505h151.214a35.888 35.888 0 010 71.01z"
+                        fill="#45b3e1"
+                      ></path>
+                    </svg>
+                    <svg
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 23.999 24"
+                      class="AdviceReport__StyledCheckIcon-kyuhht-10 dgcpwc"
+                    >
+                      <g
+                        data-name="\u7EC4 432"
+                        transform="translate(-282.797 -11.999)"
+                      >
+                        <ellipse
+                          data-name="\u692D\u5706 17"
+                          cx="8"
+                          cy="9"
+                          rx="8"
+                          ry="9"
+                          transform="translate(286.796 15)"
+                          fill="#ffffff"
+                        ></ellipse>
+                        <path
+                          d="M294.796 12a12 12 0 1012 12 12 12 0 00-12-12zm6.478 9.307l-7.329 7.333a1.378 1.378 0 01-1.947 0l-3.685-3.685a1.377 1.377 0 011.947-1.947l2.714 2.712 6.36-6.36a1.376 1.376 0 111.94 1.947z"
+                          fill="#cccccc"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Settings Section End -->
+
+          <!-- Main Middle Content Section End -->
+        </div>
+      </div>
+    </div>
+    <!-- Footer Start -->
+
+    <div class="bg-gray-800 w-full">
+      <div
+        class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col gap-y-10"
+      >
+        <div class="flex flex-wrap justify-between gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Pearson Official Website</li>
+              <li class="hover:text-mainColor">Pearson PTE Mock Tests</li>
+              <li class="hover:text-mainColor">Book PTE Tests</li>
+              <li class="hover:text-mainColor">Contact Pearson PTE</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Course</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">PTE Speaking Course</li>
+              <li class="hover:text-mainColor">PTE Writing Course</li>
+              <li class="hover:text-mainColor">PTE Reading Course</li>
+              <li class="hover:text-mainColor">PTE Listening Course</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Study Materials Download</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">APP Download</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">APEUni iOS APP</li>
+              <li class="hover:text-mainColor">APEUni Android APP</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Contact Us</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Email: support@apeuni.com</li>
+              <li class="hover:text-mainColor">Telegram: t.me/pteapeuni</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="w-full border border-lightGrayColor" />
+      <div class="text-lightGrayColor text-base leading-4 w-full">
+        <div
+          class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col lg:flex-row justify-between gap-y-10"
+        >
+          <div class="flex flex-col gap-y-5">
+            <p class="hover:text-mainColor">
+              Shenzhen APEUni Education Technology Co., Ltd.
+            </p>
+            <p class="hover:text-mainColor">Copyright©2023 APEUni Edu</p>
+            <p class="hover:text-mainColor">Terms of Use | Privacy Policy</p>
+            <div class="flex gap-x-5 pt-5">
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../../assets/images/facebook.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../../assets/images/twitter.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../../assets/images/telegram.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-16">
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../../assets/images/qrcode.svg" />
+              <p class="hover:text-mainColor text-center">APEUni iOS App</p>
+            </div>
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../../assets/images/qrcode2.svg" />
+              <p class="hover:text-mainColor text-center">APEUni Android App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer End -->
+  </body>
+</html>

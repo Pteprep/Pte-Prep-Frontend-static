@@ -10,33 +10,54 @@
     <!-- NavBar Start -->
 
     <div
-      class="py-5 px-[10px] md:px-[50px] lg:px-[90px] xl:px-[170px] w-auto md:w-full border-b border-gray-300 fixed top-0 flex items-center justify-between bg-white z-10 transition-all duration-300"
+      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
     >
-      <div class="flex items-center gap-x-9">
-        <img class="w-[20%] lg:w-auto" src="./assets/images/logo.svg" />
-        <ul
-          class="flex gap-x-5 md:gap-x-7 lg:gap-x-9 leading-5 font-normal md:text-sm text-base"
-        >
-          <a class="flex items-center" href="./screens/homeScreen">
-            <li>Home</li></a
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <img src="./assets/images/logo.svg" />
+          <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
+            <a class="flex items-center" href="./screens/homeScreen">
+              <li>Home</li></a
+            >
+            <li>PTE Practice</li>
+            <li>Course</li>
+            <li>PTE Tutorials</li>
+            <li>APP</li>
+          </ul>
+        </div>
+        <div class="flex gap-x-3">
+          <a class="items-center hidden lg:flex" href="./screens/signInScreen">
+            <button class="px-5 text-base">Login</button>
+          </a>
+          <a
+            class="items-center hidden lg:flex"
+            href="./screens/registerScreen"
           >
-          <li>PTE Practice</li>
-          <li>Course</li>
-          <li>PTE Tutorials</li>
-          <li>APP</li>
-        </ul>
-      </div>
-      <div class="flex gap-x-1 lg:gap-x-3">
-        <a class="flex items-center" href="./screens/signInScreen">
-          <button class="px-5">Login</button>
-        </a>
-        <a class="flex items-center" href="./screens/registerScreen">
-          <button
-            class="px-4 lg:px-6 py-2 rounded-[44px] text-mainColor border border-mainColor text-xs lg:text-sm leading-4 min-w-[100px]"
-          >
-            Sign Up
-          </button>
-        </a>
+            <button
+              class="px-6 py-2 rounded-[44px] text-mainColor border border-mainColor text-sm leading-4 min-w-[89px]"
+            >
+              Sign Up
+            </button>
+          </a>
+          <i aria-label="icon: bars" class="anticon anticon-bars">
+            <svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              class="text-mainTextColor text-[32px] flex lg:hidden"
+              data-icon="bars"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"
+              ></path>
+            </svg>
+          </i>
+        </div>
       </div>
     </div>
 
@@ -44,477 +65,512 @@
 
     <!-- Practice PTE with AI Sroring Section Start -->
 
-    <div
-      class="bg-green-100 py-7 px-[10px] md:px-[60px] lg:px-[90px] xl:px-[182px] mt-[83px] lg:mt-[89px] justify-between flex flex-col lg:flex-row"
-    >
-      <div class="flex flex-col justify-start gap-y-12 pt-12">
-        <h1
-          class="font-semibold text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] leading-10 flex flex-col gap-y-2"
-        >
-          Practice PTE with AI Scorings
-          <span class="text-yellow-400">for FREE</span>
-        </h1>
-        <p class="text-[10px] md:text-xl leading-6 text-mainTextColor">
-          Join 100,000 PTE test takers to practice.
-        </p>
-        <button
-          class="w-48 xl:w-52 py-2 xl:py-3 text-[21px] xl:text-[25px] leading-8 bg-mainColor text-white rounded-md"
-        >
-          Practice Now
-        </button>
-      </div>
-      <div class="w-full lg:w-auto flex justify-end">
-        <img
-          class="lg:max-w-lg lg:w-full md:w-2/5 w-1/2"
-          src="./assets/images/home-en-banner-illustration-d82756a7e98790500d382b3f3590bd40 1.svg"
-        />
-      </div>
-    </div>
-
-    <!-- Practice PTE with AI Sroring Section End -->
-
-    <!-- PTE AI Practice Platform Section Start -->
-
-    <div
-      class="px-[10px] md:px-[60px] lg:px-[90px] xl:px-[182px] py-16 flex items-center lg:justify-start justify-center"
-    >
+    <div class="bg-green-100 py-7 mt-[73px] w-full hidden lg:flex">
       <div
-        class="flex flex-col lg:flex-row justify-center lg:justify-between w-full"
+        class="max-w-[1140px] box-border mx-auto flex justify-between w-full px-5"
       >
-        <div class="flex flex-col gap-y-12">
-          <div class="relative w-auto">
-            <h1 class="font-black text-5xl text-green-100">ONE</h1>
-            <p
-              class="absolute left-[25px] top-5 text-[32px] w-full text-mainTextColor"
-            >
-              PTE AI Practice Platform
-            </p>
-          </div>
-          <div>
-            <img
-              src="./assets/images/home-en-section-one-left-5f8845b059ea1d914bc4601e75cd0ef6 1.svg"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col justify-center gap-y-4">
-          <p class="text-2xl w-full text-mainTextColor">
-            Speaking & Writing AI Scorings
-          </p>
-          <hr class="border border-mainColor w-24 mb-2" />
-          <ul
-            class="flex flex-col gap-y-2 text-base leading-5 text-lightGrayColor mb-2"
+        <div class="flex flex-col justify-start gap-y-12 pt-12">
+          <h1
+            class="font-semibold text-[40px] leading-10 flex flex-col gap-y-2"
           >
-            <li class="flex gap-x-3">
-              <span>-</span> APEUni PTE scoring engines
-            </li>
-            <li class="flex gap-x-3">
-              <span>-</span> Evaluate speaking pronunciation & fluency
-            </li>
-            <li class="flex gap-x-3">
-              <span>-</span> Check writing grammar and spelling
-            </li>
-            <li class="flex gap-x-3">
-              <span>-</span> Synchronize practice records across Web & APPs
-            </li>
-          </ul>
+            Practice PTE with AI Scorings
+            <span class="text-yellow-400">for FREE</span>
+          </h1>
+          <p class="text-xl leading-6 text-mainTextColor">
+            Join 100,000 PTE test takers to practice.
+          </p>
           <button
-            class="w-52 py-3 text-[26px] leading-7 border border-mainColor text-mainColor rounded-md"
+            class="w-52 py-3 text-[25px] leading-8 bg-mainColor text-white rounded-md"
           >
             Practice Now
           </button>
         </div>
-      </div>
-    </div>
-
-    <!-- PTE AI Practice Platform Section End -->
-
-    <!-- PTE Study Tools Section Start -->
-
-    <div
-      class="px-[10px] md:px-[60px] lg:px-[90px] xl:px-[182px] py-16 flex items-center"
-    >
-      <div class="flex flex-col gap-y-20 w-full">
-        <div class="relative w-auto">
-          <h1 class="font-black text-5xl text-green-100">TWO</h1>
-          <p
-            class="absolute left-[25px] top-5 text-[32px] w-full text-mainTextColor"
-          >
-            PTE Study Tools
-          </p>
-        </div>
-        <div class="flex flex-wrap justify-between gap-y-7">
-          <div class="p-5 dropShadow rounded-[10px] flex gap-x-6">
-            <div
-              class="rounded-full h-[72px] w-[72px] bg-pink-100 flex items-center justify-center"
-            >
-              <img
-                class="h-[40.04px] w-[36px]"
-                src="./assets/images/Group.svg"
-              />
-            </div>
-            <div class="flex flex-col gap-y-[3px]">
-              <h1 class="text-[22px]">Vocab Book</h1>
-              <p class="flex flex-col text-lightGrayColor text-base leading-5">
-                Contains 90% <span>exam vocabs</span>
-              </p>
-            </div>
-          </div>
-          <div class="p-5 dropShadow rounded-[10px] flex gap-x-6">
-            <div
-              class="rounded-full h-[72px] w-[72px] bg-green-100 flex items-center justify-center"
-            >
-              <img
-                class="w-[42.06px] h-[38.57px]"
-                src="./assets/images/Group 1114.svg"
-              />
-            </div>
-            <div class="flex flex-col gap-y-[3px]">
-              <h1 class="text-[22px]">Shadowing</h1>
-              <p class="flex flex-col text-lightGrayColor text-base leading-5">
-                Improve RA in
-                <span>14 days</span>
-              </p>
-            </div>
-          </div>
-          <div class="p-5 dropShadow rounded-[10px] flex gap-x-6">
-            <div
-              class="rounded-full h-[72px] w-[72px] bg-sky-100 flex items-center justify-center"
-            >
-              <img
-                class="h-[38.57px] w-[40.39px]"
-                src="./assets/images/Group 1113.svg"
-              />
-            </div>
-            <div class="flex flex-col gap-y-[3px]">
-              <h1 class="text-[22px]">AI Analysis</h1>
-              <p class="flex flex-col text-lightGrayColor text-base leading-5">
-                Accurate Score <span>report analysis</span>
-              </p>
-            </div>
-          </div>
-          <div class="p-5 dropShadow rounded-[10px] flex gap-x-6">
-            <div
-              class="rounded-full h-[72px] w-[72px] bg-slate-100 flex items-center justify-center"
-            >
-              <img src="./assets/images/Vector.svg" />
-            </div>
-            <div class="flex flex-col gap-y-[3px]">
-              <h1 class="text-[22px]">View More</h1>
-              <p class="flex flex-col text-lightGrayColor text-base leading-5">
-                View more
-                <span>study tools</span>
-              </p>
-            </div>
-          </div>
+        <div class="flex justify-end">
+          <img
+            src="./assets/images/home-en-banner-illustration-d82756a7e98790500d382b3f3590bd40 1.svg"
+          />
         </div>
       </div>
     </div>
 
-    <!-- PTE Study Tools Section End -->
+    <!-- Practice PTE with AI Sroring Section End -->
+    <!-- Main Div Start -->
 
-    <!-- Download PTE Study Materials Section Start -->
+    <div class="w-full max-w-[1140px] box-border mx-auto px-5">
+      <!-- PTE AI Practice Platform Section Start -->
 
-    <div
-      class="px-[10px] md:px-[60px] lg:px-[90px] xl:px-[182px] py-16 flex items-center"
-    >
-      <div class="flex flex-col gap-y-20 w-full">
-        <div class="relative w-auto">
-          <h1 class="font-black text-5xl text-green-100">THREE</h1>
-          <p
-            class="absolute left-[25px] top-5 text-[32px] w-full text-mainTextColor"
-          >
-            Download PTE Study Materials
-          </p>
-        </div>
-        <div class="w-full dropShadow flex justify-center py-8">
-          <div class="flex flex-col items-center gap-y-4">
-            <h1 class="text-2xl leading-7 text-mainTextColor">
-              Study Materials
-            </h1>
-            <hr class="border border-mainColor w-24 mb-1" />
-            <p class="text-base leading-5 text-lightGrayColor mb-1">
-              Useful study materials created by APEUni's PTE teaching experts
+      <div class="pt-40 pb-16 lg:py-16 flex items-center justify-start">
+        <div class="flex flex-col lg:flex-row justify-between w-full">
+          <div class="flex flex-col gap-y-12">
+            <div class="relative w-auto">
+              <h1 class="font-black text-5xl text-green-100">ONE</h1>
+              <p
+                class="absolute left-[25px] top-5 text-[26px] md:text-[32px] w-full text-mainTextColor"
+              >
+                PTE AI Practice Platform
+              </p>
+            </div>
+            <div class="w-full lg:min-w-[500px]">
+              <img
+                class="w-full"
+                src="./assets/images/home-en-section-one-left-5f8845b059ea1d914bc4601e75cd0ef6 1.svg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col justify-center gap-y-4 md:min-w-[390px]">
+            <p class="text-2xl w-full text-mainTextColor">
+              Speaking & Writing AI Scorings
             </p>
-            <button
-              class="w-28 py-1 text-xs leading-7 border border-mainColor text-mainColor rounded-md"
+            <hr class="border border-mainColor w-24 mb-2" />
+            <ul
+              class="flex flex-col gap-y-2 text-base leading-5 text-lightGrayColor mb-2"
             >
-              Download
+              <li class="flex gap-x-3">
+                <span>-</span> APEUni PTE scoring engines
+              </li>
+              <li class="flex gap-x-3">
+                <span>-</span> Evaluate speaking pronunciation & fluency
+              </li>
+              <li class="flex gap-x-3">
+                <span>-</span> Check writing grammar and spelling
+              </li>
+              <li class="flex gap-x-3">
+                <span>-</span> Synchronize practice records across Web & APPs
+              </li>
+            </ul>
+            <button
+              class="w-52 py-3 text-[26px] leading-7 border border-mainColor text-mainColor rounded-md"
+            >
+              Practice Now
             </button>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Download PTE Study Materials Section End -->
+      <!-- PTE AI Practice Platform Section End -->
 
-    <!-- PTE Knowledge Section Start -->
+      <!-- PTE Study Tools Section Start -->
 
-    <div
-      class="px-[10px] md:px-[60px] lg:px-[90px] xl:px-[182px] py-16 flex items-center"
-    >
-      <div class="flex flex-col gap-y-20 w-full">
-        <div class="relative w-auto">
-          <h1 class="font-black text-5xl text-green-100">FOUR</h1>
-          <p
-            class="absolute left-[25px] top-5 text-[32px] w-full text-mainTextColor"
-          >
-            PTE Knowledge
-          </p>
-        </div>
-        <div class="w-full flex justify-between flex-wrap">
-          <div
-            class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-[534px] mb-10 h-fit"
-          >
-            <h1 class="text-2xl leading-7 font-bold p-5">PTE Academic Guide</h1>
-            <hr class="border border-gray-300" />
-            <div class="p-5 flex flex-col gap-y-5">
-              <div class="flex w-full justify-between items-center">
-                <h1 class="text-base font-bold">What is the meaning of PTE?</h1>
-                <img src="./assets/images/downArrow.svg" />
-              </div>
-              <p class="text-base leading-5">
-                The full form of PTE is the Pearson Test of English, normally
-                referring to the academic version. It is also known as PTE-A,
-                Pearson Academic, or Pearson Test of English Academic. PTE is a
-                computer-based exam. It also provides online mock tests on
-                Pearson PTE's website.
-              </p>
-              <p
-                class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
-              >
-                View More
-                <span class="pt-[2px]"
-                  ><img src="./assets/images/smallRightArrow.svg"
-                /></span>
-              </p>
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">
-                PTE vs IELTS, what is the difference?
-              </h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">How is PTE test scored?</h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">How to book PTE exams?</h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">How to prepare for PTE exams?</h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
+      <div class="py-16 flex items-center">
+        <div class="flex flex-col gap-y-20 w-full">
+          <div class="relative w-auto">
+            <h1 class="font-black text-5xl text-green-100">TWO</h1>
+            <p
+              class="absolute left-[25px] top-5 text-[32px] w-full text-mainTextColor"
+            >
+              PTE Study Tools
+            </p>
           </div>
-          <div
-            class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-[534px] mb-10 h-fit"
-          >
-            <h1 class="text-2xl leading-7 font-bold p-5">PTE Speaking Guide</h1>
-            <hr class="border border-gray-300" />
-            <div class="p-5 flex flex-col gap-y-5">
-              <div class="flex w-full justify-between items-center">
-                <h1 class="text-base font-bold">Read Aloud exam tips</h1>
-                <img src="./assets/images/downArrow.svg" />
-              </div>
-              <p class="text-base leading-5">
-                Read Aloud (RA) is one of the most difficult question types in
-                PTE Speaking. Pronunciation and fluency are much more important
-                in scoring than content. Try to keep your tone smooth and do not
-                have unnatural pauses.
-              </p>
-              <p
-                class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
+          <div class="flex justify-between gap-y-10 flex-wrap">
+            <div
+              class="p-5 dropShadow rounded-[10px] flex justify-between gap-x-6 md:w-[48.5%] w-[100%] lg:w-auto"
+            >
+              <div
+                class="rounded-full h-[72px] min-w-[72px] bg-pink-100 flex items-center justify-center"
               >
-                View More
-                <span class="pt-[2px]"
-                  ><img src="./assets/images/smallRightArrow.svg"
-                /></span>
-              </p>
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">Repeat Sentence exam tips</h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">Describe Image exam tips</h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">Re-tell Lecture exam tips</h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">
-                Answer Short Question exam tips
-              </h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-          </div>
-          <div
-            class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-[534px] mb-10 h-fit"
-          >
-            <h1 class="text-2xl leading-7 font-bold p-5">PTE Writing Guide</h1>
-            <hr class="border border-gray-300" />
-            <div class="p-5 flex flex-col gap-y-5">
-              <div class="flex w-full justify-between items-center">
-                <h1 class="text-base font-bold">
-                  Summarize Written Text exam tips
-                </h1>
-                <img src="./assets/images/downArrow.svg" />
+                <img
+                  class="h-[40.04px] w-[36px]"
+                  src="./assets/images/Group.svg"
+                />
               </div>
-              <p class="text-base leading-5">
-                Summarize Written Text (SWT) is a very simple question type.
-                There are two keys in answering: to find key points in the
-                passage, and to connect the key points into a grammatically
-                correct sentence.
-              </p>
-              <p
-                class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
+              <div
+                class="flex flex-col gap-y-[3px] w-[220px] lg:w-[116px] items-start"
               >
-                View More
-                <span class="pt-[2px]"
-                  ><img src="./assets/images/smallRightArrow.svg"
-                /></span>
-              </p>
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">Write Essay exam tips</h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">PTE write essay materials</h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-          </div>
-          <div
-            class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-[534px] mb-10 h-fit"
-          >
-            <h1 class="text-2xl leading-7 font-bold p-5">PTE Reading Guide</h1>
-            <hr class="border border-gray-300" />
-            <div class="p-5 flex flex-col gap-y-5">
-              <div class="flex w-full justify-between items-center">
-                <h1 class="text-base font-bold">
-                  Multiple Choice Single Answer exam tips
-                </h1>
-                <img src="./assets/images/downArrow.svg" />
+                <h1 class="text-[22px] min-w-[124px]">Vocab Book</h1>
+                <p
+                  class="flex flex-col text-lightGrayColor text-base leading-5 w-auto lg:w-[117px]"
+                >
+                  Contains 90% exam vocabs
+                </p>
               </div>
-              <p class="text-base leading-5">
-                The Reading Multiple Choice Single Answer (MCS) question type
-                accounts for only a very small proportion of marks in the
-                overall Reading score. The most important technique for MCS is
-                time management. Please complete each question of this type
-                within 1 or 2 minutes. Otherwise, you will not have enough time
-                for the more important FIB questions.
-              </p>
-              <p
-                class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
+            </div>
+            <div
+              class="p-5 dropShadow rounded-[10px] flex justify-between gap-x-6 md:w-[48.5%] w-[100%] lg:w-auto"
+            >
+              <div
+                class="rounded-full h-[72px] min-w-[72px] bg-green-100 flex items-center justify-center"
               >
-                View More
-                <span class="pt-[2px]"
-                  ><img src="./assets/images/smallRightArrow.svg"
-                /></span>
-              </p>
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">
-                Multiple Choice Multiple Answers exam tips
-              </h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">Re-order Paragraphs exam tips</h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">
-                Fill in the Blanks (Reading) exam tips
-              </h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">
-                Fill in the Blanks (Reading & Writing) exam tips
-              </h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-          </div>
-          <div
-            class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-[534px] mb-10 h-fit"
-          >
-            <h1 class="text-2xl leading-7 font-bold p-5">
-              PTE Listening Guide
-            </h1>
-            <hr class="border border-gray-300" />
-            <div class="p-5 flex flex-col gap-y-5">
-              <div class="flex w-full justify-between items-center">
-                <h1 class="text-base font-bold">
-                  Summarize Spoken Text exam tips
-                </h1>
-                <img src="./assets/images/downArrow.svg" />
+                <img
+                  class="w-[42.06px] h-[38.57px]"
+                  src="./assets/images/Group 1114.svg"
+                />
               </div>
-              <p class="text-base leading-5">
-                Summarize Spoken Text (SST) is actually a very simple question
-                type in PTE. Focus on the grammar and spelling of your written
-                answer. Content is actually not that important in scoring.
-              </p>
-              <p
-                class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
+              <div
+                class="flex flex-col gap-y-[3px] w-[220px] lg:w-[116px] items-start"
               >
-                View More
-                <span class="pt-[2px]"
-                  ><img src="./assets/images/smallRightArrow.svg"
-                /></span>
-              </p>
+                <h1 class="text-[22px]">Shadowing</h1>
+                <p
+                  class="flex flex-col text-lightGrayColor text-base leading-5 w-auto lg:w-[117px]"
+                >
+                  Improve RA in 14 days
+                </p>
+              </div>
             </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">
-                Listening Multiple Choice exam tips
-              </h1>
-              <img src="./assets/images/rightArrow.svg" />
+            <div
+              class="p-5 dropShadow rounded-[10px] flex justify-between gap-x-6 md:w-[48.5%] w-[100%] lg:w-auto"
+            >
+              <div
+                class="rounded-full h-[72px] min-w-[72px] bg-sky-100 flex items-center justify-center"
+              >
+                <img
+                  class="h-[38.57px] w-[40.39px]"
+                  src="./assets/images/Group 1113.svg"
+                />
+              </div>
+              <div
+                class="flex flex-col gap-y-[3px] w-[220px] lg:w-[116px] items-start"
+              >
+                <h1 class="text-[22px]">AI Analysis</h1>
+                <p
+                  class="flex flex-col text-lightGrayColor text-base leading-5 w-auto lg:w-[117px]"
+                >
+                  Accurate Score report analysis
+                </p>
+              </div>
             </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">
-                Listening Fill in the Blanks exam tips
-              </h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">
-                Highlight Incorrect Words exam tips
-              </h1>
-              <img src="./assets/images/rightArrow.svg" />
-            </div>
-            <hr class="border border-gray-300" />
-            <div class="flex w-full justify-between items-center p-5">
-              <h1 class="text-base font-bold">
-                Write from Dictation exam tips
-              </h1>
-              <img src="./assets/images/rightArrow.svg" />
+            <div
+              class="p-5 dropShadow rounded-[10px] flex justify-between gap-x-6 md:w-[48.5%] w-[100%] lg:w-auto"
+            >
+              <div
+                class="rounded-full h-[72px] min-w-[72px] bg-slate-100 flex items-center justify-center"
+              >
+                <img src="./assets/images/Vector.svg" />
+              </div>
+              <div
+                class="flex flex-col gap-y-[3px] w-[220px] lg:w-[116px] items-start"
+              >
+                <h1 class="text-[22px]">View More</h1>
+                <p
+                  class="flex flex-col text-lightGrayColor text-base leading-5 w-auto lg:w-[117px]"
+                >
+                  View more study tools
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- PTE Study Tools Section End -->
+
+      <!-- Download PTE Study Materials Section Start -->
+
+      <div class="py-16 flex items-center">
+        <div class="flex flex-col gap-y-20 w-full">
+          <div class="relative w-auto">
+            <h1 class="font-black text-5xl text-green-100">THREE</h1>
+            <p
+              class="absolute left-[25px] top-5 text-[32px] w-full text-mainTextColor"
+            >
+              Download PTE Study Materials
+            </p>
+          </div>
+          <div class="w-full dropShadow flex justify-center py-8">
+            <div class="flex flex-col items-center gap-y-4">
+              <h1 class="text-2xl leading-7 text-mainTextColor">
+                Study Materials
+              </h1>
+              <hr class="border border-mainColor w-24 mb-1" />
+              <p
+                class="text-base leading-5 text-lightGrayColor mb-1 text-center"
+              >
+                Useful study materials created by APEUni's PTE teaching experts
+              </p>
+              <button
+                class="w-28 py-1 text-xs leading-7 border border-mainColor text-mainColor rounded-md"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download PTE Study Materials Section End -->
+
+      <!-- PTE Knowledge Section Start -->
+
+      <div class="py-16 flex items-center">
+        <div class="flex flex-col gap-y-20 w-full">
+          <div class="relative w-auto">
+            <h1 class="font-black text-5xl text-green-100">FOUR</h1>
+            <p
+              class="absolute left-[25px] top-5 text-[32px] w-full text-mainTextColor"
+            >
+              PTE Knowledge
+            </p>
+          </div>
+          <div class="w-full flex justify-between flex-wrap">
+            <div
+              class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-full md:max-w-[530px] mb-10 h-fit gap-x-10"
+            >
+              <h1 class="text-2xl leading-7 font-bold p-5">
+                PTE Academic Guide
+              </h1>
+              <hr class="border border-gray-300" />
+              <div class="p-5 flex flex-col gap-y-5">
+                <div class="flex w-full justify-between items-center">
+                  <h1 class="text-base font-bold">
+                    What is the meaning of PTE?
+                  </h1>
+                  <img src="./assets/images/downArrow.svg" />
+                </div>
+                <p class="text-base leading-5">
+                  The full form of PTE is the Pearson Test of English, normally
+                  referring to the academic version. It is also known as PTE-A,
+                  Pearson Academic, or Pearson Test of English Academic. PTE is
+                  a computer-based exam. It also provides online mock tests on
+                  Pearson PTE's website.
+                </p>
+                <p
+                  class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
+                >
+                  View More
+                  <span class="pt-[2px]"
+                    ><img src="./assets/images/smallRightArrow.svg"
+                  /></span>
+                </p>
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  PTE vs IELTS, what is the difference?
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">How is PTE test scored?</h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">How to book PTE exams?</h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  How to prepare for PTE exams?
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+            </div>
+            <div
+              class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-full md:max-w-[530px] mb-10 h-fit gap-x-10"
+            >
+              <h1 class="text-2xl leading-7 font-bold p-5">
+                PTE Speaking Guide
+              </h1>
+              <hr class="border border-gray-300" />
+              <div class="p-5 flex flex-col gap-y-5">
+                <div class="flex w-full justify-between items-center">
+                  <h1 class="text-base font-bold">Read Aloud exam tips</h1>
+                  <img src="./assets/images/downArrow.svg" />
+                </div>
+                <p class="text-base leading-5">
+                  Read Aloud (RA) is one of the most difficult question types in
+                  PTE Speaking. Pronunciation and fluency are much more
+                  important in scoring than content. Try to keep your tone
+                  smooth and do not have unnatural pauses.
+                </p>
+                <p
+                  class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
+                >
+                  View More
+                  <span class="pt-[2px]"
+                    ><img src="./assets/images/smallRightArrow.svg"
+                  /></span>
+                </p>
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">Repeat Sentence exam tips</h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">Describe Image exam tips</h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">Re-tell Lecture exam tips</h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  Answer Short Question exam tips
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+            </div>
+            <div
+              class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-full md:max-w-[530px] mb-10 h-fit gap-x-10"
+            >
+              <h1 class="text-2xl leading-7 font-bold p-5">
+                PTE Writing Guide
+              </h1>
+              <hr class="border border-gray-300" />
+              <div class="p-5 flex flex-col gap-y-5">
+                <div class="flex w-full justify-between items-center">
+                  <h1 class="text-base font-bold">
+                    Summarize Written Text exam tips
+                  </h1>
+                  <img src="./assets/images/downArrow.svg" />
+                </div>
+                <p class="text-base leading-5">
+                  Summarize Written Text (SWT) is a very simple question type.
+                  There are two keys in answering: to find key points in the
+                  passage, and to connect the key points into a grammatically
+                  correct sentence.
+                </p>
+                <p
+                  class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
+                >
+                  View More
+                  <span class="pt-[2px]"
+                    ><img src="./assets/images/smallRightArrow.svg"
+                  /></span>
+                </p>
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">Write Essay exam tips</h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">PTE write essay materials</h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+            </div>
+            <div
+              class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-full md:max-w-[530px] mb-10 h-fit gap-x-10"
+            >
+              <h1 class="text-2xl leading-7 font-bold p-5">
+                PTE Reading Guide
+              </h1>
+              <hr class="border border-gray-300" />
+              <div class="p-5 flex flex-col gap-y-5">
+                <div class="flex w-full justify-between items-center">
+                  <h1 class="text-base font-bold">
+                    Multiple Choice Single Answer exam tips
+                  </h1>
+                  <img src="./assets/images/downArrow.svg" />
+                </div>
+                <p class="text-base leading-5">
+                  The Reading Multiple Choice Single Answer (MCS) question type
+                  accounts for only a very small proportion of marks in the
+                  overall Reading score. The most important technique for MCS is
+                  time management. Please complete each question of this type
+                  within 1 or 2 minutes. Otherwise, you will not have enough
+                  time for the more important FIB questions.
+                </p>
+                <p
+                  class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
+                >
+                  View More
+                  <span class="pt-[2px]"
+                    ><img src="./assets/images/smallRightArrow.svg"
+                  /></span>
+                </p>
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  Multiple Choice Multiple Answers exam tips
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  Re-order Paragraphs exam tips
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  Fill in the Blanks (Reading) exam tips
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  Fill in the Blanks (Reading & Writing) exam tips
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+            </div>
+            <div
+              class="dropShadow rounded-[5px] flex-col gap-y-10 text-mainTextColor w-full md:max-w-[530px] mb-10 h-fit gap-x-10"
+            >
+              <h1 class="text-2xl leading-7 font-bold p-5">
+                PTE Listening Guide
+              </h1>
+              <hr class="border border-gray-300" />
+              <div class="p-5 flex flex-col gap-y-5">
+                <div class="flex w-full justify-between items-center">
+                  <h1 class="text-base font-bold">
+                    Summarize Spoken Text exam tips
+                  </h1>
+                  <img src="./assets/images/downArrow.svg" />
+                </div>
+                <p class="text-base leading-5">
+                  Summarize Spoken Text (SST) is actually a very simple question
+                  type in PTE. Focus on the grammar and spelling of your written
+                  answer. Content is actually not that important in scoring.
+                </p>
+                <p
+                  class="flex gap-x-3 text-mainColor text-xs leading-4 items-center justify-end"
+                >
+                  View More
+                  <span class="pt-[2px]"
+                    ><img src="./assets/images/smallRightArrow.svg"
+                  /></span>
+                </p>
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  Listening Multiple Choice exam tips
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  Listening Fill in the Blanks exam tips
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  Highlight Incorrect Words exam tips
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+              <hr class="border border-gray-300" />
+              <div class="flex w-full justify-between items-center p-5">
+                <h1 class="text-base font-bold">
+                  Write from Dictation exam tips
+                </h1>
+                <img src="./assets/images/rightArrow.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PTE Knowledge Section End -->
     </div>
 
-    <!-- PTE Knowledge Section End -->
+    <!-- Main Div End -->
 
     <!-- Download App Section Start -->
 
@@ -526,95 +582,99 @@
 
     <!-- Footer Start -->
 
-    <div class="bg-gray-800 pt-20 py-16 flex flex-col gap-y-10">
+    <div class="bg-gray-800 w-full">
       <div
-        class="flex flex-wrap gap-y-10 justify-between px-[10px] md:px-[150px] xl:px-[170px]"
+        class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col gap-y-10"
       >
-        <div class="flex flex-col gap-y-10">
-          <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
-          <ul
-            class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
-          >
-            <li class="hover:text-mainColor">Pearson Official Website</li>
-            <li class="hover:text-mainColor">Pearson PTE Mock Tests</li>
-            <li class="hover:text-mainColor">Book PTE Tests</li>
-            <li class="hover:text-mainColor">Contact Pearson PTE</li>
-          </ul>
-        </div>
-        <div class="flex flex-col gap-y-10">
-          <h1 class="text-xl leading-6 text-white">PTE Course</h1>
-          <ul
-            class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
-          >
-            <li class="hover:text-mainColor">PTE Speaking Course</li>
-            <li class="hover:text-mainColor">PTE Writing Course</li>
-            <li class="hover:text-mainColor">PTE Reading Course</li>
-            <li class="hover:text-mainColor">PTE Listening Course</li>
-          </ul>
-        </div>
-        <div class="flex flex-col gap-y-10">
-          <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
-          <ul
-            class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
-          >
-            <li class="hover:text-mainColor">Study Materials Download</li>
-          </ul>
-        </div>
-        <div class="flex flex-col gap-y-10">
-          <h1 class="text-xl leading-6 text-white">APP Download</h1>
-          <ul
-            class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
-          >
-            <li class="hover:text-mainColor">APEUni iOS APP</li>
-            <li class="hover:text-mainColor">APEUni Android APP</li>
-          </ul>
-        </div>
-        <div class="flex flex-col gap-y-10">
-          <h1 class="text-xl leading-6 text-white">Contact Us</h1>
-          <ul
-            class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
-          >
-            <li class="hover:text-mainColor">Email: support@apeuni.com</li>
-            <li class="hover:text-mainColor">Telegram: t.me/pteapeuni</li>
-          </ul>
+        <div class="flex flex-wrap justify-between gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Pearson Official Website</li>
+              <li class="hover:text-mainColor">Pearson PTE Mock Tests</li>
+              <li class="hover:text-mainColor">Book PTE Tests</li>
+              <li class="hover:text-mainColor">Contact Pearson PTE</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Course</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">PTE Speaking Course</li>
+              <li class="hover:text-mainColor">PTE Writing Course</li>
+              <li class="hover:text-mainColor">PTE Reading Course</li>
+              <li class="hover:text-mainColor">PTE Listening Course</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Study Materials Download</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">APP Download</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">APEUni iOS APP</li>
+              <li class="hover:text-mainColor">APEUni Android APP</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Contact Us</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Email: support@apeuni.com</li>
+              <li class="hover:text-mainColor">Telegram: t.me/pteapeuni</li>
+            </ul>
+          </div>
         </div>
       </div>
       <hr class="w-full border border-lightGrayColor" />
-      <div
-        class="px-[10px] md:px-[150px] xl:px-[170px]] flex flex-wrap gap-y-10 justify-between text-lightGrayColor text-base leading-4"
-      >
-        <div class="flex flex-col gap-y-5">
-          <p class="hover:text-mainColor">
-            Shenzhen APEUni Education Technology Co., Ltd.
-          </p>
-          <p class="hover:text-mainColor">Copyright©2023 APEUni Edu</p>
-          <p class="hover:text-mainColor">Terms of Use | Privacy Policy</p>
-          <div class="flex gap-x-5 pt-5">
-            <div
-              class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
-            >
-              <img src="./assets/images/facebook.svg" />
-            </div>
-            <div
-              class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
-            >
-              <img src="./assets/images/twitter.svg" />
-            </div>
-            <div
-              class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
-            >
-              <img src="./assets/images/telegram.svg" />
+      <div class="text-lightGrayColor text-base leading-4 w-full">
+        <div
+          class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col lg:flex-row justify-between gap-y-10"
+        >
+          <div class="flex flex-col gap-y-5">
+            <p class="hover:text-mainColor">
+              Shenzhen APEUni Education Technology Co., Ltd.
+            </p>
+            <p class="hover:text-mainColor">Copyright©2023 APEUni Edu</p>
+            <p class="hover:text-mainColor">Terms of Use | Privacy Policy</p>
+            <div class="flex gap-x-5 pt-5">
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/facebook.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/twitter.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/telegram.svg" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="flex gap-x-16">
-          <div class="flex flex-col gap-y-5 lg:items-center items-start">
-            <img class="h-20 w-20" src="./assets/images/qrcode.svg" />
-            <p class="hover:text-mainColor">APEUni iOS App</p>
-          </div>
-          <div class="flex flex-col gap-y-5 lg:items-center items-start">
-            <img class="h-20 w-20" src="./assets/images/qrcode2.svg" />
-            <p class="hover:text-mainColor">APEUni Android App</p>
+          <div class="flex gap-x-16">
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode.svg" />
+              <p class="hover:text-mainColor text-center">APEUni iOS App</p>
+            </div>
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode2.svg" />
+              <p class="hover:text-mainColor text-center">APEUni Android App</p>
+            </div>
           </div>
         </div>
       </div>

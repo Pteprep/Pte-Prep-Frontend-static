@@ -10,38 +10,62 @@
     <!-- NavBar Start -->
 
     <div
-      class="py-5 px-[170px] w-full border-b border-gray-300 fixed top-0 flex items-center justify-between bg-white z-10"
+      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
     >
-      <div class="flex items-center gap-x-9">
-        <a class="flex items-center" href="../../index.html">
-          <img src="../../assets/images/logo.svg" />
-        </a>
-        <ul class="flex gap-x-9 leading-5 font-normal">
-          <a class="flex items-center" href="../homeScreen/"> <li>Home</li></a>
-          <a class="flex items-center" href="../dropdownScreen">
-            <li class="flex items-center gap-x-2">
-              PTE Practice
-              <img src="../../assets/images/Play.svg" />
-            </li>
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <a class="flex items-center" href="../../index.html">
+            <img src="../../assets/images/logo.svg" />
           </a>
-          <li>Course</li>
-          <li>PTE Tutorials</li>
-          <li>APP</li>
-        </ul>
-      </div>
-      <div class="flex gap-x-6">
-        <div class="flex items-center gap-x-[6px] hover:text-mainColor">
-          <img src="../../assets/images/VIP.svg" />
-          <a class="flex items-center" href="../vipCenterScreen">
-            <p class="text-base leading-5">Upgrade VIP</p></a
-          >
+          <ul class="hidden lg:flex gap-x-9 leading-5 font-normal">
+            <a class="flex items-center" href="../homeScreen">
+              <li>Home</li>
+            </a>
+            <a class="flex items-center" href="../dropdownScreen">
+              <li class="flex items-center gap-x-2">
+                PTE Practice
+                <img src="../../assets/images/Play.svg" />
+              </li>
+            </a>
+            <li>Course</li>
+            <li>PTE Tutorials</li>
+            <li>APP</li>
+          </ul>
         </div>
-        <a class="flex items-center" href="../ProfileScreen">
-          <img
-            class="h-[32px] w-[32px]"
-            src="../../assets/images/Ellipse 7.svg"
-          />
-        </a>
+        <div class="flex gap-x-6">
+          <div
+            class="hidden lg:flex items-center gap-x-[6px] hover:text-mainColor"
+          >
+            <img src="../../assets/images/VIP.svg" />
+            <a class="flex items-center" href="../vipCenterScreen">
+              <p class="text-base leading-5">Upgrade VIP</p></a
+            >
+          </div>
+          <a class="items-center hidden lg:flex" href="../ProfileScreen">
+            <img
+              class="h-[32px] w-[32px] hidden lg:flex"
+              src="../../assets/images/Ellipse 7.svg"
+            />
+          </a>
+          <i aria-label="icon: bars" class="anticon anticon-bars">
+            <svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              class="text-mainTextColor text-[32px] flex lg:hidden"
+              data-icon="bars"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"
+              ></path>
+            </svg>
+          </i>
+        </div>
       </div>
     </div>
 
@@ -49,318 +73,336 @@
 
     <!-- Main Section Start -->
 
-    <div class="bg-gray-50 pt-36">
-      <div class="flex justify-between gap-x-2 px-[170px]">
-        <!-- Left SideBar Start -->
-        <div
-          class="bg-white rounded-[7px] py-4 w-[350px] border border-gray-200 h-fit text-mainTextColor"
-        >
-          <div class="flex items-center px-6 gap-4 mb-5">
-            <img
-              class="h-[32px] w-[32px]"
-              src="../../assets/images/Ellipse 7.svg"
-            />
-            <p class="font-bold text-base leading-5">Daniyal Samim</p>
+    <div class="bg-gray-50 pt-24 w-full border">
+      <div class="max-w-[1140px] box-border mx-auto w-full px-5">
+        <div class="flex justify-between gap-x-4 w-full">
+          <!-- Left SideBar Start -->
+          <div
+            class="bg-white rounded-[7px] py-4 w-[25%] border border-gray-200 h-fit text-mainTextColor md:block hidden"
+          >
+            <div class="flex items-center px-6 gap-4 mb-5">
+              <img
+                class="h-[32px] w-[32px]"
+                src="../../assets/images/Ellipse 7.svg"
+              />
+              <p class="font-bold text-base leading-5">Daniyal Samim</p>
+            </div>
+            <hr class="border border-gray-100 mb-2" />
+            <ul class="flex flex-col gap-y-3 cursor-pointer">
+              <a class="flex items-center" href="../homeScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2 relative"
+                >
+                  <img src="../../assets/images/homeBlack.svg" />
+                  Home
+                </li>
+              </a>
+              <li
+                class="py-2 px-6 text-mainColor hover:text-mainColor bg-lightGreenColor flex items-center gap-x-2 relative"
+              >
+                <img src="../../assets/images/study center green ICon.svg" />
+                Study Center
+                <hr class="absolute right-0 h-full border border-mainColor" />
+              </li>
+              <a class="flex items-center" href="../mockTestScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/mocktest.svg" />
+                  Mock Tests
+                </li>
+              </a>
+              <a class="flex items-center" href="../settingScreen/">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/setting.svg" />
+                  Settings
+                </li>
+              </a>
+              <a class="flex items-center" href="../vipCenterScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/Crown Simple.svg" />
+                  VIP Center
+                </li>
+              </a>
+              <a class="flex items-center" href="../notificationCenterScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/notification.svg" />
+                  Notification Center
+                </li>
+              </a>
+              <a class="flex items-center" href="../Help(Q&A)Secreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/help.svg" />
+                  Help (Q&A)
+                </li>
+              </a>
+              <a class="flex items-center" href="../ContactUsScreen">
+                <li
+                  class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+                >
+                  <img src="../../assets/images/homeBlack.svg" />
+                  Contact Us
+                </li>
+              </a>
+              <li
+                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
+              >
+                <img src="../../assets/images/sidebralogout.svg" />
+                Log Out
+              </li>
+            </ul>
           </div>
-          <hr class="border border-gray-100 mb-2" />
-          <ul class="flex flex-col gap-y-3 cursor-pointer">
-            <a class="flex items-center" href="../homeScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2 relative"
-              >
-                <img src="../../assets/images/homeBlack.svg" />
-                Home
-              </li>
-            </a>
-            <li
-              class="py-2 px-6 text-mainColor hover:text-mainColor bg-lightGreenColor flex items-center gap-x-2 relative"
+          <!-- Left SideBar End -->
+
+          <!-- Main Middle Content Section Start -->
+
+          <div class="w-full md:w-[75%] flex flex-col gap-y-12">
+            <!-- AI Study Tips & Target Section Start -->
+
+            <div
+              class="flex flex-col gap-y-8 lg:flex-row w-full justify-between px-2"
             >
-              <img src="../../assets/images/study center green ICon.svg" />
-              Study Center
-              <hr class="absolute right-0 h-full border border-mainColor" />
-            </li>
-            <a class="flex items-center" href="../mockTestScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/mocktest.svg" />
-                Mock Tests
-              </li>
-            </a>
-            <a class="flex items-center" href="../settingScreen/">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/setting.svg" />
-                Settings
-              </li>
-            </a>
-            <a class="flex items-center" href="../vipCenterScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/Crown Simple.svg" />
-                VIP Center
-              </li>
-            </a>
-            <a class="flex items-center" href="../notificationCenterScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/notification.svg" />
-                Notification Center
-              </li>
-            </a>
-            <a class="flex items-center" href="../Help(Q&A)Secreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/help.svg" />
-                Help (Q&A)
-              </li>
-            </a>
-            <a class="flex items-center" href="../ContactUsScreen">
-              <li
-                class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-              >
-                <img src="../../assets/images/homeBlack.svg" />
-                Contact Us
-              </li>
-            </a>
-            <li
-              class="py-2 px-6 hover:text-mainColor flex items-center gap-x-2"
-            >
-              <img src="../../assets/images/sidebralogout.svg" />
-              Log Out
-            </li>
-          </ul>
-        </div>
-        <!-- Left SideBar End -->
-
-        <!-- Main Middle Content Section Start -->
-
-        <div class="w-full flex flex-col gap-y-12">
-          <!-- AI Study Tips & Target Section Start -->
-
-          <div class="flex w-full justify-between px-2">
-            <div class="flex flex-col gap-y-5 w-[49%]">
-              <h1 class="font-bold leading-5 text-base px-3 text-mainTextColor">
-                AI Study Tips
-              </h1>
-              <div class="dropShadow bg-white rounded-[10px]">
-                <div class="bg-white px-12 pt-16 rounded-[10px]">
-                  <div class="flex items-center gap-x-24 mb-[41px]">
-                    <img
-                      src="../../assets/images/studyCentreAiTipsRobotImg.svg"
-                    />
-                    <h1
-                      class="w-[165px] h-[57px] leading-5 text-base text-mainTextColor"
+              <div class="flex flex-col gap-y-5 w-full lg:w-[49%]">
+                <h1
+                  class="font-bold leading-5 text-base px-3 text-mainTextColor"
+                >
+                  AI Study Tips
+                </h1>
+                <div class="dropShadow bg-white rounded-[10px]">
+                  <div class="bg-white px-8 md:px-12 pt-16 rounded-[10px]">
+                    <div
+                      class="flex items-center gap-x-10 md:gap-x-28 lg:gap-x-10 mb-[41px]"
                     >
-                      Enter【Target】& 【Exam Histories】to get AI study tips
+                      <img
+                        src="../../assets/images/studyCentreAiTipsRobotImg.svg"
+                      />
+                      <h1
+                        class="w-auto md:min-w-[140px] leading-5 text-sm md:text-base text-mainTextColor"
+                      >
+                        Enter【Target】&【Exam Histories】to get AI study tips
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="flex justify-end px-6 mb-5">
+                    <button
+                      class="flex gap-x-4 items-center text-xs leading-3 text-lightGrayColor"
+                    >
+                      View All
+                      <img src="../../assets/images/smallArrow.svg" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-[49%] flex flex-col gap-y-5">
+                <h1
+                  class="font-bold leading-5 text-base px-3 text-mainTextColor"
+                >
+                  Target
+                </h1>
+                <div class="dropShadow bg-white rounded-[10px]">
+                  <div
+                    class="bg-lightRedColor px-6 py-4 rounded-t-[10px] flex justify-between items-center"
+                  >
+                    <p class="text-white text-xs">Exam Date:</p>
+                    <button
+                      class="text-xs leading-3 py-[5px] px-[10px] rounded-[5px] border text-white"
+                    >
+                      - Day Left
+                    </button>
+                  </div>
+                  <div class="bg-white px-6 pt-8">
+                    <di v class="flex flex-wrap items-center justify-between mb-7 gap-y-5 md:gap-y-0 gap-x-2 md:gap-x-0">
+                      <div class="flex flex-col items-center gap-y-4">
+                        <h1 class="text-[25px] leading-7 text-lightRedColor">
+                          -
+                        </h1>
+                        <p class="text-sm leading-4 text-lightGrayColor">
+                          Overall
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-center gap-y-4">
+                        <h1 class="text-[25px] leading-7 text-mainTextColor">
+                          -
+                        </h1>
+                        <p class="text-sm leading-4 text-lightGrayColor">
+                          Listening
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-center gap-y-4">
+                        <h1 class="text-[25px] leading-7 text-mainTextColor">
+                          -
+                        </h1>
+                        <p class="text-sm leading-4 text-lightGrayColor">
+                          Reading
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-center gap-y-4">
+                        <h1 class="text-[25px] leading-7 text-mainTextColor">
+                          -
+                        </h1>
+                        <p class="text-sm leading-4 text-lightGrayColor">
+                          Speaking
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-center gap-y-4">
+                        <h1 class="text-[25px] leading-7 text-mainTextColor">
+                          -
+                        </h1>
+                        <p class="text-sm leading-4 text-lightGrayColor">
+                          Writing
+                        </p>
+                      </div>
+                    </di>
+                  </div>
+                  <div class="flex justify-end px-6 mb-5">
+                    <button
+                      class="flex gap-x-4 items-center text-xs leading-3 text-lightGrayColor"
+                    >
+                      Set Target
+                      <img src="../../assets/images/smallArrow.svg" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AI Study Tips & Target Section End -->
+
+            <!-- Important Questions' Correctness Req Section Start -->
+
+            <div class="flex w-full justify-between px-2">
+              <div class="flex flex-col gap-y-5">
+                <h1
+                  class="font-bold leading-5 text-base px-3 text-lightGrayColor"
+                >
+                  Important Questions' Correctness Req
+                </h1>
+                <p
+                  class="text-sm leading-4 px-3 w-full mb-2 text-lightGrayColor"
+                >
+                  According to your target scores, you're suggested to focus on
+                  the following question types and achieve their correctness
+                  requirements. Click on the progress bars to see more details
+                </p>
+                <div class="dropShadow rounded-[10px] relative bg-white w-full">
+                  <div class="py-[57px] pl-5 md:pl-12 flex items-center gap-x-12 md:gap-x-[74px]">
+                    <button
+                      class="py-[31px] px-[30px] min-w-fit bg-mainColor text-white rounded-[15px] text-base leading-5 z-10"
+                    >
+                      Fill
+                    </button>
+                    <div
+                      class="flex flex-col gap-y-2 justify-center text-lightGrayColor z-10"
+                    >
+                      <p class="text-base leading-5">
+                        Fill in target scores to see:
+                      </p>
+                      <p class="text-base leading-6 max-w-[416px]">
+                        question types you should focus on & your correctness
+                        requirements & your current correctness levels
+                      </p>
+                    </div>
+                  </div>
+                  <img
+                    class="absolute right-0 top-0 h-full"
+                    src="../../assets/images/studyCenterBackgroundDivImg.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Important Questions' Correctness Req Section End -->
+
+            <!-- Today's Records & Exam Histories Section Start -->
+
+            <div class="flex flex-col gap-y-10 lg:gap-y-0 lg:flex-row w-full justify-between px-2">
+              <div class="flex flex-col gap-y-5 w-full lg:w-[49%]">
+                <h1
+                  class="font-bold leading-5 text-base px-3 text-lightGrayColor"
+                >
+                  Today's Records
+                </h1>
+                <div class="dropShadow bg-white rounded-[10px] p-8">
+                  <div class="flex flex-col gap-y-5 items-center">
+                    <img
+                      src="../../assets/images/studyCenterTodayRecoredImg.svg"
+                    />
+                    <h1 class="leading-4 text-sm text-lightGrayColor text-center">
+                      No record today : Practice makes perfect!
                     </h1>
                   </div>
                 </div>
-                <div class="flex justify-end px-6 mb-5">
-                  <button
-                    class="flex gap-x-4 items-center text-xs leading-3 text-lightGrayColor"
-                  >
-                    View All
-                    <img src="../../assets/images/smallArrow.svg" />
-                  </button>
-                </div>
               </div>
-            </div>
-            <div class="w-[49%] flex flex-col gap-y-5">
-              <h1 class="font-bold leading-5 text-base px-3 text-mainTextColor">
-                Target
-              </h1>
-              <div class="dropShadow bg-white rounded-[10px]">
-                <div
-                  class="bg-lightRedColor px-6 py-4 rounded-t-[10px] flex justify-between items-center"
+              <div class="w-full lg:w-[49%] flex flex-col gap-y-5">
+                <h1
+                  class="font-bold leading-5 text-base px-3 text-lightGrayColor"
                 >
-                  <p class="text-white text-xs">Exam Date:</p>
-                  <button
-                    class="text-xs leading-3 py-[5px] px-[10px] rounded-[5px] border text-white"
-                  >
-                    - Day Left
-                  </button>
-                </div>
-                <div class="bg-white px-6 pt-8">
-                  <div class="flex items-center justify-between mb-7">
-                    <div class="flex flex-col items-center gap-y-4">
-                      <h1 class="text-[25px] leading-7 text-lightRedColor">
-                        -
-                      </h1>
-                      <p class="text-sm leading-4 text-lightGrayColor">
-                        Overall
-                      </p>
-                    </div>
-                    <div class="flex flex-col items-center gap-y-4">
-                      <h1 class="text-[25px] leading-7 text-mainTextColor">
-                        -
-                      </h1>
-                      <p class="text-sm leading-4 text-lightGrayColor">
-                        Listening
-                      </p>
-                    </div>
-                    <div class="flex flex-col items-center gap-y-4">
-                      <h1 class="text-[25px] leading-7 text-mainTextColor">
-                        -
-                      </h1>
-                      <p class="text-sm leading-4 text-lightGrayColor">
-                        Reading
-                      </p>
-                    </div>
-                    <div class="flex flex-col items-center gap-y-4">
-                      <h1 class="text-[25px] leading-7 text-mainTextColor">
-                        -
-                      </h1>
-                      <p class="text-sm leading-4 text-lightGrayColor">
-                        Speaking
-                      </p>
-                    </div>
-                    <div class="flex flex-col items-center gap-y-4">
-                      <h1 class="text-[25px] leading-7 text-mainTextColor">
-                        -
-                      </h1>
-                      <p class="text-sm leading-4 text-lightGrayColor">
-                        Writing
-                      </p>
-                    </div>
+                  Exam Histories
+                </h1>
+                <div class="dropShadow bg-white rounded-[10px]">
+                  <div class="px-5 py-[63px] md:p-[63px] flex items-center gap-x-10 md:gap-x-32 lg:gap-x-12">
+                    <button
+                      class="h-[72px] min-w-[72px] rounded-full bg-mainColor flex items-center justify-center"
+                    >
+                      <img src="../../assets/images/组 376.svg" />
+                    </button>
+                    <h1
+                      class="w-auto md:min-w-[149px] text-sm md:text-base leading-5 text-lightGrayColor"
+                    >
+                      Add score reports. Get AI score report analysis.
+                    </h1>
                   </div>
                 </div>
-                <div class="flex justify-end px-6 mb-5">
-                  <button
-                    class="flex gap-x-4 items-center text-xs leading-3 text-lightGrayColor"
-                  >
-                    Set Target
-                    <img src="../../assets/images/smallArrow.svg" />
-                  </button>
-                </div>
               </div>
             </div>
-          </div>
 
-          <!-- AI Study Tips & Target Section End -->
+            <!-- Today's Records & Exam Histories Section End -->
 
-          <!-- Important Questions' Correctness Req Section Start -->
+            <!-- History Records Section Start -->
 
-          <div class="flex w-full justify-between px-2">
-            <div class="flex flex-col gap-y-5">
-              <h1
-                class="font-bold leading-5 text-base px-3 text-lightGrayColor"
-              >
-                Important Questions' Correctness Req
-              </h1>
-              <p class="text-sm leading-4 px-3 w-full mb-2 text-lightGrayColor">
-                According to your target scores, you're suggested to focus on
-                the following question types and achieve their correctness
-                requirements. Click on the progress bars to see more details
-              </p>
-              <div class="dropShadow rounded-[10px] relative bg-white w-full">
-                <div class="py-[57px] pl-12 flex items-center gap-x-[74px]">
-                  <button
-                    class="py-[31px] px-[30px] bg-mainColor text-white rounded-[15px] text-base leading-5"
-                  >
-                    Fill
-                  </button>
-                  <div
-                    class="flex flex-col gap-y-2 justify-center text-lightGrayColor"
-                  >
-                    <p class="text-base leading-5">
-                      Fill in target scores to see:
-                    </p>
-                    <p class="text-base leading-6 w-[416px]">
-                      question types you should focus on & your correctness
-                      requirements & your current correctness levels
-                    </p>
+            <div class="w-full px-2 mb-5">
+              <div class="flex flex-col gap-y-5 w-full lg:w-[49%]">
+                <h1
+                  class="font-bold leading-5 text-base px-3 text-lightGrayColor"
+                >
+                  History Records
+                </h1>
+                <div class="dropShadow bg-white rounded-[10px] p-8">
+                  <div class="flex flex-col gap-y-5 items-center">
+                    <img
+                      src="../../assets/images/studyCenterTodayRecoredImg.svg"
+                    />
+                    <h1 class="leading-4 text-sm text-lightGrayColor text-center">
+                      No more data（only shows recent 6 months data）
+                    </h1>
                   </div>
                 </div>
-                <img
-                  class="absolute right-0 top-0"
-                  src="../../assets/images/studyCenterBackgroundDivImg.svg"
-                />
               </div>
             </div>
+
+            <!-- Histories Records Section End -->
           </div>
 
-          <!-- Important Questions' Correctness Req Section End -->
-
-          <!-- Today's Records & Exam Histories Section Start -->
-
-          <div class="flex w-full justify-between px-2">
-            <div class="flex flex-col gap-y-5 w-[49%]">
-              <h1
-                class="font-bold leading-5 text-base px-3 text-lightGrayColor"
-              >
-                Today's Records
-              </h1>
-              <div class="dropShadow bg-white rounded-[10px] p-8">
-                <div class="flex flex-col gap-y-5 items-center">
-                  <img
-                    src="../../assets/images/studyCenterTodayRecoredImg.svg"
-                  />
-                  <h1 class="leading-4 text-sm text-lightGrayColor">
-                    No record today : Practice makes perfect!
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <div class="w-[49%] flex flex-col gap-y-5">
-              <h1
-                class="font-bold leading-5 text-base px-3 text-lightGrayColor"
-              >
-                Exam Histories
-              </h1>
-              <div class="dropShadow bg-white rounded-[10px]">
-                <div class="p-[63px] flex items-center gap-x-28">
-                  <button
-                    class="h-[72px] w-[72px] rounded-full bg-mainColor flex items-center justify-center"
-                  >
-                    <img src="../../assets/images/组 376.svg" />
-                  </button>
-                  <h1 class="w-[149px] text-base leading-5 text-lightGrayColor">
-                    Add score reports. Get AI score report analysis.
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Today's Records & Exam Histories Section End -->
-
-          <!-- History Records Section Start -->
-
-          <div class="w-full px-2 mb-5">
-            <div class="flex flex-col gap-y-5 w-[49%]">
-              <h1
-                class="font-bold leading-5 text-base px-3 text-lightGrayColor"
-              >
-                History Records
-              </h1>
-              <div class="dropShadow bg-white rounded-[10px] p-8">
-                <div class="flex flex-col gap-y-5 items-center">
-                  <img
-                    src="../../assets/images/studyCenterTodayRecoredImg.svg"
-                  />
-                  <h1 class="leading-4 text-sm text-lightGrayColor">
-                    No more data（only shows recent 6 months data）
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Histories Records Section End -->
+          <!-- Main Middle Content Section End -->
         </div>
-
-        <!-- Main Middle Content Section End -->
       </div>
-      <!-- Footer Start -->
+    </div>
+    <!-- Footer Start -->
 
-      <div class="bg-gray-800 pt-20 py-16 flex flex-col gap-y-10 mt-10">
-        <div class="flex justify-between px-[170px]">
-          <div class="flex flex-col gap-y-10">
+    <div class="bg-gray-800 w-full">
+      <div
+        class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col gap-y-10"
+      >
+        <div class="flex flex-wrap justify-between gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -371,7 +413,7 @@
               <li class="hover:text-mainColor">Contact Pearson PTE</li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">PTE Course</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -382,7 +424,7 @@
               <li class="hover:text-mainColor">PTE Listening Course</li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -390,7 +432,7 @@
               <li class="hover:text-mainColor">Study Materials Download</li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">APP Download</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -399,7 +441,7 @@
               <li class="hover:text-mainColor">APEUni Android APP</li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
             <h1 class="text-xl leading-6 text-white">Contact Us</h1>
             <ul
               class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
@@ -409,9 +451,11 @@
             </ul>
           </div>
         </div>
-        <hr class="w-full border border-lightGrayColor" />
+      </div>
+      <hr class="w-full border border-lightGrayColor" />
+      <div class="text-lightGrayColor text-base leading-4 w-full">
         <div
-          class="px-[170px] flex justify-between text-lightGrayColor text-base leading-4"
+          class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col lg:flex-row justify-between gap-y-10"
         >
           <div class="flex flex-col gap-y-5">
             <p class="hover:text-mainColor">
@@ -440,17 +484,17 @@
           <div class="flex gap-x-16">
             <div class="flex flex-col gap-y-5 items-center">
               <img class="h-20 w-20" src="../../assets/images/qrcode.svg" />
-              <p class="hover:text-mainColor">APEUni iOS App</p>
+              <p class="hover:text-mainColor text-center">APEUni iOS App</p>
             </div>
             <div class="flex flex-col gap-y-5 items-center">
               <img class="h-20 w-20" src="../../assets/images/qrcode2.svg" />
-              <p class="hover:text-mainColor">APEUni Android App</p>
+              <p class="hover:text-mainColor text-center">APEUni Android App</p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Footer End -->
     </div>
+
+    <!-- Footer End -->
   </body>
 </html>

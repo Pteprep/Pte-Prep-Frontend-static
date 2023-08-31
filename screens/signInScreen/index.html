@@ -10,88 +10,132 @@
     <!-- NavBar Start -->
 
     <div
-      class="py-5 px-[170px] w-full border-b border-gray-300 fixed top-0 flex items-center justify-between bg-white z-10"
+      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
     >
-      <div class="flex items-center gap-x-9">
-        <a class="flex items-center" href="../../index.html">
-          <img src="../../assets/images/logo.svg"
-        /></a>
-        <ul class="flex gap-x-9 leading-5 font-normal">
-          <li>PTE Practice</li>
-          <li>PTE Tutorials</li>
-          <li>APP</li>
-        </ul>
-      </div>
-      <a class="flex items-center" href="../registerScreen/">
-        <button class="px-5">Sign In</button></a
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
       >
+        <div class="flex items-center gap-x-9">
+          <img src="../../assets/images/logo.svg" />
+          <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
+            <li>PTE Practice</li>
+            <li>PTE Tutorials</li>
+            <li>APP</li>
+          </ul>
+        </div>
+        <div class="flex gap-x-3">
+          <a class="items-center hidden lg:flex" href="./screens/signInScreen">
+            <button class="px-5 text-base">Login</button>
+          </a>
+          <a
+            class="items-center hidden lg:flex"
+            href="../registerScreen"
+          >
+            <button
+              class="px-6 py-2 rounded-[44px] text-mainColor border border-mainColor text-sm leading-4 min-w-[89px]"
+            >
+              Sign Up
+            </button>
+          </a>
+          <i aria-label="icon: bars" class="anticon anticon-bars">
+            <svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              class="text-mainTextColor text-[32px] flex lg:hidden"
+              data-icon="bars"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"
+              ></path>
+            </svg>
+          </i>
+        </div>
+      </div>
     </div>
 
     <!-- NavBar End-->
 
-    <div class="w-full flex flex-col items-center pt-[165px]">
-      <!-- SignIn Section Start -->
+    <div class="w-full pt-[165px]">
+      <div
+        class="w-full max-w-[1140px] box-border mx-auto px-5 flex flex-col items-center"
+      >
+        <!-- SignIn Section Start -->
 
-      <div class="flex items-center mb-16">
-        <h1 class="font-semibold text-[32px] leading-9 text-darkBlueColor">
-          Email
-        </h1>
-        <hr class="border border-borderColor -rotate-90 w-[82px]" />
-        <div class="flex gap-3">
-          <img
-            src="../../assets/images/wx_logo-1877e065d79143066e1a02a7a5efb88e068e6a06c0f3e62652c3ed5d2e7b67c6 1.svg"
-          />
-          <h1 class="font-semibold text-[32px] leading-9 text-mainTextColor">
-            WeChat
+        <div class="flex items-center mb-16">
+          <h1
+            class="font-semibold text-[26px] md:text-[32px] leading-9 text-darkBlueColor"
+          >
+            Email
           </h1>
+          <hr
+            class="border border-borderColor -rotate-90 w-[78px] md:w-[82px]"
+          />
+          <div class="flex gap-2 md:gap-3">
+            <img
+              src="../../assets/images/wx_logo-1877e065d79143066e1a02a7a5efb88e068e6a06c0f3e62652c3ed5d2e7b67c6 1.svg"
+            />
+            <h1
+              class="font-semibold text-[26px] md:text-[32px] leading-9 text-mainTextColor"
+            >
+              WeChat
+            </h1>
+          </div>
         </div>
+        <div class="flex flex-col gap-y-10 items-center mb-[48px]">
+          <input
+            class="py-3 outline-none border-b border-borderColor text-lg leading-5 text-center px-[2.8rem] md:px-[6rem]"
+            placeholder="Email"
+          />
+          <input
+            class="py-3 outline-none border-b border-borderColor text-lg leading-5 text-center px-[2.8rem] md:px-[6rem]"
+            placeholder="Password"
+          />
+        </div>
+        <div class="flex items-center justify-center gap-x-5 mb-12">
+          <input class="h-6 w-6 cursor-pointer" type="checkbox" />
+          <p class="text-base leading-5">auto login next time</p>
+        </div>
+        <div class="flex flex-col gap-y-7 items-center mb-10">
+          <button
+            class="px-[65px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-blueButtonColor"
+          >
+            Sign In
+          </button>
+          <button
+            class="px-[59px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-green-600"
+          >
+            Register
+          </button>
+        </div>
+        <div class="flex flex-col gap-y-5 items-center mb-6">
+          <p class="text-base leading-5 text-blueButtonColor">
+            Forgot Password?
+          </p>
+          <p class="text-base leading-5 text-blueButtonColor">
+            Other login methods (Apple ID)
+          </p>
+        </div>
+        <div class="flex items-center justify-center gap-x-5 mb-24">
+          <p class="text-base leading-5 text-darkGrayColor text-center">
+            <input class="h-6 w-6 cursor-pointer relative top-[6px] left-[-5px]" type="checkbox" />
+            I've read and agreed to the
+            <span class="text-blueButtonColor">Terms of Use</span> and
+            <span class="text-blueButtonColor">Privacy Policy.</span>
+          </p>
+        </div>
+        <!-- SignIn Section End -->
       </div>
-      <div class="flex flex-col gap-y-10 items-center mb-[48px]">
-        <input
-          class="py-3 w-[401px] outline-none border-b border-borderColor text-lg leading-5 pl-[170px]"
-          placeholder="Email"
-        />
-        <input
-          class="py-3 w-[401px] outline-none border-b border-borderColor text-lg leading-5 pl-[152px]"
-          placeholder="Password"
-        />
-      </div>
-      <div class="flex items-center justify-center gap-x-5 mb-12">
-        <input class="h-6 w-6 cursor-pointer" type="checkbox" />
-        <p class="text-base leading-5">auto login next time</p>
-      </div>
-      <div class="flex flex-col gap-y-7 items-center mb-10">
-        <button
-          class="px-[65px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-blueButtonColor"
-        >
-          Sign In
-        </button>
-        <button
-          class="px-[59px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-green-600"
-        >
-          Register
-        </button>
-      </div>
-      <div class="flex flex-col gap-y-5 items-center mb-6">
-        <p class="text-base leading-5 text-blueButtonColor">Forgot Password?</p>
-        <p class="text-base leading-5 text-blueButtonColor">
-          Other login methods (Apple ID)
-        </p>
-      </div>
-      <div class="flex items-center justify-center gap-x-5 mb-24">
-        <input class="h-6 w-6 cursor-pointer" type="checkbox" />
-        <p class="text-base leading-5 text-darkGrayColor">
-          I've read and agreed to the
-          <span class="text-blueButtonColor">Terms of Use</span> and
-          <span class="text-blueButtonColor">Privacy Policy.</span>
-        </p>
-      </div>
-      <!-- SignIn Section End -->
 
       <!-- Footer Start -->
 
       <div class="w-full py-9 flex justify-center bg-footerBgColor">
-        <div class="flex gap-x-16 text-lg leading-5 text-footerTextColor">
+        <div
+          class="flex flex-wrap gap-y-10 justify-start items-center gap-x-16 text-lg leading-5 text-footerTextColor px-5 lg:px-0"
+        >
           <p>WeChat / apeuni225</p>
           <p>APEUni Telegram</p>
           <p>iOS APP</p>
@@ -99,8 +143,8 @@
           <p>APEUni English Site</p>
         </div>
       </div>
-      <div class="bg-white py-2">
-        <div class="flex gap-x-16 text-sm leading-4">
+      <div class="bg-white py-2 flex justify-center px-5 lg:px-0">
+        <div class="flex gap-x-16 text-sm leading-4 flex-wrap gap-y-5">
           <p>© Shenzhen APEUni Educational Technology Co., Ltd.</p>
           <p>ICU-18035327</p>
           <p>PTE APEUni English Site</p>

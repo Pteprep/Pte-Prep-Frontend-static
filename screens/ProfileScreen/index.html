@@ -7,32 +7,99 @@
     <link rel="stylesheet" href="../../dist/output.css" />
   </head>
   <body>
-    <div class="w-full justify-end flex pt-12">
+    <!-- NavBar Start -->
+
     <div
-      class="pt-6 flex flex-col gap-y-5 dropShadow bg-white rounded-[5px] w-[335px] text-mainTextColor leading-5 text-base relative after:absolute after:w-[20px] after:h-[20px] after:border-t-2 after:border-l-2 after:border-white after:top-[-10px] after:left-[50%] after:ml-[-10px] after:bg-white after:rotate-[45deg]">
-      <div class="flex gap-x-4 px-5">
-        <img src="../../assets/images/Ellipse 7.svg" />
-        <div class="flex flex-col justify-center gap-1">
-          <p>Daniyal Saim</p>
-          <p>daniyalsamim@gmail.com</p=>
+      class="w-full border-b border-gray-300 fixed top-0 gap-x-2 md:gap-x-0 bg-white z-10 transition-all duration-300"
+    >
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <a class="flex items-center" href="../../index.html">
+            <img src="../../assets/images/logo.svg" />
+          </a>
+          <ul class="hidden lg:flex gap-x-9 leading-5 font-normal">
+            <a class="flex items-center" href="../homeScreen">
+              <li>Home</li>
+            </a>
+            <a class="flex items-center" href="../dropdownScreen">
+              <li class="flex items-center gap-x-2">
+                PTE Practice
+                <img src="../../assets/images/Play.svg" />
+              </li>
+            </a>
+            <li>Course</li>
+            <li>PTE Tutorials</li>
+            <li>APP</li>
+          </ul>
+
+        </div>
+        <div class="flex gap-x-6">
+          <div
+            class="hidden lg:flex items-center gap-x-[6px] hover:text-mainColor"
+          >
+            <img src="../../assets/images/VIP.svg" />
+            <a class="flex items-center" href="../vipCenterScreen">
+              <p class="text-base leading-5">Upgrade VIP</p></a
+            >
+          </div>
+          <div class="relative hidden lg:block">
+            <a class="items-center hidden lg:flex" href="../ProfileScreen">
+              <img
+                class="h-[32px] w-[32px] hidden lg:flex"
+                src="../../assets/images/Ellipse 7.svg"
+              />
+            </a>
+            <div class="justify-end pt-12 absolute top-5 right-0">
+              <div
+                class="pt-6 flex flex-col gap-y-5 dropShadow bg-white rounded-[5px] w-[270px] md:w-[325px] text-mainTextColor leading-5 text-base relative after:absolute after:w-[20px] after:h-[20px] after:border-t-2 after:border-l-2 after:border-white after:top-[-10px] after:right-[4%] after:ml-[-10px] after:bg-white after:rotate-[45deg]">
+                <div class="flex gap-x-4 px-5">
+                  <img src="../../assets/images/Ellipse 7.svg" />
+                  <div class="flex flex-col justify-center gap-1 md:text-base text-sm">
+                    <p>Daniyal Saim</p>
+                    <p>daniyalsamim@gmail.com</p=>
+                  </div>
+                </div>
+                <hr class="border border-hrColor w-full" />
+                <div class="flex items-center gap-x-2 px-5">
+                  <img src="../../assets//images/VIPicon.svg" />
+                  <p>Upgrade to VIP</p>
+                </div>
+                <hr class="border border-hrColor w-full" />
+                <div class="flex items-center gap-x-2 px-5">
+                  <img src="../../assets//images/Account.svg" />
+                  <p>Profile Center</p>
+                </div>
+                <hr class="border border-hrColor w-full" />
+                <div class="flex items-center gap-x-2 px-5 mb-5">
+                  <img src="../../assets//images/logout.svg" />
+                  <p>Log Out</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <i aria-label="icon: bars" class="anticon anticon-bars">
+            <svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              class="text-mainTextColor text-[32px] flex lg:hidden"
+              data-icon="bars"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"
+              ></path>
+            </svg>
+          </i>
         </div>
       </div>
-      <hr class="border border-hrColor w-full" />
-      <div class="flex items-center gap-x-2 px-5">
-        <img src="../../assets//images/VIPicon.svg" />
-        <p>Upgrade to VIP</p>
-      </div>
-      <hr class="border border-hrColor w-full" />
-      <div class="flex items-center gap-x-2 px-5">
-        <img src="../../assets//images/Account.svg" />
-        <p>Profile Center</p>
-      </div>
-      <hr class="border border-hrColor w-full" />
-      <div class="flex items-center gap-x-2 px-5 mb-5">
-        <img src="../../assets//images/logout.svg" />
-        <p>Log Out</p>
-      </div>
     </div>
-  </div>
+
+    <!-- NavBar End-->
+
   </body>
 </html>
