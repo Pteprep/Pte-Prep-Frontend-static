@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+  </head>
+  <body>
+    <!-- NavBar Start -->
+
+    <div
+      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
+    >
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <img src="../../assets/images/logo.svg" />
+          <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
+            <a class="items-center hidden lg:flex" href="../dropdownScreen">
+              <li>PTE Practice</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../pteTurtorialScreen">
+              <li>PTE Tutorials</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../AppScreen">
+              <li>APP</li></a
+            >
+          </ul>
+        </div>
+        <a href="../signInScreen">
+          <button class="px-5 text-base">Sign In</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- NavBar End-->
+
+    <div class="w-full pt-[150px] pb-28 bg-gray-50">
+      <div class="w-full max-w-[1140px] box-border mx-auto px-5 flex gap-x-7">
+        <div
+          class="w-full md:w-[65%] bg-white rounded-[10px] dropShadow flex flex-col py-6 px-11"
+        >
+          <div class="w-full items-center flex flex-col mb-12">
+            <h1 class="text-lightGrayColor font-bold leading-6 text-xl mb-10">
+              Other login methods (Apple ID)
+            </h1>
+            <p class="mb-5 text-mainTextColor">
+              If you created your apeuni account with WeChat or Apple ID, you
+              can bind your email address to your account in APEUni iOS /
+              Android APP, and use the email address to log in.
+            </p>
+            <p class="text-mainTextColor">
+              (The email binding feature is only available in the latest APEUni
+              APP version -- 4.8.0 or later)
+            </p>
+          </div>
+          <div class="flex flex-col gap-y-5 text-mainTextColor mb-20">
+            <h1
+              class="border-b border-mainColor w-fit pb-2 text-xl leading-6 font-bold"
+            >
+              Email-binding process
+            </h1>
+            <p>
+              1、Log in to PTE APEUni iOS / Android App with WeChat or Apple ID
+              (only available in iOS), and enter settings from the "Me" page
+            </p>
+          </div>
+          <div class="w-full flex justify-center mb-12">
+            <img src="../../assets/images/bound_appleid_me_en 1.svg" />
+          </div>
+          <p class="text-mainTextColor mb-12">
+            2、Click the button "Click to add" to enter the page of
+            email-binding
+          </p>
+          <div class="w-full flex justify-center mb-12">
+            <img src="../../assets/images/bound_appleid_me_en 2.svg" />
+          </div>
+          <p class="text-mainTextColor mb-12">
+            3、Type the your email address in the dialog box; set login password
+            (for email login); and click "Send code to email"; then type the
+            verification code you receive in email.
+          </p>
+          <div class="w-full flex justify-center mb-12">
+            <img src="../../assets/images/bound_appleid_me_en 3.svg" />
+          </div>
+          <p class="text-mainTextColor mb-12">
+            4、After successfully binding your email, you can log in to Apeuni's
+            official website / APPs (both iOS and Android) via the newly bound
+            email address.
+          </p>
+          <div class="w-full flex justify-center mb-12">
+            <img src="../../assets/images/bound_appleid_me_en 4.svg" />
+          </div>
+        </div>
+        <div
+          class="w-[35%] bg-white rounded-[10px] dropShadow h-fit hidden md:block"
+        >
+          <div class="pt-7 flex justify-between items-center px-4 mb-5">
+            <h1 class="text-mainTextColor text-2xl leading-6 font-bold">
+              PTE Paid Courses
+            </h1>
+            <p class="text-lightGrayColor leading-5">More</p>
+          </div>
+          <hr class="w-full border border-gray-50 mb-5" />
+          <div class="flex px-4 gap-x-4 mb-4">
+            <img
+              class="w-[112px] h-[64px] rounded-[5px]"
+              src="../../assets/images/unlimited_live_class.png"
+            />
+            <div
+              class="flex flex-col justify-start text-lightGrayColor gap-y-5"
+            >
+              <p>APEUni live class</p>
+              <p class="text-sm">2023-08-29</p>
+            </div>
+          </div>
+          <div class="flex px-4 gap-x-4 mb-4">
+            <img
+              class="w-[112px] h-[64px] rounded-[5px]"
+              src="../../assets/images/fib_reading_course.png"
+            />
+            <div
+              class="flex flex-col justify-start text-lightGrayColor gap-y-5"
+            >
+              <p>Reading course</p>
+              <p class="text-sm">2023-08-29</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+
+    <div class="bg-gray-800 w-full">
+      <div
+        class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col gap-y-10"
+      >
+        <div class="flex flex-wrap justify-between gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Pearson Official Website</li>
+              <li class="hover:text-mainColor">Pearson PTE Mock Tests</li>
+              <li class="hover:text-mainColor">Book PTE Tests</li>
+              <li class="hover:text-mainColor">Contact Pearson PTE</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Course</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">PTE Speaking Course</li>
+              <li class="hover:text-mainColor">PTE Writing Course</li>
+              <li class="hover:text-mainColor">PTE Reading Course</li>
+              <li class="hover:text-mainColor">PTE Listening Course</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Study Materials Download</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">APP Download</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">APEUni iOS APP</li>
+              <li class="hover:text-mainColor">APEUni Android APP</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Contact Us</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Email: support@apeuni.com</li>
+              <li class="hover:text-mainColor">Telegram: t.me/pteapeuni</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="w-full border border-lightGrayColor" />
+      <div class="text-lightGrayColor text-base leading-4 w-full">
+        <div
+          class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col lg:flex-row justify-between gap-y-10"
+        >
+          <div class="flex flex-col gap-y-5">
+            <p class="hover:text-mainColor">
+              Shenzhen APEUni Education Technology Co., Ltd.
+            </p>
+            <p class="hover:text-mainColor">Copyright©2023 APEUni Edu</p>
+            <p class="hover:text-mainColor">Terms of Use | Privacy Policy</p>
+            <div class="flex gap-x-5 pt-5">
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/facebook.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/twitter.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/telegram.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-16">
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode.svg" />
+              <p class="hover:text-mainColor text-center">APEUni iOS App</p>
+            </div>
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode2.svg" />
+              <p class="hover:text-mainColor text-center">APEUni Android App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer End -->
+  </body>
+</html>

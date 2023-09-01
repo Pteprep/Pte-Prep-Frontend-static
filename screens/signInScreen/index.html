@@ -18,19 +18,22 @@
         <div class="flex items-center gap-x-9">
           <img src="../../assets/images/logo.svg" />
           <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
-            <li>PTE Practice</li>
-            <li>PTE Tutorials</li>
-            <li>APP</li>
+            <a class="flex items-center" href="../dropdownScreen">
+              <li>PTE Practice</li>
+            </a>
+            <a class="items-center hidden lg:flex" href="../pteTurtorialScreen">
+              <li>PTE Tutorials</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../AppScreen">
+              <li>APP</li></a
+            >
           </ul>
         </div>
         <div class="flex gap-x-3">
           <a class="items-center hidden lg:flex" href="./screens/signInScreen">
             <button class="px-5 text-base">Login</button>
           </a>
-          <a
-            class="items-center hidden lg:flex"
-            href="../registerScreen"
-          >
+          <a class="items-center hidden lg:flex" href="../registerScreen">
             <button
               class="px-6 py-2 rounded-[44px] text-mainColor border border-mainColor text-sm leading-4 min-w-[89px]"
             >
@@ -100,28 +103,39 @@
           <p class="text-base leading-5">auto login next time</p>
         </div>
         <div class="flex flex-col gap-y-7 items-center mb-10">
-          <button
-            class="px-[65px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-blueButtonColor"
+          <a href="../homeScreen">
+            <button
+              class="px-[65px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-blueButtonColor"
+            >
+              Sign In
+            </button></a
           >
-            Sign In
-          </button>
-          <button
-            class="px-[59px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-green-600"
+          <a href="../registerScreen">
+            <button
+              class="px-[59px] py-[13px] rounded-[5px] font-bold leading-4 text-sm text-white bg-green-600"
+            >
+              Register
+            </button></a
           >
-            Register
-          </button>
         </div>
         <div class="flex flex-col gap-y-5 items-center mb-6">
-          <p class="text-base leading-5 text-blueButtonColor">
-            Forgot Password?
-          </p>
-          <p class="text-base leading-5 text-blueButtonColor">
-            Other login methods (Apple ID)
-          </p>
+          <a href="../forgetPasswordScreen/">
+            <p class="text-base leading-5 text-blueButtonColor">
+              Forgot Password?
+            </p></a
+          >
+          <a href="../appleIdScreen">
+            <p class="text-base leading-5 text-blueButtonColor">
+              Other login methods (Apple ID)
+            </p></a
+          >
         </div>
         <div class="flex items-center justify-center gap-x-5 mb-24">
           <p class="text-base leading-5 text-darkGrayColor text-center">
-            <input class="h-6 w-6 cursor-pointer relative top-[6px] left-[-5px]" type="checkbox" />
+            <input
+              class="h-6 w-6 cursor-pointer relative top-[6px] left-[-5px]"
+              type="checkbox"
+            />
             I've read and agreed to the
             <span class="text-blueButtonColor">Terms of Use</span> and
             <span class="text-blueButtonColor">Privacy Policy.</span>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+  </head>
+  <body>
+    <!-- NavBar Start -->
+
+    <div
+      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
+    >
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <img src="../../assets/images/logo.svg" />
+          <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
+            <a class="items-center hidden lg:flex" href="../dropdownScreen">
+              <li>PTE Practice</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../pteTurtorialScreen">
+              <li>PTE Tutorials</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../AppScreen">
+              <li>APP</li></a
+            >
+          </ul>
+        </div>
+        <a href="../signInScreen">
+          <button class="px-5 text-base">Sign In</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- NavBar End-->
+
+    <div class="w-full pt-[110px] pb-28 bg-gray-50">
+      <div class="w-full max-w-[1140px] box-border mx-auto px-5 flex gap-x-7">
+        <!-- Side bar Start -->
+
+        <div
+          class="w-[25%] bg-white rounded-[5px] dropShadow h-fit hidden md:block"
+        >
+          <hr class="border border-gray-100 mb-2" />
+          <ul class="flex flex-col gap-y-3 cursor-pointer mb-2">
+            <a class="flex items-center" href="../studyMaterialDownloadScreen">
+              <li
+                class="py-2 px-5 hover:text-mainColor relative text-sm transition-all duration-300"
+              >
+                Study Materials Download
+              </li>
+            </a>
+            <div>
+              <li
+                onClick="showAboutDropdown()"
+                class="py-2 px-5 hover:text-mainColor text-mainColor flex items-center justify-between w-full text-sm relative transition-all duration-300"
+              >
+                About PTE
+                <img src="../../assets/images/Down Arrow.svg" />
+                <!-- <hr class="absolute right-0 h-full border border-mainColor" /> -->
+              </li>
+              <div
+                style="display: none; height: fit-content"
+                class="flex flex-col gap-y-2 hideAboutDropDown"
+              >
+                <ul class="flex flex-col gap-y-2 text-sm">
+                  <li
+                    class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                  >
+                    About PTE
+                  </li>
+                  <a href="../pteTurtorialScreen/index.html">
+                    <li
+                      class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300"
+                    >
+                      PTE Integrated Scoring System
+                      <hr
+                        class="absolute right-0 h-full border border-mainColor top-0"
+                      /></li
+                  ></a>
+                  <a href="../pteTurtorialScreen/contactPersonPteScreen">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300 mb-1"
+                    >
+                      Contact Pearson PTE
+                    </li></a
+                  >
+                </ul>
+                <ul class="flex flex-col gap-y-2 text-sm">
+                  <li
+                    class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                  >
+                    PTE Courses
+                  </li>
+                  <a href="../pteTurtorialScreen/pteTeachingClasses">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      PTE Teaching Classes
+                    </li></a
+                  >
+                </ul>
+              </div>
+            </div>
+            <div>
+              <li
+                onClick="showSpeakingGuideDropdown()"
+                class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm"
+              >
+                Speaking Guide
+                <img src="../../assets/images/Down Arrow.svg" />
+              </li>
+              <div
+                style="display: none; height: fit-content"
+                class="flex flex-col gap-y-2 hideSpeakingGuideDropdown"
+              >
+                <ul class="flex flex-col gap-y-2 text-sm">
+                  <li
+                    class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                  >
+                    Speaking Skills
+                  </li>
+                  <a href="../pteTurtorialScreen/tuneYourMicrophoneScreen">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      How to tune your microphone
+                    </li></a
+                  >
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Read Aloud
+                  </li>
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Repeat Sentence
+                  </li>
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Describe Image
+                  </li>
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Retell Lecture
+                  </li>
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Answer Short Question
+                  </li>
+                </ul>
+                <ul class="flex flex-col gap-y-2 text-sm">
+                  <li
+                    class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                  >
+                    PTE Speaking Courses
+                  </li>
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    PTE Speaking Classes
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <li
+                onClick="showWritingGuideDropdown()"
+                class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm"
+              >
+                Writing Guide
+                <img src="../../assets/images/Down Arrow.svg" />
+              </li>
+              <div
+                style="display: none; height: fit-content"
+                class="flex flex-col gap-y-2 hideWritingGuideDropdown"
+              >
+                <ul class="flex flex-col gap-y-2 text-sm">
+                  <li
+                    class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                  >
+                    Writing Skills
+                  </li>
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Summarize Written Text
+                  </li>
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Write Essay
+                  </li>
+                </ul>
+                <ul class="flex flex-col gap-y-2 text-sm">
+                  <li
+                    class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                  >
+                    PTE Writing Courses
+                  </li>
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    PTE Writing Classes
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <li
+              onClick="showReadingGuideDropdown()"
+              class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm"
+            >
+              Reading Guide
+              <img src="../../assets/images/Down Arrow.svg" />
+            </li>
+            <div
+              style="display: none; height: fit-content"
+              class="flex flex-col gap-y-2 hideReadingGuideDropdown"
+            >
+              <ul class="flex flex-col gap-y-2 text-sm">
+                <li
+                  class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                >
+                  Reading Skills
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Fill in Blank (R & W)
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Multiple Choice (Multiple)
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Re-order Paragraphs
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Fill in Blank (R)
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Multiple Choice (Single)
+                </li>
+              </ul>
+              <ul class="flex flex-col gap-y-2 text-sm">
+                <li
+                  class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                >
+                  PTE Reading Courses
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  PTE Reading Classes
+                </li>
+              </ul>
+            </div>
+            <li
+              onClick="showListeningGuideDropdown()"
+              class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm"
+            >
+              Listening Guide
+              <img src="../../assets/images/Down Arrow.svg" />
+            </li>
+            <div
+              style="display: none; height: fit-content"
+              class="flex flex-col gap-y-2 hideListeningGuideDropdown"
+            >
+              <ul class="flex flex-col gap-y-2 text-sm">
+                <li
+                  class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                >
+                  Listening Skills
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Summarize Spoken Text
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Multiple Choice (Multiple)
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Fill in Blank
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Highlight Correct Summary
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Multiple Choice (Single)
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Select Missing Word
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Highlight Incorrect Words
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  Write From Dictation
+                </li>
+              </ul>
+              <ul class="flex flex-col gap-y-2 text-sm">
+                <li
+                  class="text-lightGrayColor py-1 px-7 transition-all duration-300"
+                >
+                  PTE Listening Courses
+                </li>
+                <li
+                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                >
+                  PTE Listening Classes
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+
+        <!-- Side bar End -->
+
+        <div
+          class="w-full md:w-[75%] bg-white rounded-[10px] dropShadow flex flex-col py-6 px-5 md:px-[90px]"
+        >
+          <div class="w-full items-center flex flex-col mb-5">
+            <h1 class="text-lightGrayColor font-bold leading-6 text-xl mb-10">
+              PTE Score Report
+            </h1>
+            <div class="relative w-full flex justify-center mb-3">
+              <h1 class="text-[34px] md:text-[50px] text-green-100 font-bold">
+                PTE SCORE
+              </h1>
+              <p
+                class="absolute top-5 md:top-7 text-[16px] md:text-[24px] text-mainTextColor leading-6 font-bold w-fit"
+              >
+                PTE's Integrated Score System
+              </p>
+            </div>
+            <p class="mb-5 text-mainTextColor">
+              PTE Integrated Score System: some question types of PTE test more
+              than one section (listening, speaking, reading and writing). For
+              example, Read Aloud (RA), the first question type in the Speaking
+              Section, tests not only speaking but also reading. This scoring
+              system brings more objectiveness and comprehensiveness. Below is a
+              complete breakdown of PTE’s Integrated Score System by APEUni:
+            </p>
+            <p class="text-mainTextColor w-full">
+              Below is a complete breakdown of PTE’s Integrated Score System by
+              APEUni:
+            </p>
+          </div>
+          <div class="w-full flex justify-center mb-12">
+            <img
+              class="rounded-[5px]"
+              src="../../assets/images/APEUni PTE Score Breakdown Table.png"
+            />
+          </div>
+          <div class="relative w-full flex justify-center mb-3">
+            <h1 class="text-[34px] md:text-[50px] text-green-100 font-bold">
+              TRANSCRIPT
+            </h1>
+            <p
+              class="absolute top-5 md:top-7 text-[16px] md:text-[24px] text-mainTextColor leading-6 font-bold w-fit"
+            >
+              PTE Score Report
+            </p>
+          </div>
+          <div class="w-full flex justify-center mb-12">
+            <img
+              class="rounded-[5px]"
+              src="../../assets/images/Peter 成绩单.jpg"
+            />
+          </div>
+          <p class="text-mainTextColor mb-12">
+            This is an official PTE score report (thanks to Principal Peter’s
+            contribution) and it consists of three parts.
+          </p>
+          <h1
+            class="border-b border-mainColor w-fit pb-2 text-xl leading-6 mb-7 font-medium"
+          >
+            a. Personal Information
+          </h1>
+          <div class="w-full flex justify-center mb-12">
+            <img src="../../assets/images/个人信息以及照片.png" />
+          </div>
+          <h1
+            class="border-b border-mainColor w-fit pb-2 text-xl leading-6 mb-7 font-medium"
+          >
+            b. Overall Score
+          </h1>
+          <div class="w-full flex justify-center mb-8">
+            <img src="../../assets/images/total score.png" />
+          </div>
+          <p class="text-mainTextColor mb-12">
+            Peter’s overall score is 90 points. The overall score ranges from 10
+            ~ 90 points.
+          </p>
+          <h1
+            class="border-b border-mainColor w-fit pb-2 text-xl leading-6 mb-7 font-medium"
+          >
+            c. Scores
+          </h1>
+          <div class="w-full flex justify-center mb-8">
+            <img src="../../assets/images/Key Score.png" />
+          </div>
+          <p class="text-mainTextColor mb-12">
+            Communicative skills scores are the very four requirements directly
+            related to your language competence, determining your qualification
+            for visa or college entrances. For example, while applying for
+            Australia's Permanent Residency, a score of 65 in each of the four
+            communicative skills will add you 10 points in its Points-tested
+            system.
+          </p>
+          <div class="w-full flex justify-center mb-8">
+            <img src="../../assets/images/other part score.png" />
+          </div>
+          <p class="text-mainTextColor mb-4">
+            Enabling skills scores are not assessed in Visa or University
+            applications, but they will provide you a detailed analysis of how
+            you performed in your speaking and writing sections. The scores of
+            pronunciation and fluency are related to your overall speaking
+            score, and scores of spelling, grammar, vocabulary and written
+            discourse reflect your performance in writing tasks and listening
+            SST (Summarize Spoken Text).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+
+    <div class="bg-gray-800 w-full">
+      <div
+        class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col gap-y-10"
+      >
+        <div class="flex flex-wrap justify-between gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Pearson Official Website</li>
+              <li class="hover:text-mainColor">Pearson PTE Mock Tests</li>
+              <li class="hover:text-mainColor">Book PTE Tests</li>
+              <li class="hover:text-mainColor">Contact Pearson PTE</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Course</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">PTE Speaking Course</li>
+              <li class="hover:text-mainColor">PTE Writing Course</li>
+              <li class="hover:text-mainColor">PTE Reading Course</li>
+              <li class="hover:text-mainColor">PTE Listening Course</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Study Materials Download</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">APP Download</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">APEUni iOS APP</li>
+              <li class="hover:text-mainColor">APEUni Android APP</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Contact Us</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Email: support@apeuni.com</li>
+              <li class="hover:text-mainColor">Telegram: t.me/pteapeuni</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="w-full border border-lightGrayColor" />
+      <div class="text-lightGrayColor text-base leading-4 w-full">
+        <div
+          class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col lg:flex-row justify-between gap-y-10"
+        >
+          <div class="flex flex-col gap-y-5">
+            <p class="hover:text-mainColor">
+              Shenzhen APEUni Education Technology Co., Ltd.
+            </p>
+            <p class="hover:text-mainColor">Copyright©2023 APEUni Edu</p>
+            <p class="hover:text-mainColor">Terms of Use | Privacy Policy</p>
+            <div class="flex gap-x-5 pt-5">
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/facebook.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/twitter.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/telegram.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-16">
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode.svg" />
+              <p class="hover:text-mainColor text-center">APEUni iOS App</p>
+            </div>
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode2.svg" />
+              <p class="hover:text-mainColor text-center">APEUni Android App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer End -->
+
+    <script>
+      let showAboutDropdown = () => {
+        const dropdown = document.querySelector(".hideAboutDropDown");
+        if (
+          dropdown.style.display === "none" ||
+          dropdown.style.display === ""
+        ) {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      };
+      let showSpeakingGuideDropdown = () => {
+        const dropdown = document.querySelector(".hideSpeakingGuideDropdown");
+        if (
+          dropdown.style.display === "none" ||
+          dropdown.style.display === ""
+        ) {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      };
+      let showWritingGuideDropdown = () => {
+        const dropdown = document.querySelector(".hideWritingGuideDropdown");
+        if (
+          dropdown.style.display === "none" ||
+          dropdown.style.display === ""
+        ) {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      };
+      let showReadingGuideDropdown = () => {
+        const dropdown = document.querySelector(".hideReadingGuideDropdown");
+        if (
+          dropdown.style.display === "none" ||
+          dropdown.style.display === ""
+        ) {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      };
+      let showListeningGuideDropdown = () => {
+        const dropdown = document.querySelector(".hideListeningGuideDropdown");
+        if (
+          dropdown.style.display === "none" ||
+          dropdown.style.display === ""
+        ) {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

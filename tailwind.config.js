@@ -16,6 +16,7 @@ module.exports = {
         footerBgColor: "#292933",
         footerTextColor: "#808080",
         darkGrayColor: "#333333",
+        darkBlue: "#1F2D41",
       },
     },
   },
