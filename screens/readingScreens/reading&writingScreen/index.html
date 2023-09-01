@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../../dist/output.css" />
+  </head>
+  <body>
+    <!-- NavBar Start -->
+
+    <div
+      class="w-full border-b border-gray-300 fixed top-0 gap-x-2 md:gap-x-0 bg-white z-10 transition-all duration-300"
+    >
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <a class="flex items-center" href=".../../../../../index.html">
+            <img src=".../../../../../assets/images/logo.svg" />
+          </a>
+          <ul class="hidden lg:flex gap-x-9 leading-5 font-normal">
+            <a class="flex items-center" href="../../homeScreen">
+              <li>Home</li>
+            </a>
+            <a class="flex items-center" href="../../dropdownScreen">
+              <li class="flex items-center gap-x-2">
+                PTE Practice
+                <img src=".../../../../../assets/images/Play.svg" />
+              </li>
+            </a>
+            <a class="flex items-center" href="../../courseScreen">
+              <li>Course</li></a
+            >
+            <a
+              class="items-center hidden lg:flex"
+              href="../../pteTurtorialScreen"
+            >
+              <li>PTE Tutorials</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../../AppScreen">
+              <li>APP</li></a
+            >
+          </ul>
+        </div>
+        <div class="flex gap-x-6">
+          <div
+            class="hidden lg:flex items-center gap-x-[6px] hover:text-mainColor"
+          >
+            <img src=".../../../../../assets/images/VIP.svg" />
+            <a class="flex items-center" href="../../vipCenterScreen">
+              <p class="text-base leading-5">Upgrade VIP</p></a
+            >
+          </div>
+          <a class="items-center hidden lg:flex" href="../../ProfileScreen">
+            <img
+              class="h-[32px] w-[32px] hidden lg:flex"
+              src=".../../../../../assets/images/Ellipse 7.svg"
+            />
+          </a>
+          <i aria-label="icon: bars" class="anticon anticon-bars">
+            <svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              class="text-mainTextColor text-[32px] flex lg:hidden"
+              data-icon="bars"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"
+              ></path>
+            </svg>
+          </i>
+        </div>
+      </div>
+    </div>
+
+    <!-- NavBar End-->
+
+    <!-- Main Section Start -->
+
+    <div class="bg-gray-50 pt-[100px] flex flex-col w-full relative">
+      <div
+        class="max-w-[1140px] box-border mx-auto w-full flex items-center flex-col px-5 mb-20"
+      >
+        <div class="w-full flex gap-x-4 mb-6">
+          <img
+            class="h-20 w-20"
+            src=".../../../../../assets/images/readingScreenFibImg.png"
+          />
+          <div class="flex flex-col gap-y-2 text-mainTextColor">
+            <div class="flex items-center gap-x-3 flex-wrap gap-y-1 md:gap-y-0">
+              <h1 class="font-bold text-[22px] leading-5">
+                Reading & Writing：Fill in the blanks
+              </h1>
+              <button
+                class="py-[7px] px-[10px] rounded-[5px] bg-mainColor text-white flex gap-x-1 items-center text-xs transition-all duration-300 hover:opacity-[0.7]"
+              >
+                <img src=".../../../../../assets/images/Graduation Hat.svg" />
+                Study Guide
+              </button>
+            </div>
+            <p class="text-[15px] leading-5">
+              There are some words missing in the following text. Please select
+              the correct word in the drop-down box.
+            </p>
+          </div>
+        </div>
+        <hr class="w-full border border-zinc-100" />
+        <div
+          class="w-full pt-10 flex justify-between items-center flex-wrap gap-y-3 lg:gap-y-0"
+        >
+          <p class="text-base leading-5 text-mainTextColor">
+            #922 Hippopotamus
+          </p>
+          <div class="flex gap-x-4">
+            <img src=".../../../../../assets/images/Tag.svg" />
+            <button
+              class="pt-[8px] pb-[9px] px-[17px] text-base leading-5 transition-all duration-300 hover:opacity-[0.7] bg-mainColor text-white rounded-[5px]"
+            >
+              Tested (17)
+            </button>
+          </div>
+        </div>
+        <div class="w-full pt-9">
+          <p class="text-base leading-5 text-red-400">Time: 23:24</p>
+        </div>
+        <div class="w-full pt-7 flex flex-col gao-y-5">
+          <p class="text-lg leading-7 text-black cursor-pointer">
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >3D</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >bioprinting</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >is</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >process</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >of</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >3D</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >printing</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >a</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >biological</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >structure</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >using</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >bioinks</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >consisting</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >of</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >cells</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >and</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >other</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >biological</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >materials</span
+            >.
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >This</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >innovation</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >can</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >be</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >used</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >in</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >medical</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >field</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >for</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >different</span
+            >,
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >especially</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >for</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >organ</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >transplants</span
+            >.
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >As</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >of</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >now</span
+            >,
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >transplant</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >patients</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >face</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >risk</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >of</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >organ</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >rejection</span
+            >,
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >an</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >instance</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >where</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >body</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >recognizes</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >a</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >donor</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >organ</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >as</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >a</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >foreign</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >body</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >and</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >enlists</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >immune</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >system</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >to</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >treat</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >it</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >as</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >such</span
+            >.
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >If</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >donor</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >organ</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >is</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >necessary</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >to</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >patient</span
+            >,
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >other</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >measures</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >need</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >to</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >be</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >taken</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >to</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >try</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >to</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >stop</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >immune</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >system</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >from</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >fighting</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >against</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >it</span
+            >.
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >The</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >use</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >of</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >bioinks</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >and</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >specialization</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >of</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >3D</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >bioprinters</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >can</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >result</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >in</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >less</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >rigorous</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >medical</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >therapies</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >for</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >these</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >patients</span
+            >.
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >3D</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >bioprinted</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >organs</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >were</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >hypothesized</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >to</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >induce</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >a</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >better</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >response</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >from</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >immune</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >system</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >than</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >current</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >donor</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >organs</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >do</span
+            >.
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >The</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >conclusion</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >that</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >3D</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >bioprinting</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >can</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >lead</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >to</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >better</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >lifestyles</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >for</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >organ</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >transplant</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >patients</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >and</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >less</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >rejection</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >by</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >human</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >immune</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >system</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >was</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >reached</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >after</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >researching</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >the</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >use</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >of</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >autologous</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >cells</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >and</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >specialized</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >cells</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >in</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >3D</span
+            >
+            <span class="hover:bg-lightGreenColor" onclick="showModal()"
+              >bioprinting</span
+            >.
+          </p>
+          <div
+            class="w-full flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row justify-between pt-7"
+          >
+            <div class="gap-x-5 flex items-center flex-wrap gap-y-3 lg:gap-y-0">
+              <button
+                class="text-lightGrayColor border border-zinc-300 cursor-not-allowed rounded-[5px] py-[7px] px-[17px] text-sm bg-gray-100 font-normal"
+              >
+                Submit
+              </button>
+              <button
+                class="text-white rounded-[5px] py-[7px] px-[17px] text-sm bg-mainColor font-normal transition-all duration-300 hover:opacity-[0.7]"
+              >
+                Re-do
+              </button>
+              <button
+                class="text-mainColor rounded-[5px] py-[7px] px-[28px] text-sm border border-mainColor font-normal"
+              >
+                Dict Mode
+              </button>
+              <button
+                class="m-0 p-0 text-sm min-w-[44px] h-[22px] leading-5 align-middle bg-gray-300 hover:bg-blueButtonColor rounded-[100px] transition-all duration-200 select-none text-mainTextColor overflow-visible relative"
+              >
+                <span
+                  class="block mr-[6px] ml-[24px] text-white text-xs after:absolute after:top-[1px] after:w-[18px] after:h-[18px] after:bg-white after:rounded-[18px] after:cursor-pointer after:transition-all after:duration-300 hover:after:right-[1px] after:left-[1px]"
+                  >Answer</span
+                >
+              </button>
+            </div>
+            <div class="gap-x-5 flex items-center flex-wrap gap-y-3 lg:gap-y-0">
+              <div class="flex items-center">
+                <input
+                  class="py-[7px] px-[17px] text-mainTextColor text-sm border border-zinc-300 outline-none rounded-[5px] rounded-r-none truncate"
+                  placeholder="Question Content / Number"
+                />
+                <button
+                  class="text-white rounded-[5px] py-[7px] px-[17px] text-sm bg-mainColor font-normal rounded-l-none transition-all duration-300 hover:opacity-[0.7]"
+                >
+                  Search
+                </button>
+              </div>
+              <button
+                class="text-lightGrayColor border border-zinc-300 cursor-not-allowed rounded-[5px] py-[7px] px-[17px] text-sm bg-gray-100 font-normal"
+              >
+                Previous
+              </button>
+              <button
+                class="text-white rounded-[5px] py-[7px] px-[17px] text-sm bg-mainColor font-normal transition-all duration-300 hover:opacity-[0.7]"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Section End -->
+
+    <!-- Footer Start -->
+
+    <div class="bg-gray-800 w-full">
+      <div
+        class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col gap-y-10"
+      >
+        <div class="flex flex-wrap justify-between gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Pearson Official Website</li>
+              <li class="hover:text-mainColor">Pearson PTE Mock Tests</li>
+              <li class="hover:text-mainColor">Book PTE Tests</li>
+              <li class="hover:text-mainColor">Contact Pearson PTE</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Course</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">PTE Speaking Course</li>
+              <li class="hover:text-mainColor">PTE Writing Course</li>
+              <li class="hover:text-mainColor">PTE Reading Course</li>
+              <li class="hover:text-mainColor">PTE Listening Course</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Study Materials Download</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">APP Download</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">APEUni iOS APP</li>
+              <li class="hover:text-mainColor">APEUni Android APP</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Contact Us</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Email: support@apeuni.com</li>
+              <li class="hover:text-mainColor">Telegram: t.me/pteapeuni</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="w-full border border-lightGrayColor" />
+      <div class="text-lightGrayColor text-base leading-4 w-full">
+        <div
+          class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col lg:flex-row justify-between gap-y-10"
+        >
+          <div class="flex flex-col gap-y-5">
+            <p class="hover:text-mainColor">
+              Shenzhen APEUni Education Technology Co., Ltd.
+            </p>
+            <p class="hover:text-mainColor">Copyright©2023 APEUni Edu</p>
+            <p class="hover:text-mainColor">Terms of Use | Privacy Policy</p>
+            <div class="flex gap-x-5 pt-5">
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src=".../../../../../assets/images/facebook.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src=".../../../../../assets/images/twitter.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src=".../../../../../assets/images/telegram.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-16">
+            <div class="flex flex-col gap-y-5 items-center">
+              <img
+                class="h-20 w-20"
+                src=".../../../../../assets/images/qrcode.svg"
+              />
+              <p class="hover:text-mainColor text-center">APEUni iOS App</p>
+            </div>
+            <div class="flex flex-col gap-y-5 items-center">
+              <img
+                class="h-20 w-20"
+                src=".../../../../../assets/images/qrcode2.svg"
+              />
+              <p class="hover:text-mainColor text-center">APEUni Android App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer End -->
+
+    <!-- Side Bar Start -->
+
+    <div
+      class="outer-div fixed h-[100vh] w-[67%] top-0 right-[-67%] bg-white z-30 transition-all duration-500 overflow-scroll"
+    >
+      <button
+        class="inner-button h-[50px] min-w-[50px] lg:h-[60px] lg:min-w-[60px] bg-red-400 rounded-full flex items-center justify-center fixed top-[50%] right-[-1.8%] lg:right-[-1.5%] xl:right-[-1.2%] z-50 transition-all duration-500"
+      >
+        <img
+          src=".../../../../../assets/images/RIGHTARROWWhiteReadingPage.svg"
+        />
+      </button>
+      <div class="pt-[30px] flex flex-col w-full">
+        <div
+          class="max-w-[1030px] box-border mx-auto w-full flex items-center flex-col mb-10 px-5 md:px-8 lg:px-10"
+        >
+          <div
+            class="w-full flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-end md:items-center justify-between"
+          >
+            <div class="flex gap-x-4 items-center">
+              <img
+                class="h-[45px] w-[45px]"
+                src=".../../../../../assets/images/readingScreenFibImg.png"
+              />
+
+              <h1 class="font-bold text-[22px] leading-5">
+                Reading & Writing：Fill in the blanks
+              </h1>
+            </div>
+            <input
+              class="rounded-[32px] h-[32px] w-[180px] md:w-[256px] border border-zinc-300 truncate pl-5 text-sm"
+              placeholder="Question Content / Number"
+            />
+          </div>
+
+          <!-- Side Bar Data Section Start -->
+
+          <div class="flex flex-col gap-y-5 w-full pt-10">
+            <div
+              class="w-full border-b border-gray-400 flex gap-x-2 overflow-hidden"
+            >
+              <div class="border-b border-mainColor px-3 min-w-[70px]">
+                <p class="text-mainColor leading-5 mb-2 text-center">All</p>
+              </div>
+              <div class="px-3">
+                <p
+                  class="text-lightGrayColor leading-5 mb-2 text-center min-w-[70px]"
+                >
+                  Weekly P
+                </p>
+              </div>
+              <div class="px-3 relative">
+                <p
+                  class="text-lightGrayColor leading-5 mb-2 text-center min-w-[70px]"
+                >
+                  Aug P
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full flex flex-wrap gap-y-3 md:gap-y-3 gap-x-[25px] py-3"
+            >
+              <button
+                class="py-[9px] px-[14px] rounded-[5px] bg-zinc-100 text-mainColor flex items-center gap-x-3 text-xs"
+              >
+                New
+                <img src=".../../../../../assets/images/sort.svg" />
+              </button>
+              <button
+                class="py-[9px] px-[14px] rounded-[5px] bg-zinc-100 text-lightGrayColor flex items-center gap-x-3 text-xs"
+              >
+                Mark
+                <img src=".../../../../../assets/images/Down Arrow.svg" />
+              </button>
+              <button
+                class="py-[9px] px-[14px] rounded-[5px] bg-zinc-100 text-lightGrayColor flex items-center gap-x-3 text-xs"
+              >
+                Prac Status
+                <img src=".../../../../../assets/images/Down Arrow.svg" />
+              </button>
+              <button
+                class="py-[9px] px-[14px] rounded-[5px] bg-zinc-100 text-lightGrayColor flex items-center gap-x-3 text-xs"
+              >
+                Shadowing
+                <img src=".../../../../../assets/images/Down Arrow.svg" />
+              </button>
+            </div>
+            <p class="text-sm leading-5 text-lightGrayColor pb-3">
+              Done 0 , Found 1010 Questions
+            </p>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 gap-x-2 md:gap-x-0 text-lightGrayColor"
+            >
+              <div
+                class="flex flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center gap-x-4"
+              >
+                <h1>#922 Hippopotamus</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#921 Bioprinting</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#920 Recruitment Tool</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#920 Recruitment Tool</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#904 Bonus of Dendrochronology</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#898 Environmental Policy</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#892 Financial Crisis</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#891 Crime Prevention</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#888 International Trade</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#887 Pinker</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#886 Plains Indians</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#884 Graphene</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#881 Dag Hammarskjold Library</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                  <button
+                    class="bg-mainColor text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Video
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pb-[15px] flex flex-col md:flex-row gap-y-3 md:gap-y-0 justify-between text-sm border-b border-gray-300 text-lightGrayColor"
+            >
+              <div
+                class="flex gap-x-4 flex-col md:flex-row gap-y-3 md:gap-y-0 items-start md:items-center"
+              >
+                <h1>#880 Coral Reefs</h1>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    #892
+                  </button>
+                  <button
+                    class="bg-purple-500 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Explain
+                  </button>
+                  <button
+                    class="bg-mainColor text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                  >
+                    Video
+                  </button>
+                </div>
+              </div>
+              <div class="flex gap-x-2 items-center">
+                <button
+                  class="bg-zinc-300 text-xs text-white py-[4px] px-[7px] rounded-[4px]"
+                >
+                  Undone
+                </button>
+                <img src=".../../../../../assets/images/Tag.svg" />
+              </div>
+            </div>
+            <div
+              class="pt-[25px] flex justify-center text-sm leading-5 text-mainTextColor"
+            >
+              <div
+                class="flex flex-wrap gap-y-3 md:gap-y-0 items-center gap-x-3"
+              >
+                <button
+                  class="py-[9px] px-[13px] rounded-[5px] text-mainColor border border-gray-300 text-base leading-5"
+                >
+                  <img src=".../../../../../assets/images/leftArrow.svg" />
+                </button>
+                <button
+                  class="py-[9px] px-[13px] rounded-[5px] text-mainColor border border-mainColor text-base leading-5"
+                >
+                  1
+                </button>
+                <button
+                  class="py-[9px] px-[13px] rounded-[5px] text-mainTextColor border border-mainTextColor text-base leading-5"
+                >
+                  2
+                </button>
+                <button
+                  class="py-[9px] px-[13px] rounded-[5px] text-mainTextColor border border-mainTextColor text-base leading-5"
+                >
+                  3
+                </button>
+                <button
+                  class="py-[9px] px-[13px] rounded-[5px] text-mainTextColor border border-mainTextColor text-base leading-5"
+                >
+                  4
+                </button>
+                <button
+                  class="py-[9px] px-[13px] rounded-[5px] text-mainTextColor border border-mainTextColor text-base leading-5"
+                >
+                  5
+                </button>
+                <button
+                  class="py-[9px] px-[13px] rounded-[5px] text-mainTextColor border border-mainTextColor text-base leading-5"
+                >
+                  6
+                </button>
+                <button
+                  class="py-[9px] px-[13px] rounded-[5px] text-mainTextColor border border-mainTextColor text-base leading-5"
+                >
+                  <img src=".../../../../../assets/images/rightArrow.svg" />
+                </button>
+                <button
+                  class="py-[6px] px-[10px] rounded-[5px] text-mainTextColor font-normal text-base leading-5 md:flex hidden"
+                >
+                  Go to
+                </button>
+                <button
+                  class="h-[32px] w-[53px] rounded-[5px] text-mainTextColor border border-mainTextColor text-base leading-5 md:flex hidden"
+                ></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Bar Data Section End -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Bar End -->
+
+    <!-- modal Start -->
+
+    <div
+      class="addBg h-full w-full fixed z-[60] top-0 items-center justify-center hidden"
+    >
+      <div
+        class="bg-white rounded-[5px] w-[64%] relative addTop mt-[-10px] transition-all duration-300"
+      >
+        <h1
+          onclick="onHideModal()"
+          class="absolute top-3 right-3 text-mainTextColor cursor-pointer"
+        >
+          X
+        </h1>
+        <div class="flex flex-col gap-y-2 p-5">
+          <h1 class="text-3xl text-mainColor font-medium">patients</h1>
+          <div
+            class="flex flex-col md:flex-row gap-y-1 items-start md:items-center gap-x-36 text-mainTextColor text-sm"
+          >
+            <p class="flex items-center gap-x-1">UK /ˈpeɪʃ(ə)nts/</p>
+            <p class="flex items-center gap-x-1">US /ˈpeɪʃnts/</p>
+          </div>
+        </div>
+        <hr class="w-full border border-zinc-100" />
+        <div class="p-5 pt-8 flex gap-x-20 items-start mb-7">
+          <div
+            class="flex flex-col gap-y-5 text-mainTextColor w-[45%] h-[45vh] overflow-y-auto"
+          >
+            <h1 class="text-lightGrayColor">Defination</h1>
+            <p>
+              [n] a person who is receiving medical treatment, especially in a
+              hospital
+            </p>
+            <p>
+              [n] a person who receives treatment from a particular doctor,
+              dentist, etc.
+            </p>
+            <p>
+              [n] the person or thing that is affected by the action of the
+              verb. In the sentence ‘I started the car’, the patient iscar
+            </p>
+            <p>
+              [adj] able to wait for a long time or accept annoying behaviour or
+              difficulties without becoming angry
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-y-5 text-mainTextColor w-[45%] h-[45vh] overflow-y-auto"
+          >
+            <h1 class="text-lightGrayColor">Examples</h1>
+            <p>cancer patients</p>
+            <p>He's one of Dr Shaw's patients.</p>
+            <p>She's very patient with young children.</p>
+            <p>You'll just have to be patient and wait till I'm finished.</p>
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col md:flex-row items-start gap-y-3 md:items-center justify-between px-7 mb-5"
+        >
+          <button
+            class="px-[15px] h-[40px] rounded-[100px] text-lightGrayColor border border-zinc-300 hover:text-mainColor hover:border-mainColor transition-all duration-300"
+          >
+            Go Back
+          </button>
+          <button
+            class="px-[15px] h-[40px] rounded-[100px] text-white bg-mainColor transition-all duration-300 hover:opacity-[0.6]"
+          >
+            Add to Vocab List
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal End -->
+
+    <script>
+      const showModal = () => {
+        const modalShow = document.querySelector(".addBg");
+        modalShow.classList.add("show");
+      };
+      const onHideModal = () => {
+        document.querySelector(".addBg").classList.remove("show");
+      };
+    </script>
+  </body>
+</html>

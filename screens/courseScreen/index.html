@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NavBar Start -->
+
+    <div
+      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
+    >
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <a class="flex items-center" href="../../index.html">
+            <img src="../../assets/images/logo.svg" />
+          </a>
+          <ul class="hidden lg:flex gap-x-9 leading-5 font-normal">
+            <a class="flex items-center" href="../homeScreen">
+              <li>Home</li>
+            </a>
+            <a class="flex items-center" href="../dropdownScreen">
+              <li class="flex items-center gap-x-2">
+                PTE Practice
+                <img src="../../assets/images/Play.svg" />
+              </li>
+            </a>
+            <a class="flex items-center" href="../courseScreen">
+              <li>Course</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../pteTurtorialScreen">
+              <li>PTE Tutorials</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../AppScreen">
+              <li>APP</li></a
+            >
+          </ul>
+        </div>
+        <div class="flex gap-x-6">
+          <div
+            class="hidden lg:flex items-center gap-x-[6px] hover:text-mainColor"
+          >
+            <img src="../../assets/images/VIP.svg" />
+            <a class="flex items-center" href="../vipCenterScreen">
+              <p class="text-base leading-5">Upgrade VIP</p></a
+            >
+          </div>
+          <a class="items-center hidden lg:flex" href="../ProfileScreen">
+            <img
+              class="h-[32px] w-[32px] hidden lg:flex"
+              src="../../assets/images/Ellipse 7.svg"
+            />
+          </a>
+          <i aria-label="icon: bars" class="anticon anticon-bars">
+            <svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              class="text-mainTextColor text-[32px] flex lg:hidden"
+              data-icon="bars"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"
+              ></path>
+            </svg>
+          </i>
+        </div>
+      </div>
+    </div>
+
+    <!-- NavBar End-->
+
+    <!-- Banner Start -->
+
+    <div class="w-full pt-[70px]">
+      <img class="w-full" src="../../assets/images/courseSliderImg.svg" />
+    </div>
+
+    <!-- Banner End -->
+
+    <!-- Main Section Start -->
+
+    <div class="bg-gray-50 pt-24 w-full border">
+      <div
+        class="max-w-[1140px] box-border mx-auto w-full px-5 flex flex-col gap-y-24"
+      >
+        <!-- Pte Paid Course Section Start -->
+
+        <div class="flex flex-col gap-y-7">
+          <h1 class="font-bold text-[24px] flex gap-x-12 items-center">
+            PTE Paid Courses
+            <p
+              class="text-lightGrayColor font-normal text-base flex items-center gap-x-1 mt-1"
+            >
+              More
+              <img src="../../assets/images/smallCourseGrayArrow.svg" />
+            </p>
+          </h1>
+          <div
+            class="grid place-items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full"
+          >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/unlimited_live_class.png"
+                />
+                <h1 class="pt-4 pb-3 px-5 text-mainTextColor font-bold">
+                  APEUni live class
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col gap-y-3 bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/fib_reading_course.png"
+                />
+                <h1 class="pt-1 pb-3 px-5 text-mainTextColor font-bold">
+                  Reading course
+                </h1>
+              </div></a
+            >
+          </div>
+        </div>
+
+        <!-- Pte Paid Course Section End -->
+
+        <!-- Public Lessons Section Start -->
+
+        <div class="flex flex-col gap-y-7">
+          <h1 class="font-bold text-[24px] flex gap-x-12 items-center">
+            Public Lessons
+            <p
+              class="text-lightGrayColor font-normal text-base flex items-center gap-x-1 mt-1"
+            >
+              More
+              <img src="../../assets/images/smallCourseGrayArrow.svg" />
+            </p>
+          </h1>
+          <div
+            class="grid place-items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full"
+          >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/pte lesson.png"
+                />
+                <h1
+                  class="pt-4 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  Write From Dictation Exam Strategies
+                  <p class="text-xs text-lightGrayColor">Teacher: Yousef</p>
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col gap-y-3 bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/pte lesson.png"
+                />
+                <h1
+                  class="pt-1 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  1/3 Summarize Spoken Text Exam Strategies
+                  <p class="text-xs text-lightGrayColor">Teacher: Yousef</p>
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col gap-y-3 bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/pte lesson.png"
+                />
+                <h1
+                  class="pt-1 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  2/3 Summarize Spoken Text Exam Strategies
+                  <p class="text-xs text-lightGrayColor">Teacher: Yousef</p>
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col gap-y-3 bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/pte lesson.png"
+                />
+                <h1
+                  class="pt-1 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  3/3 Summarize Spoken Text Exam Strategies
+                  <p class="text-xs text-lightGrayColor">Teacher: Yousef</p>
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col gap-y-3 bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/pte lesson.png"
+                />
+                <h1
+                  class="pt-1 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  Summarize Written Text Exam Strategies
+                  <p class="text-xs text-lightGrayColor">Teacher: Yousef</p>
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col gap-y-3 bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/pte lesson.png"
+                />
+                <h1
+                  class="pt-1 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  Fill in the Blanks Reading & Writing Exam Strategies -
+                  <p class="text-xs text-lightGrayColor">Teacher: Yousef</p>
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col gap-y-3 bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/pte lesson.png"
+                />
+                <h1
+                  class="pt-1 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  Fill in the Blanks Reading & Writing Exam Strategies -
+                  <p class="text-xs text-lightGrayColor">Teacher: Yousef</p>
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col gap-y-3 bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/pte lesson.png"
+                />
+                <h1
+                  class="pt-1 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  Repeat Sentence Exam Strategies
+                  <p class="text-xs text-lightGrayColor">Teacher: Yousef</p>
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col gap-y-3 bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/pte lesson.png"
+                />
+                <h1
+                  class="pt-1 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  Reorder Paragraphs Exam Strategies
+                  <p class="text-xs text-lightGrayColor">Teacher: Yousef</p>
+                </h1>
+              </div></a
+            >
+          </div>
+        </div>
+
+        <!-- Public Lesson Section End -->
+
+        <!-- Pte Paid Course Section Start -->
+
+        <div class="flex flex-col gap-y-7 mb-24">
+          <div
+            class="flex flex-col md:flex-row gap-y-3 gap-x-0 md:gap-x-7 lg:gap-x-12 items-start md:items-center"
+          >
+            <h1 class="font-bold text-[24px]">PTE Study Guide</h1>
+            <div
+              class="flex flex-wrap items-center pt-1 gap-x-7 text-lightGrayColor cursor-pointer"
+            >
+              <p class="text-mainColor">Guide</p>
+              <p class="hover:text-mainColor transition-all duration-300">
+                Speaking
+              </p>
+              <p class="hover:text-mainColor transition-all duration-300">
+                Writing
+              </p>
+              <p class="hover:text-mainColor transition-all duration-300">
+                Reading
+              </p>
+              <p class="hover:text-mainColor transition-all duration-300">
+                Listening
+              </p>
+              <p
+                class="text-lightGrayColor font-normal text-base flex items-center gap-x-1 mt-1 hover:text-mainColor transition-all duration-300"
+              >
+                More
+                <img src="../../assets/images/smallCourseGrayArrow.svg" />
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid place-items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full"
+          >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/PTE’s_Integrated_Score_System.png"
+                />
+                <h1
+                  class="pt-4 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  Pearson PTE Contact Info
+                  <p class="text-xs text-lightGrayColor">Author: APEUni</p>
+                </h1>
+              </div></a
+            >
+            <a class="flex items-center" href="../courseVideoSection">
+              <div
+                class="flex flex-col bg-white dropShadow text-mainTextColor cursor-pointer rounded-[8px] w-[100%]"
+              >
+                <img
+                  class="h-full w-full rounded-[8px]"
+                  src="../../assets/images/Contact_Pearson_PTE.png"
+                />
+                <h1
+                  class="pt-4 pb-3 px-5 text-mainTextColor font-bold flex flex-col gap-y-1"
+                >
+                  PTE Integrated Score System Explained
+                  <p class="text-xs text-lightGrayColor">Author: APEUni</p>
+                </h1>
+              </div></a
+            >
+          </div>
+        </div>
+
+        <!-- Pte Paid Course Section End -->
+      </div>
+    </div>
+    <!-- Footer Start -->
+
+    <div class="bg-gray-800 w-full">
+      <div
+        class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col gap-y-10"
+      >
+        <div class="flex flex-wrap justify-between gap-y-10">
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Pearson PTE</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Pearson Official Website</li>
+              <li class="hover:text-mainColor">Pearson PTE Mock Tests</li>
+              <li class="hover:text-mainColor">Book PTE Tests</li>
+              <li class="hover:text-mainColor">Contact Pearson PTE</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Course</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">PTE Speaking Course</li>
+              <li class="hover:text-mainColor">PTE Writing Course</li>
+              <li class="hover:text-mainColor">PTE Reading Course</li>
+              <li class="hover:text-mainColor">PTE Listening Course</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">PTE Resources</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Study Materials Download</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">APP Download</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">APEUni iOS APP</li>
+              <li class="hover:text-mainColor">APEUni Android APP</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-10 min-w-[220px]">
+            <h1 class="text-xl leading-6 text-white">Contact Us</h1>
+            <ul
+              class="text-lightGrayColor text-sm leading-4 flex flex-col gap-y-5"
+            >
+              <li class="hover:text-mainColor">Email: support@apeuni.com</li>
+              <li class="hover:text-mainColor">Telegram: t.me/pteapeuni</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="w-full border border-lightGrayColor" />
+      <div class="text-lightGrayColor text-base leading-4 w-full">
+        <div
+          class="w-full max-w-[1140px] box-border mx-auto px-5 pt-20 py-16 flex flex-col lg:flex-row justify-between gap-y-10"
+        >
+          <div class="flex flex-col gap-y-5">
+            <p class="hover:text-mainColor">
+              Shenzhen APEUni Education Technology Co., Ltd.
+            </p>
+            <p class="hover:text-mainColor">Copyright©2023 APEUni Edu</p>
+            <p class="hover:text-mainColor">Terms of Use | Privacy Policy</p>
+            <div class="flex gap-x-5 pt-5">
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/facebook.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/twitter.svg" />
+              </div>
+              <div
+                class="h-9 w-9 border-2 border-lightGrayColor rounded-full flex items-center justify-center"
+              >
+                <img src="../../assets/images/telegram.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-x-16">
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode.svg" />
+              <p class="hover:text-mainColor text-center">APEUni iOS App</p>
+            </div>
+            <div class="flex flex-col gap-y-5 items-center">
+              <img class="h-20 w-20" src="../../assets/images/qrcode2.svg" />
+              <p class="hover:text-mainColor text-center">APEUni Android App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer End -->
+  </body>
+</html>

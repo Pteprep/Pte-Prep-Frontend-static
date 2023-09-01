@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+  </head>
+  <body>
+    <!-- NavBar Start -->
+
+    <div
+      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
+    >
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <img src="../../assets/images/logo.svg" />
+          <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
+            <a class="items-center hidden lg:flex" href="../dropdownScreen">
+              <li>PTE Practice</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../pteTurtorialScreen">
+              <li>PTE Tutorials</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../AppScreen">
+              <li>APP</li></a
+            >
+          </ul>
+        </div>
+        <a href="../signInScreen">
+          <button class="px-5 text-base">Sign In</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- NavBar End-->
+
+    <div class="w-full pt-[150px] pb-[200px] bg-gray-50">
+      <div class="w-full max-w-[1040px] box-border mx-auto px-5">
+        <!-- Confirm Email Section Start -->
+
+        <div
+          class="w-full bg-white flex flex-col md:flex-row gap-y-4 justify-center items-center md:justify-between py-5 px-8 lg:px-20"
+        >
+          <div class="flex flex-col items-center py-3">
+            <h1
+              class="text-lg md:text-[25px] leading-7 text-mainTextColor mb-5"
+            >
+              Confirm Your Email Address
+            </h1>
+            <h1 class="text-[16px] leading-5 mb-8 text-lightGrayColor">
+              Please enter your email
+            </h1>
+            <input
+              class="py-[11px] border border-lightGrayColor text-base md:text-lg leading-5 w-[270px] md:w-[350px] pl-3 rounded-[5px] text-lightGrayColor mb-6 outline-none bg-lightGreenColor"
+            />
+            <button
+              class="bg-mainColor text-white py-[11px] px-[40px] md:px-[59px] leading-5 rounded-[5px] mb-8"
+            >
+              Resend Email
+            </button>
+            <a href="../haveNotRecievedModalScreen">
+              <p class="text-mainColor leading-5 text-center">
+                Have not received ?
+              </p></a
+            >
+          </div>
+          <hr class="border border-gray-100 h-[304px] hidden md:block" />
+          <div
+            class="flex flex-col gap-y-2 py-10 text-lightGrayColor w-auto md:w-[268px] h-fit text-center md:text-start"
+          >
+            <p>Confirming email will enable you:</p>
+            <p>1. Use Speaking AI score, to check pronunciation and fluency</p>
+            <p>
+              2. Use Speaking AI score, to check grammer and spelling mistakes
+            </p>
+            <p>3. Get 5 speaking scoring coupons every day</p>
+            <p>4. Get 3 speaking scoring coupons</p>
+          </div>
+        </div>
+        <!-- Confirm Email Section End -->
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+
+    <div class="w-full py-9 flex justify-center bg-footerBgColor">
+      <div
+        class="flex flex-wrap gap-y-10 justify-start items-center gap-x-16 text-lg leading-5 text-footerTextColor px-5 lg:px-0"
+      >
+        <p>WeChat / apeuni225</p>
+        <p>APEUni Telegram</p>
+        <p>iOS APP</p>
+        <p>Android APP</p>
+        <p>APEUni English Site</p>
+      </div>
+    </div>
+    <div class="bg-white py-2 flex justify-center px-5 lg:px-0">
+      <div class="flex gap-x-16 text-sm leading-4 flex-wrap gap-y-5">
+        <p>© Shenzhen APEUni Educational Technology Co., Ltd.</p>
+        <p>ICU-18035327</p>
+        <p>PTE APEUni English Site</p>
+      </div>
+    </div>
+
+    <!-- Footer End -->
+  </body>
+</html>

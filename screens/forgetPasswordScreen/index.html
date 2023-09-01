@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/output.css" />
+  </head>
+  <body>
+    <!-- NavBar Start -->
+
+    <div
+      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
+    >
+      <div
+        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+      >
+        <div class="flex items-center gap-x-9">
+          <img src="../../assets/images/logo.svg" />
+          <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
+            <a class="items-center hidden lg:flex" href="../dropdownScreen">
+              <li>PTE Practice</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../pteTurtorialScreen">
+              <li>PTE Tutorials</li></a
+            >
+            <a class="items-center hidden lg:flex" href="../AppScreen">
+              <li>APP</li></a
+            >
+          </ul>
+        </div>
+        <div class="flex gap-x-3">
+          <a class="items-center hidden lg:flex" href="../signInScreen">
+            <button class="px-5 text-base">signIn</button>
+          </a>
+          <i aria-label="icon: bars" class="anticon anticon-bars">
+            <svg
+              viewBox="0 0 1024 1024"
+              focusable="false"
+              class="text-mainTextColor text-[32px] flex lg:hidden"
+              data-icon="bars"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"
+              ></path>
+            </svg>
+          </i>
+        </div>
+      </div>
+    </div>
+
+    <!-- NavBar End-->
+
+    <div class="w-full pt-[150px]">
+      <div
+        class="w-full max-w-[1140px] box-border mx-auto px-5 flex flex-col items-center"
+      >
+        <!-- forget Password Section Start -->
+
+        <h1
+          class="font-semibold text-[26px] md:text-[32px] leading-8 text-darkBlueColor mb-10"
+        >
+          Forgot Password?
+        </h1>
+        <h1 class="text-[25px] leading-7 text-mainTextColor mb-12">Email</h1>
+        <div class="flex flex-col gap-y-7 items-center mb-[44px]">
+          <div
+            class="py-[11px] border border-borderColor text-base md:text-lg leading-5 text-center px-[40px] md:px-[66px] rounded-[5px] text-lightGrayColor"
+          >
+            <p>daniyalsamimahmad@gmail.com</p>
+          </div>
+          <a href="../confrimEmailScreen">
+            <div
+              class="py-[13px] text-xs md:text-sm font-bold leading-5 text-center px-[33px] md:px-[59px] rounded-[5px] text-white bg-blueButtonColor"
+            >
+              <p>Send Password Reset Instructions to Email</p>
+            </div></a
+          >
+        </div>
+        <div class="flex flex-col gap-y-3 mb-28">
+          <a href="../signInScreen">
+            <p class="text-blueButtonColor leading-5 text-center">Sign In</p></a
+          >
+          <a href="../registerScreen">
+            <p class="text-blueButtonColor leading-5 text-center">
+              Register
+            </p></a
+          >
+          <p class="text-blueButtonColor leading-5 text-center">
+            Haven't recieved confirmation email?
+          </p>
+        </div>
+        <!-- forget Password Section End -->
+      </div>
+      <!-- Footer Start -->
+
+      <div class="w-full py-9 flex justify-center bg-footerBgColor">
+        <div
+          class="flex flex-wrap gap-y-10 justify-start items-center gap-x-16 text-lg leading-5 text-footerTextColor px-5 lg:px-0"
+        >
+          <p>WeChat / apeuni225</p>
+          <p>APEUni Telegram</p>
+          <p>iOS APP</p>
+          <p>Android APP</p>
+          <p>APEUni English Site</p>
+        </div>
+      </div>
+      <div class="bg-white py-2 flex justify-center px-5 lg:px-0">
+        <div class="flex gap-x-16 text-sm leading-4 flex-wrap gap-y-5">
+          <p>© Shenzhen APEUni Educational Technology Co., Ltd.</p>
+          <p>ICU-18035327</p>
+          <p>PTE APEUni English Site</p>
+        </div>
+      </div>
+
+      <!-- Footer End -->
+    </div>
+  </body>
+</html>
