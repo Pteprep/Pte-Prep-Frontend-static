@@ -18,13 +18,16 @@
         <div class="flex items-center gap-x-9">
           <img src="../../../assets/images/logo.svg" />
           <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
-            <a class="items-center hidden lg:flex" href="../dropdownScreen">
+            <a class="items-center hidden lg:flex" href="../../dropdownScreen">
               <li>PTE Practice</li></a
             >
-            <a class="items-center hidden lg:flex" href="../pteTurtorialScreen">
+            <a
+              class="items-center hidden lg:flex"
+              href="../../pteTurtorialScreen"
+            >
               <li>PTE Tutorials</li></a
             >
-            <a class="items-center hidden lg:flex" href="../AppScreen">
+            <a class="items-center hidden lg:flex" href="../../AppScreen">
               <li>APP</li></a
             >
           </ul>
@@ -59,11 +62,10 @@
             <div>
               <li
                 onClick="showAboutDropdown()"
-                class="py-2 px-5 hover:text-mainColor text-mainColor flex items-center justify-between w-full text-sm relative transition-all duration-300"
+                class="py-2 px-5 hover:text-mainColor text-mainTextColor flex items-center justify-between w-full text-sm relative transition-all duration-300"
               >
                 About PTE
                 <img src="../../../assets/images/Down Arrow.svg" />
-                <!-- <hr class="absolute right-0 h-full border border-mainColor" /> -->
               </li>
               <div
                 style="display: none; height: fit-content"
@@ -77,14 +79,14 @@
                   </li>
                   <a href="../../pteTurtorialScreen">
                     <li
-                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300 mb-1"
                     >
                       PTE Integrated Scoring System
                     </li></a
                   >
                   <a href="../../pteTurtorialScreen/contactPersonPteScreen">
                     <li
-                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300 mb-2"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300 mb-1"
                     >
                       Contact Pearson PTE
                     </li></a
@@ -96,22 +98,20 @@
                   >
                     PTE Courses
                   </li>
-                  <a href="../../pteTurtorialScreen/pteTeachingClasses/">
+                  <a href="../../pteTurtorialScreen/pteTeachingClasses">
                     <li
-                      class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                     >
                       PTE Teaching Classes
-                      <hr
-                        class="absolute right-0 h-full border border-mainColor top-0"
-                      /></li
-                  ></a>
+                    </li></a
+                  >
                 </ul>
               </div>
             </div>
             <div>
               <li
                 onClick="showSpeakingGuideDropdown()"
-                class="py-2 px-5 hover:text-mainColor text-mainColor flex items-center justify-between w-full text-sm"
+                class="py-2 px-5 hover:text-mainColor text-mainTextColor flex items-center justify-between w-full text-sm"
               >
                 Speaking Guide
                 <img src="../../../assets/images/Down Arrow.svg" />
@@ -135,7 +135,7 @@
                   >
                   <a href="../../pteTurtorialScreen/readAloudScreen">
                     <li
-                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColorw-full text-xs transition-all duration-300"
                     >
                       Read Aloud
                     </li></a
@@ -177,20 +177,18 @@
                   </li>
                   <a href="../../pteTurtorialScreen/pteTeachingClasses">
                     <li
-                      class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                     >
                       PTE Speaking Classes
-                      <hr
-                        class="absolute right-0 h-full border border-mainColor top-0"
-                      /></li
-                  ></a>
+                    </li></a
+                  >
                 </ul>
               </div>
             </div>
             <div>
               <li
                 onClick="showWritingGuideDropdown()"
-                class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm text-mainColor"
+                class="py-2 px-5 hover:text-mainColor text-mainTextColor flex items-center justify-between w-full text-sm"
               >
                 Writing Guide
                 <img src="../../../assets/images/Down Arrow.svg" />
@@ -228,19 +226,17 @@
                   </li>
                   <a href="../../pteTurtorialScreen/pteTeachingClasses">
                     <li
-                      class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                     >
                       PTE Writing Classes
-                      <hr
-                        class="absolute right-0 h-full border border-mainColor top-0"
-                      /></li
-                  ></a>
+                    </li></a
+                  >
                 </ul>
               </div>
             </div>
             <li
               onClick="showReadingGuideDropdown()"
-              class="py-2 px-5 hover:text-mainColor text-mainColor flex items-center justify-between w-full text-sm"
+              class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm"
             >
               Reading Guide
               <img src="../../../assets/images/Down Arrow.svg" />
@@ -249,7 +245,7 @@
               style="display: none; height: fit-content"
               class="flex flex-col gap-y-2 hideReadingGuideDropdown"
             >
-              <ul class="flex flex-col gap-y-2 text-sm">
+              <ul class="flex flex-col gap-y-2 text-sm mb-1">
                 <li
                   class="text-lightGrayColor py-1 px-7 transition-all duration-300"
                 >
@@ -301,13 +297,11 @@
                 </li>
                 <a href="../../pteTurtorialScreen/pteTeachingClasses">
                   <li
-                    class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                   >
                     PTE Reading Classes
-                    <hr
-                      class="absolute right-0 h-full border border-mainColor top-0"
-                    /></li
-                ></a>
+                  </li></a
+                >
               </ul>
             </div>
             <li
@@ -347,11 +341,13 @@
                   href="../../pteTurtorialScreen/listeningFillInTheBlanksScreen"
                 >
                   <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    class="py-2 px-10 text-mainColor bg-lightGreenColor relative hover:text-mainColor w-full text-xs transition-all duration-300"
                   >
                     Fill in Blank
-                  </li></a
-                >
+                    <hr
+                      class="absolute right-0 h-full border border-mainColor top-0"
+                    /></li
+                ></a>
                 <a
                   href="../../pteTurtorialScreen/listeningHighlightCorrectSummaryScreen"
                 >
@@ -406,14 +402,11 @@
                 </li>
                 <a href="../../pteTurtorialScreen/pteTeachingClasses">
                   <li
-                    class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                   >
                     PTE Listening Classes
-                    <hr
-                      class="absolute right-0 h-full border border-mainColor top-0"
-                    />
-                  </li>
-                </a>
+                  </li></a
+                >
               </ul>
             </div>
           </ul>
@@ -422,34 +415,112 @@
         <!-- Side bar End -->
 
         <div
-          class="w-full md:w-[75%] bg-white rounded-[10px] dropShadow flex flex-col py-6 px-0 md:px-[90px]"
+          class="w-full md:w-[75%] bg-white rounded-[10px] dropShadow flex flex-col py-6 px-5 md:px-[90px]"
         >
-          <div>
-            <img src="../../../assets/images/live_classes_01.jpg" />
-          </div>
-          <div>
-            <img src="../../../assets/images/Ubronze.png" />
-          </div>
-          <div>
-            <img src="../../../assets/images/Usilver.png" />
-          </div>
-          <div>
-            <img src="../../../assets/images/Ugold.png" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_classes_05.jpg" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_classes_06.jpg" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_classes_07.jpg" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_classes_08.png" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_class_faq.png" />
+          <div class="w-full items-center flex flex-col mb-5">
+            <div class="relative w-full flex justify-center mb-3">
+              <h1 class="text-[42px] md:text-[50px] text-green-100 font-bold">
+                STUDYGUIDE
+              </h1>
+              <p
+                class="absolute top-7 text-[19px] md:text-[24px] text-mainTextColor leading-6 font-bold w-fit"
+              >
+                Fill in Blank (R & W)
+              </p>
+            </div>
+            <div class="w-full mb-12">
+              <img src="../../../assets/images/l_fib.png" />
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                About
+              </h1>
+              <p class="mb-3 text-mainTextColor">
+                Test takers will usually hear a audio clip and see a textual
+                passage with blanks, before<span class="font-bold">
+                  required to write a correct word down in each blank according
+                  to the audio clip.</span
+                >
+                This question type usually consists of 2 or 3 tasks.
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                Tips
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                LFIB, one of the key question types in the Listening Section,
+                deserves great effort to guarantee correctness rate..
+              </p>
+              <p class="mb-2 text-mainTextColor">
+                In real tests, intervals between two blanks are usually very
+                small, so shorten your typing and keep up with the audio. Thus
+                there is no need to type the word completely once your hear it,
+                because you can take your time to finish it after the audio
+                ends.
+              </p>
+              <p class="mb-2 text-mainTextColor">
+                Note: Press the key of Tab to quickly jump to next blank.
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                Time Span
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                Despite LFIB’s significance in terms of points in the Listening
+                Section, do not spend too much time in it, 2 minutes at most for
+                each task.
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                Practice Goal
+              </h1>
+              <p class="mb-6 text-mainTextColor">
+                <span class="font-bold">WHV:</span> Test takers for WHV do not
+                have to pay much attention to this question type.
+              </p>
+              <p class="mb-6 text-mainTextColor">
+                <span class="font-bold">50 points:</span> Achieve a correctness
+                rate of <span class="font-bold">50%</span> or above.
+              </p>
+              <p class="mb-6 text-mainTextColor">
+                <span class="font-bold">65 points:</span> For each task,
+                <span class="font-bold"
+                  >try to limit errors to 1, never above 2;</span
+                >
+                or on average within 1.5 errors for each 5 blanks.
+              </p>
+              <p class="mb-6 text-mainTextColor">
+                <span class="font-bold">79 points:</span> Try to limit errors
+                within <span>1</span> for each task.
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                Practice Task
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                Intensively practicing WFD questions is enough, which helps to
+                imporve abilities for FIB.
+              </p>
+            </div>
+            <button
+              class="bg-mainColor text-white rounded-[5px] py-[10px] px-[35px] text-xl"
+            >
+              Practice
+            </button>
           </div>
         </div>
       </div>

@@ -18,13 +18,16 @@
         <div class="flex items-center gap-x-9">
           <img src="../../../assets/images/logo.svg" />
           <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
-            <a class="items-center hidden lg:flex" href="../dropdownScreen">
+            <a class="items-center hidden lg:flex" href="../../dropdownScreen">
               <li>PTE Practice</li></a
             >
-            <a class="items-center hidden lg:flex" href="../pteTurtorialScreen">
+            <a
+              class="items-center hidden lg:flex"
+              href="../../pteTurtorialScreen"
+            >
               <li>PTE Tutorials</li></a
             >
-            <a class="items-center hidden lg:flex" href="../AppScreen">
+            <a class="items-center hidden lg:flex" href="../../AppScreen">
               <li>APP</li></a
             >
           </ul>
@@ -59,11 +62,10 @@
             <div>
               <li
                 onClick="showAboutDropdown()"
-                class="py-2 px-5 hover:text-mainColor text-mainColor flex items-center justify-between w-full text-sm relative transition-all duration-300"
+                class="py-2 px-5 hover:text-mainColor text-mainTextColor flex items-center justify-between w-full text-sm relative transition-all duration-300"
               >
                 About PTE
                 <img src="../../../assets/images/Down Arrow.svg" />
-                <!-- <hr class="absolute right-0 h-full border border-mainColor" /> -->
               </li>
               <div
                 style="display: none; height: fit-content"
@@ -77,14 +79,14 @@
                   </li>
                   <a href="../../pteTurtorialScreen">
                     <li
-                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300 mb-1"
                     >
                       PTE Integrated Scoring System
                     </li></a
                   >
                   <a href="../../pteTurtorialScreen/contactPersonPteScreen">
                     <li
-                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300 mb-2"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300 mb-1"
                     >
                       Contact Pearson PTE
                     </li></a
@@ -96,15 +98,13 @@
                   >
                     PTE Courses
                   </li>
-                  <a href="../../pteTurtorialScreen/pteTeachingClasses/">
+                  <a href="../../pteTurtorialScreen/pteTeachingClasses">
                     <li
-                      class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                     >
                       PTE Teaching Classes
-                      <hr
-                        class="absolute right-0 h-full border border-mainColor top-0"
-                      /></li
-                  ></a>
+                    </li></a
+                  >
                 </ul>
               </div>
             </div>
@@ -135,18 +135,20 @@
                   >
                   <a href="../../pteTurtorialScreen/readAloudScreen">
                     <li
-                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColorw-full text-xs transition-all duration-300"
                     >
                       Read Aloud
                     </li></a
                   >
                   <a href="../../pteTurtorialScreen/repeatSentenceScreen">
                     <li
-                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                      class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor w-full text-xs transition-all duration-300 relative"
                     >
                       Repeat Sentence
-                    </li></a
-                  >
+                      <hr
+                        class="absolute right-0 h-full border border-mainColor top-0"
+                      /></li
+                  ></a>
                   <a href="../../pteTurtorialScreen/describeImageScreen">
                     <li
                       class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
@@ -177,20 +179,18 @@
                   </li>
                   <a href="../../pteTurtorialScreen/pteTeachingClasses">
                     <li
-                      class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                     >
                       PTE Speaking Classes
-                      <hr
-                        class="absolute right-0 h-full border border-mainColor top-0"
-                      /></li
-                  ></a>
+                    </li></a
+                  >
                 </ul>
               </div>
             </div>
             <div>
               <li
                 onClick="showWritingGuideDropdown()"
-                class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm text-mainColor"
+                class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm"
               >
                 Writing Guide
                 <img src="../../../assets/images/Down Arrow.svg" />
@@ -228,19 +228,17 @@
                   </li>
                   <a href="../../pteTurtorialScreen/pteTeachingClasses">
                     <li
-                      class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                     >
                       PTE Writing Classes
-                      <hr
-                        class="absolute right-0 h-full border border-mainColor top-0"
-                      /></li
-                  ></a>
+                    </li></a
+                  >
                 </ul>
               </div>
             </div>
             <li
               onClick="showReadingGuideDropdown()"
-              class="py-2 px-5 hover:text-mainColor text-mainColor flex items-center justify-between w-full text-sm"
+              class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm"
             >
               Reading Guide
               <img src="../../../assets/images/Down Arrow.svg" />
@@ -301,18 +299,16 @@
                 </li>
                 <a href="../../pteTurtorialScreen/pteTeachingClasses">
                   <li
-                    class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                   >
                     PTE Reading Classes
-                    <hr
-                      class="absolute right-0 h-full border border-mainColor top-0"
-                    /></li
-                ></a>
+                  </li></a
+                >
               </ul>
             </div>
             <li
               onClick="showListeningGuideDropdown()"
-              class="py-2 px-5 hover:text-mainColor text-mainColor flex items-center justify-between w-full text-sm"
+              class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm"
             >
               Listening Guide
               <img src="../../../assets/images/Down Arrow.svg" />
@@ -406,14 +402,11 @@
                 </li>
                 <a href="../../pteTurtorialScreen/pteTeachingClasses">
                   <li
-                    class="py-2 px-10 text-mainColor hover:text-mainColor bg-lightGreenColor relative w-full text-xs transition-all duration-300 mb-1"
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
                   >
                     PTE Listening Classes
-                    <hr
-                      class="absolute right-0 h-full border border-mainColor top-0"
-                    />
-                  </li>
-                </a>
+                  </li></a
+                >
               </ul>
             </div>
           </ul>
@@ -422,34 +415,206 @@
         <!-- Side bar End -->
 
         <div
-          class="w-full md:w-[75%] bg-white rounded-[10px] dropShadow flex flex-col py-6 px-0 md:px-[90px]"
+          class="w-full md:w-[75%] bg-white rounded-[10px] dropShadow flex flex-col py-6 px-5 md:px-[90px]"
         >
-          <div>
-            <img src="../../../assets/images/live_classes_01.jpg" />
-          </div>
-          <div>
-            <img src="../../../assets/images/Ubronze.png" />
-          </div>
-          <div>
-            <img src="../../../assets/images/Usilver.png" />
-          </div>
-          <div>
-            <img src="../../../assets/images/Ugold.png" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_classes_05.jpg" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_classes_06.jpg" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_classes_07.jpg" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_classes_08.png" />
-          </div>
-          <div>
-            <img src="../../../assets/images/live_class_faq.png" />
+          <div class="w-full items-center flex flex-col mb-5">
+            <div class="relative w-full flex justify-center mb-3">
+              <h1 class="text-[42px] md:text-[50px] text-green-100 font-bold">
+                STUDYGUIDE
+              </h1>
+              <p
+                class="absolute top-7 text-[19px] md:text-[24px] text-mainTextColor leading-6 font-bold w-fit"
+              >
+                Repeat Sentence
+              </p>
+            </div>
+            <div class="w-full h-[350px] mb-12 rounded-[5px]">
+              <iframe
+                class="rounded-[5px]"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/5z2TRiqIQlg"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                About
+              </h1>
+              <p class="mb-3 text-mainTextColor">
+                Task: you will hear a recording of a sentence only once. Repeat
+                what you've heard.
+              </p>
+              <p class="mb-3 text-mainTextColor">
+                Sentence length: mostly 9 - 14 words
+              </p>
+              <p class="mb-3 text-mainTextColor">
+                Maximum answer time: 15 seconds
+              </p>
+              <p class="mb-3 text-mainTextColor">
+                Number of questions in the exam: 10 - 12
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                Exam Tips
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                RS is one of the most important tasks in PTE because it is a key
+                contributor to BOTH speaking and listening scores. Make use of
+                the Method 258 to help you secure the maximum points possible.
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1 class="w-fit pb-1 text-xl leading-6 mb-2 font-bold">
+                Method 258:
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                Method 258 is the best way to balance the content requirement
+                and being fluent at the same time. It is actually three
+                different methods of repeating.
+              </p>
+            </div>
+            <div class="w-full mb-4">
+              <h1 class="w-fit pb-1 text-base leading-6 mb-2 font-bold">
+                Method 2:
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                If you cannot understand most of the content when the sentence
+                is too difficult, repeat 2-4 words, mainly content words. And
+                make sure you say naturally and fluently.
+              </p>
+            </div>
+            <div class="w-full mb-4">
+              <h1 class="w-fit pb-1 text-base leading-6 mb-2 font-bold">
+                Method 5:
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                If you can only understand or remember half of the content when
+                the sentence is too long, pay attention to half of the sentence
+                only while listening (first half / second half / first few words
+                + last few words). And repeat half of the sentence clearly and
+                fluently.
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1 class="w-fit pb-1 text-base leading-6 mb-2 font-bold">
+                Method 8:
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                If you can understand most of the content, skip the words you
+                don't remember clearly, and repeat 80% of the sentence clearly
+                and fluently.
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1 class="w-fit pb-1 text-base leading-6 mb-2 font-bold">
+                There are 3 steps in answering RS:
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                Step 1: Listen to the sentence carefully. Quickly decide which
+                method (2/5/8) you should adopt.
+              </p>
+              <p class="mb-2 text-mainTextColor">
+                Step 2: After the audio ends, use 1-2 seconds to recall and
+                organize your answer in mind.
+              </p>
+              <p class="mb-2 text-mainTextColor">
+                Step 3: Tell your answer clearly and fluently. No more add-ons /
+                hesitation
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                Answer Time
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                The maximum answering time given for each RS question is 15
+                seconds, but most probably you don't need that much time. Make
+                sure you answer fluently and in a normal speed, without
+                hesitation.
+              </p>
+              <p class="mb-2 text-mainTextColor">
+                3 Seconds Rule: same as all other speaking questions, the
+                recording stops automatically if you are silent for 3 seconds.
+              </p>
+              <p class="mb-2 text-mainTextColor">
+                There is no beep sound before the recording starts. After the
+                audio ends, pay attention to the recording progress bar. Only
+                start speaking when the recording starts. Since the recording
+                must have started 2 seconds after the audio ends, a better and
+                more recommended way is to take the 2 seconds to prepare your
+                answer before speaking, so that you won't need to keep staring
+                at the recording progress bar.
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                Practice Goal
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                <span class="font-bold">Target 79+ :</span> Use Method 8 on
+                short sentences, and Method 5 on long sentences
+              </p>
+              <p class="mb-2 text-mainTextColor">
+                <span class="font-bold">Target 65+ :</span> Use Method 5 on all
+                sentences
+              </p>
+              <p class="mb-2 text-mainTextColor">
+                <span class="font-bold">Target 50 or below :</span> Use Method 2
+                on all sentences
+              </p>
+            </div>
+            <div class="w-full mb-8">
+              <h1
+                class="border-b border-mainColor w-fit pb-1 text-lg leading-6 mb-2 font-medium"
+              >
+                Practice method
+              </h1>
+              <p class="mb-2 text-mainTextColor">
+                To improve your listening skills, it is recommended to do Repeat
+                Sentence Drill with APEUni MP3:
+              </p>
+            </div>
+            <div class="w-full mb-5">
+              <p class="mb-2 text-mainTextColor">Step 1: Listen and repeat</p>
+              <p class="mb-2 text-mainTextColor">
+                Set the playback interval in APEUni MP3 to be 5 or 10 seconds,
+                and the audio replay to be 5 times. Repeat the sentence as much
+                as you can during the interval. Do not look at the script at
+                this step.
+              </p>
+            </div>
+            <div class="w-full mb-5">
+              <p class="mb-2 text-mainTextColor">
+                Step 2: Learn and understand
+              </p>
+              <p class="mb-2 text-mainTextColor">
+                Look at the script and check unfamiliar words in the dictionary.
+                Understand the meaning of the sentence.
+              </p>
+            </div>
+            <div class="w-full mb-5">
+              <p class="mb-2 text-mainTextColor">Step 3:</p>
+              <p class="mb-2 text-mainTextColor">
+                Repeat Step 1 & 2 until fully understand / able to repeat 80% of
+                the sentence
+              </p>
+            </div>
+            <button
+              class="bg-mainColor text-white rounded-[5px] py-[10px] px-[35px] text-xl"
+            >
+              Practice
+            </button>
           </div>
         </div>
       </div>

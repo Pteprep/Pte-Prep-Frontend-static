@@ -18,13 +18,16 @@
         <div class="flex items-center gap-x-9">
           <img src="../../../assets/images/logo.svg" />
           <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
-            <a class="items-center hidden lg:flex" href="../dropdownScreen">
+            <a class="items-center hidden lg:flex" href="../../dropdownScreen">
               <li>PTE Practice</li></a
             >
-            <a class="items-center hidden lg:flex" href="../pteTurtorialScreen">
+            <a
+              class="items-center hidden lg:flex"
+              href="../../pteTurtorialScreen"
+            >
               <li>PTE Tutorials</li></a
             >
-            <a class="items-center hidden lg:flex" href="../AppScreen">
+            <a class="items-center hidden lg:flex" href="../../AppScreen">
               <li>APP</li></a
             >
           </ul>
@@ -46,7 +49,10 @@
         >
           <hr class="border border-gray-100 mb-2" />
           <ul class="flex flex-col gap-y-3 cursor-pointer mb-2">
-            <a class="flex items-center" href="../studyMaterialDownloadScreen">
+            <a
+              class="flex items-center"
+              href="../../studyMaterialDownloadScreen"
+            >
               <li
                 class="py-2 px-5 hover:text-mainColor relative text-sm transition-all duration-300"
               >
@@ -56,7 +62,7 @@
             <div>
               <li
                 onClick="showAboutDropdown()"
-                class="py-2 px-5 hover:text-mainColor text-mainColor flex items-center justify-between w-full text-sm relative transition-all duration-300"
+                class="py-2 px-5 hover:text-mainColor text-mainTextColor flex items-center justify-between w-full text-sm relative transition-all duration-300"
               >
                 About PTE
                 <img src="../../../assets/images/Down Arrow.svg" />
@@ -106,7 +112,7 @@
             <div>
               <li
                 onClick="showSpeakingGuideDropdown()"
-                class="py-2 px-5 hover:text-mainColor flex items-center justify-between w-full text-sm"
+                class="py-2 px-5 hover:text-mainColor text-mainColor flex items-center justify-between w-full text-sm"
               >
                 Speaking Guide
                 <img src="../../../assets/images/Down Arrow.svg" />
@@ -130,31 +136,41 @@
                         class="absolute right-0 h-full border border-mainColor top-0"
                       /></li
                   ></a>
-                  <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <a href="../../pteTurtorialScreen/readAloudScreen">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      Read Aloud
+                    </li></a
                   >
-                    Read Aloud
-                  </li>
-                  <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <a href="../../pteTurtorialScreen/repeatSentenceScreen">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      Repeat Sentence
+                    </li></a
                   >
-                    Repeat Sentence
-                  </li>
-                  <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <a href="../../pteTurtorialScreen/describeImageScreen">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      Describe Image
+                    </li></a
                   >
-                    Describe Image
-                  </li>
-                  <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <a href="../../pteTurtorialScreen/retellLectures">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      Retell Lecture
+                    </li></a
                   >
-                    Retell Lecture
-                  </li>
-                  <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <a href="../../pteTurtorialScreen/answerShortQScreen">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      Answer Short Question
+                    </li></a
                   >
-                    Answer Short Question
-                  </li>
                 </ul>
                 <ul class="flex flex-col gap-y-2 text-sm">
                   <li
@@ -162,11 +178,13 @@
                   >
                     PTE Speaking Courses
                   </li>
-                  <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <a href="../../pteTurtorialScreen/pteTeachingClasses">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      PTE Speaking Classes
+                    </li></a
                   >
-                    PTE Speaking Classes
-                  </li>
                 </ul>
               </div>
             </div>
@@ -188,16 +206,20 @@
                   >
                     Writing Skills
                   </li>
-                  <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <a href="../../pteTurtorialScreen/summarizeWrittenScreen">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      Summarize Written Text
+                    </li></a
                   >
-                    Summarize Written Text
-                  </li>
-                  <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <a href="../../pteTurtorialScreen/writeEssayScreen">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      Write Essay
+                    </li></a
                   >
-                    Write Essay
-                  </li>
                 </ul>
                 <ul class="flex flex-col gap-y-2 text-sm">
                   <li
@@ -205,11 +227,13 @@
                   >
                     PTE Writing Courses
                   </li>
-                  <li
-                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <a href="../../pteTurtorialScreen/pteTeachingClasses">
+                    <li
+                      class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                    >
+                      PTE Writing Classes
+                    </li></a
                   >
-                    PTE Writing Classes
-                  </li>
                 </ul>
               </div>
             </div>
@@ -230,31 +254,43 @@
                 >
                   Reading Skills
                 </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a href="../../pteTurtorialScreen/fillInTheBlanks(R&W)Screen">
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Fill in Blank (R & W)
+                  </li></a
                 >
-                  Fill in Blank (R & W)
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a
+                  href="../../pteTurtorialScreen/multipleChoice(Multiple)Screen"
                 >
-                  Multiple Choice (Multiple)
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Multiple Choice (Multiple)
+                  </li></a
                 >
-                  Re-order Paragraphs
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a href="../../pteTurtorialScreen/reOrderParaScreen">
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Re-order Paragraphs
+                  </li></a
                 >
-                  Fill in Blank (R)
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a href="../../pteTurtorialScreen/fillInTheBlanks(R)screen">
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Fill in Blank (R)
+                  </li></a
                 >
-                  Multiple Choice (Single)
-                </li>
+                <a href="../../pteTurtorialScreen/multiChoice(Single)Screen">
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Multiple Choice (Single)
+                  </li></a
+                >
               </ul>
               <ul class="flex flex-col gap-y-2 text-sm">
                 <li
@@ -262,11 +298,13 @@
                 >
                   PTE Reading Courses
                 </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a href="../../pteTurtorialScreen/pteTeachingClasses">
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    PTE Reading Classes
+                  </li></a
                 >
-                  PTE Reading Classes
-                </li>
               </ul>
             </div>
             <li
@@ -286,46 +324,76 @@
                 >
                   Listening Skills
                 </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a href="../../pteTurtorialScreen/summarizeSpokenTextScreen">
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Summarize Spoken Text
+                  </li></a
                 >
-                  Summarize Spoken Text
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a
+                  href="../../pteTurtorialScreen/listeningMultipleChoiceScreen"
                 >
-                  Multiple Choice (Multiple)
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Multiple Choice (Multiple)
+                  </li></a
                 >
-                  Fill in Blank
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a
+                  href="../../pteTurtorialScreen/listeningFillInTheBlanksScreen"
                 >
-                  Highlight Correct Summary
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Fill in Blank
+                  </li></a
                 >
-                  Multiple Choice (Single)
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a
+                  href="../../pteTurtorialScreen/listeningHighlightCorrectSummaryScreen"
                 >
-                  Select Missing Word
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Highlight Correct Summary
+                  </li></a
                 >
-                  Highlight Incorrect Words
-                </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a
+                  href="../../pteTurtorialScreen/ListeningMultipleChoice(Single)Screen"
                 >
-                  Write From Dictation
-                </li>
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Multiple Choice (Single)
+                  </li></a
+                >
+                <a
+                  href="../../pteTurtorialScreen/listeningSelectMissingWordScreen"
+                >
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Select Missing Word
+                  </li></a
+                >
+                <a
+                  href="../../pteTurtorialScreen/listeningHighlightIncorrectWordsScreen"
+                >
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Highlight Incorrect Words
+                  </li></a
+                >
+                <a
+                  href="../../pteTurtorialScreen/listeningWriteFromDictationScreen"
+                >
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    Write From Dictation
+                  </li></a
+                >
               </ul>
               <ul class="flex flex-col gap-y-2 text-sm">
                 <li
@@ -333,11 +401,13 @@
                 >
                   PTE Listening Courses
                 </li>
-                <li
-                  class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                <a href="../../pteTurtorialScreen/pteTeachingClasses">
+                  <li
+                    class="py-2 px-10 text-mainTextColor hover:text-mainColor w-full text-xs transition-all duration-300"
+                  >
+                    PTE Listening Classes
+                  </li></a
                 >
-                  PTE Listening Classes
-                </li>
               </ul>
             </div>
           </ul>
@@ -359,93 +429,128 @@
             </h1>
             <div class="w-full">
               <h1
-                class="border-b border-mainColor w-fit pb-2 text-base leading-6 mb-7 font-medium"
+                class="border-b border-mainColor w-fit pb-1 text-base leading-6 mb-7 font-medium"
               >
                 Step 1 Where should the microphone be set?
               </h1>
+              <p class="mb-1 text-mainTextColor">
+                Firstly, the earphone and microphone in real exams are as below:
+              </p>
             </div>
-            <p class="mb-5 text-mainTextColor">
-              Firstly, the earphone and microphone in real exams are as below:
-            </p>
-            <p class="text-mainTextColor w-full">
-              Below is a complete breakdown of PTE’s Integrated Score System by
-              APEUni :
-            </p>
           </div>
+          <div class="w-full flex justify-center mb-5">
+            <img class="rounded-[5px]" src="../../../assets/images/耳机.jpeg" />
+          </div>
+          <p>
+            The microphone is supposed to be set at the tip of your nose or
+            lower jaw, as displayed below. Please pay attention that both the
+            left and the right are correct and the middle position may cause
+            unwanted p-pops or weak receptions of your voice.
+          </p>
           <div class="w-full flex justify-center mb-12">
             <img
               class="rounded-[5px]"
-              src="../../../assets/images/APEUni PTE Score Breakdown Table.png"
+              src="../../../assets/images/正确&错误的方式.jpg"
             />
           </div>
-          <div class="relative w-full flex justify-center mb-3">
-            <h1 class="text-[34px] md:text-[50px] text-green-100 font-bold">
-              TRANSCRIPT
-            </h1>
-            <p
-              class="absolute top-5 md:top-7 text-[16px] md:text-[24px] text-mainTextColor leading-6 font-bold w-fit"
+          <h1
+            class="border-b border-mainColor w-fit pb-2 text-xl leading-6 mb-7 font-medium"
+          >
+            Step 2 How to tune your microphone
+          </h1>
+          <p class="text-sm mb-8">
+            When tuning it, do not just say several single words into it, but
+            try a short passage, like an answer for DI or your
+            self-introduction, within 15s - 20s.
+          </p>
+          <p class="text-sm mb-8">
+            Check the result of your recording, and pay attention to the points
+            below:
+          </p>
+          <p class="text-mainTextColor mb-8">
+            <span class="font-bold">P-pop：</span> Your voice is too weak and
+            indistinct.
+          </p>
+          <p class="text-mainTextColor mb-8">
+            <span class="font-bold">Indistinct voice:</span> Your voice is too
+            weak and indistinct.
+          </p>
+          <p class="text-mainTextColor mb-8">
+            <span class="font-bold"
+              >Interferences from others next to you:</span
             >
-              PTE Score Report
-            </p>
+            You can wait untill others start to check the devices before
+            starting your own tuning. Generally, unless the test taker sitting
+            next to you deliberately shouts and your microphone is set too far
+            to your lips, your own voice will be very clearly recorded, with
+            others' noise sounding as a background. If this is not the
+            situation, try to place your microphone a bit closer, or raise the
+            hand and ask supervisors to take care of the noisy one next to you.
+            Please pay attention that you shoud not try speaking even louder to
+            cover the already loudly noise, for that may result in a very low
+            speaking grade.
+          </p>
+          <p class="text-mainTextColor mb-8">
+            <span class="font-bold">Undue loudness</span> Your unduly loudly
+            pronunciation is unlikely to earn you good grades, and may cause
+            gratuitous interferences to other test takers.
+          </p>
+          <div class="w-full">
+            <h1 class="text-2xl text-mainTextColor font-bold mb-16 w-full">
+              2. How to tune your microphone before mock exams
+            </h1>
           </div>
+          <h1
+            class="border-b border-mainColor w-fit pb-2 text-lg leading-6 mb-9 font-medium"
+          >
+            Step 1
+          </h1>
+          <p class="mb-5">
+            Log in the
+            <span class="text-mainColor border-b border-mainColor">web</span>
+            page of mock exam and click
+            <span class="font-bold">'Test Your Computer'</span>
+          </p>
           <div class="w-full flex justify-center mb-12">
-            <img
-              class="rounded-[5px]"
-              src="../../../assets/images/Peter 成绩单.jpg"
-            />
-          </div>
-          <p class="text-mainTextColor mb-12">
-            This is an official PTE score report (thanks to Principal Peter’s
-            contribution) and it consists of three parts.
-          </p>
-          <h1
-            class="border-b border-mainColor w-fit pb-2 text-xl leading-6 mb-7 font-medium"
-          >
-            a. Personal Information
-          </h1>
-          <div class="w-full flex justify-center mb-12">
-            <img src="../../../assets/images/个人信息以及照片.png" />
+            <img src="../../../assets/images/Page 1.png" />
           </div>
           <h1
-            class="border-b border-mainColor w-fit pb-2 text-xl leading-6 mb-7 font-medium"
+            class="border-b border-mainColor w-fit pb-2 text-lg leading-6 mb-9 font-medium"
           >
-            b. Overall Score
+            Step 2
           </h1>
-          <div class="w-full flex justify-center mb-8">
-            <img src="../../../assets/images/total score.png" />
-          </div>
-          <p class="text-mainTextColor mb-12">
-            Peter’s overall score is 90 points. The overall score ranges from 10
-            ~ 90 points.
+          <p class="mb-5">
+            Pearson’s official website will automatically test hardware and
+            software involved in mock tests.
           </p>
+          <div class="w-full flex justify-center mb-8">
+            <img src="../../../assets/images/Page 2.png" />
+          </div>
           <h1
-            class="border-b border-mainColor w-fit pb-2 text-xl leading-6 mb-7 font-medium"
+            class="border-b border-mainColor w-fit pb-2 text-lg leading-6 mb-9 font-medium"
           >
-            c. Scores
+            Step 3
           </h1>
-          <div class="w-full flex justify-center mb-8">
-            <img src="../../../assets/images/Key Score.png" />
-          </div>
-          <p class="text-mainTextColor mb-12">
-            Communicative skills scores are the very four requirements directly
-            related to your language competence, determining your qualification
-            for visa or college entrances. For example, while applying for
-            Australia's Permanent Residency, a score of 65 in each of the four
-            communicative skills will add you 10 points in its Points-tested
-            system.
+          <p class="mb-5">
+            Pearson’s official website will automatically test hardware and
+            software involved in mock tests.
           </p>
           <div class="w-full flex justify-center mb-8">
-            <img src="../../../assets/images/other part score.png" />
+            <img src="../../../assets/images/Page 3.png" />
           </div>
-          <p class="text-mainTextColor mb-4">
-            Enabling skills scores are not assessed in Visa or University
-            applications, but they will provide you a detailed analysis of how
-            you performed in your speaking and writing sections. The scores of
-            pronunciation and fluency are related to your overall speaking
-            score, and scores of spelling, grammar, vocabulary and written
-            discourse reflect your performance in writing tasks and listening
-            SST (Summarize Spoken Text).
+          <p class="mb-5">
+            <span class="font-bold text-red-800">Note:</span>
+            <span class="text-bold"
+              >Earphones with a microphone are highly recommended,</span
+            >
+            such as Apple's earphones, but not built-in ones on laptops! The
+            tick in the red box in the right upper corner only denotes your
+            voice being detected and recorded, and you still have to listen to
+            the recording in order to make sure its quality.
           </p>
+          <div class="w-full flex justify-center mb-8">
+            <img src="../../../assets/images/Page 4.png" />
+          </div>
         </div>
       </div>
     </div>
