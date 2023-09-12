@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Ysabeau+Infant:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
-  font-family: "Inter", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .dropShadow {
   box-shadow: 0px 1px 10px 0px #d9d9d9;
@@ -28,4 +28,43 @@
 }
 .show {
   display: flex !important;
+}
+.showBefore {
+  position: relative;
+}
+
+.showBefore::before,
+.showBefore::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0%;
+  transform: translateX(0%);
+  width: 0;
+  height: 3px;
+  background-color: #7703fc;
+  transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+}
+
+.showBefore:hover::before {
+  width: 42%;
+  opacity: 1;
+}
+
+.showBefore:not(:hover)::after {
+  animation: hide 1s forwards;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.moveArrow:hover .arrow{
+  transition-property: all;
+  transform: translateX(10px);
 }
