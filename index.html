@@ -10,46 +10,84 @@
     <!-- NavBar Start -->
 
     <div
-      class="w-full border-b border-gray-300 fixed top-0 bg-white z-10 transition-all duration-300"
+      class="w-full border-b border-gray-300 fixed top-0 bg-[#f5f6fa] z-10 transition-all duration-300"
     >
       <div
-        class="max-w-[1140px] flex items-center justify-between px-5 box-border mx-auto py-3"
+        class="max-w-[1200px] flex items-center justify-between px-5 box-border mx-auto py-3"
       >
-        <div class="flex items-center gap-x-9">
-          <img src="./assets/images/logo.svg" />
-          <ul class="gap-x-9 leading-5 font-normal text-base hidden lg:flex">
+        <div class="flex items-center gap-x-5">
+          <img class="max-w-[110px] max-h-[38px] h-auto" src="./assets/images/Home Page/logo.svg" />
+          <ul class="gap-x-7 leading-5 text-base hidden lg:flex font-semibold text-[#565E77]">
             <a class="flex items-center" href="./screens/homeScreen">
-              <li>Home</li></a
-            >
-            <a class="flex items-center" href="./screens/dropdownScreen">
-              <li>PTE Practice</li></a
+              <li class="flex items-center gap-x-1 group relative showBefore">
+                Product 
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-v-872b6f1b="" data-icon="feather:chevron-down" class="iconify iconify--feather group-hover:rotate-[180deg] transition-all duration-200"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6" class=""></path></svg>
+                <div class="absolute top-0 left-[-148px] hidden group-hover:flex w-[100vw]">
+                <div class="bg-white py-16 px-24 pr-32 w-full mt-12">
+                  <div class="flex justify-between items-center w-full">
+                  <div class="flex gap-x-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 20 20" data-icon="heroicons-solid:lightning-bolt" data-inline="false" class="iconify iconify--heroicons-solid"><path fill="currentColor" fill-rule="evenodd" d="M11.3 1.046A1 1 0 0 1 12 2v5h4a1 1 0 0 1 .82 1.573l-7 10A1 1 0 0 1 8 18v-5H4a1 1 0 0 1-.82-1.573l7-10a1 1 0 0 1 1.12-.38Z" clip-rule="evenodd"></path></svg>
+                    <div class="flex flex-col gap-y-5 items-start"><p class="text-[1.25rem]">Awesome Features</p>
+                    <p class="text-gray-400 font-normal w-[300px] group hover:opacity-[0.7] translate-all duration-300">Vulk is a Vue 3 UI kit that makes it easy to build gorgeous interfaces.</p>
+                    <button class="text-[#7703fc] font-semibold flex items-center gap-x-2 hover:opacity-[0.7] transition-all duration-300 moveArrow">Theme colors overview <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="feather:arrow-right" data-inline="false" class="iconify iconify--feather translate-all duration-300 arrow"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg></button>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-3 text-sm">DEMOS</p>
+                    <ul class="flex flex-col gap-y-2 text-gray-400 font-normal text-sm">
+                      <li>Landing Pages</li>
+                      <li>About Pages</li>
+                      <li>Pricing Pages</li>
+                      <li>Profile Pages</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="font-semibold mb-3 text-sm invisible">DEMOS</p>
+                    <ul class="flex flex-col gap-y-2 text-gray-400 font-normal text-sm">
+                      <li>Blog pages</li>
+                      <li>Auth pages</li>
+                      <li>Layouts</li>
+                      <li>Components</li>
+                    </ul>
+                  </div>
+                  <hr class="h-[130px] border border-gray-300"/>
+                  <div class="flex gap-x-5 pl-5 py-3">
+                    <div class="flex flex-col gap-y-5 items-start"><p class="text-[1.25rem]">Vulk documentation</p>
+                    <p class="text-gray-400 font-normal w-[320px]">Learn more about how you can get the most from the Vulk component library.</p>
+                    <button class="text-[#7703fc] font-semibold flex items-center gap-x-2 hover:opacity-[0.7] transition-all duration-300 moveArrow">Read Documentation <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="feather:arrow-right" data-inline="false" class="iconify iconify--feather translate-all duration-300 arrow"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg></button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              </li>
+            <a class="flex items-center showBefore" href="./screens/dropdownScreen">
+              <li>Pricing</li></a
             >
             <a class="flex items-center" href="./screens/courseScreen">
-              <li>Course</li></a
+              <li class="flex items-center gap-x-1 group showBefore">Company  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-v-872b6f1b="" data-icon="feather:chevron-down" class="iconify iconify--feather group-hover:rotate-[180deg] transition-all duration-200"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></li></a
+              ></li></a
             >
             <a
               class="items-center hidden lg:flex"
               href="./screens/pteTurtorialScreen"
             >
-              <li>PTE Tutorials</li></a
-            >
-            <a class="items-center hidden lg:flex" href="./screens/AppScreen">
-              <li>APP</li></a
+              <li class="flex items-center gap-x-1 group showBefore">Resources 
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-v-872b6f1b="" data-icon="feather:chevron-down" class="iconify iconify--feather group-hover:rotate-[180deg] transition-all duration-200"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></li></a
+                >
+              </li></a
             >
           </ul>
         </div>
         <div class="flex gap-x-3">
-          <a class="items-center hidden lg:flex" href="./screens/signInScreen">
-            <button class="px-5 text-base">Login</button>
-          </a>
           <a
             class="items-center hidden lg:flex"
             href="./screens/registerScreen"
           >
             <button
-              class="px-6 py-2 rounded-[44px] text-mainColor border border-mainColor text-sm leading-4 min-w-[89px]"
+              class="px-7 py-4 rounded-[0.65rem] text-sm leading-4 bg-[#7703fc] text-white font-bold hover:shadow-md hover:shadow-[#7703fc] transition-all duration-300"
             >
-              Sign Up
+              Buy Vulk
             </button>
           </a>
           <i aria-label="icon: bars" class="anticon anticon-bars">
